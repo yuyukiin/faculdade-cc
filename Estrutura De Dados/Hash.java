@@ -32,5 +32,6 @@ public class Hash{
 
         System.exit(0);
 
+        int a = 0;
         }
     }

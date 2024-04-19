@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import javax.swing.JOptionPane;
 
-public class exs{   
+public class Hash{   
     public static void main (String[] args){
         ArrayList<String> ListaNomes = new ArrayList<String>();
         HashSet<String> HashNomes = new HashSet<String>();

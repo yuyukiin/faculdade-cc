@@ -11,11 +11,11 @@ Estrudura de Dados
 Aplicações: Guardar, buscar e exibir. Amplamente utilizada quando dados 
 que asem de uma base de dados (BD em memória secundária) vão para memória principal.
 
-2)Pilha - Controle do último dado inserido. Sistemas Operacionais. Jogos. Stack Em tese a classe
+2) Pilha - Controle do último dado inserido. Sistemas Operacionais. Jogos. Stack Em tese a classe
 stack herda da classe Lista, Logo possui todos atributos e métodos ede classe pai.
 
-inserir             - push, Push, append
-remover             - pop, Pop, remove
+   inserir           - push, Push, append
+   remover           - pop, Pop, remove
 
 Aplicações: backup, processos em SO e/ou Jogos
 

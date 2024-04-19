@@ -1,0 +1,29 @@
+Estrudura de Dados
+
+1) lista - ordenação e controle duplicidade
+    percorrer       - for
+    inserir         - add, Add, append
+    remover         - remove, Remove
+    esta contido    - contains, Contains, in
+    tamanho         - size, Count, len
+    esta vazio      - isEmpty, Empty, empty
+
+Aplicações: Guardar, buscar e exibir. Amplamente utilizada quando dados 
+que asem de uma base de dados (BD em memória secundária) vão para memória principal.
+
+2)Pilha - Controle do último dado inserido. Sistemas Operacionais. Jogos. Stack Em tese a classe
+stack herda da classe Lista, Logo possui todos atributos e métodos ede classe pai.
+
+inserir             - push, Push, append
+remover             - pop, Pop, remove
+
+Aplicações: backup, processos em SO e/ou Jogos
+
+3) fila - controle de prioridade no atendimento. Queue (FIFO - First In, First Out)
+    Assim como a pilha, Queue herda da classe List.
+
+    Inserir         - add, Enqueue, put
+    remover         - remove, Dequeue, get_nowait   *Atenção em Python
+
+    Aplicações: gestão de prioridade de processos, atendimento, ...
+                IA há métodos de resolução de problemas:

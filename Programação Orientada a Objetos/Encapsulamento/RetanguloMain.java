@@ -13,7 +13,7 @@ public class RetanguloMain {
         System.out.println("Informe a base do retângulo:");
         double base = sc.nextDouble();
         
-        Retangulo retangulo = new Retangulo(altura, base);
+        RetanguloNew retangulo = new RetanguloNew(altura, base);
         
         System.out.println("Altura do Retângulo: " + retangulo.getAltura());
         System.out.println("Base do Retângulo: " + retangulo.getBase());

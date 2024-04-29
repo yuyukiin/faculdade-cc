@@ -17,6 +17,6 @@ public class Circulo {
     }
     
     public double calculaArea() {
-        return Math.PI * raio * raio;
+        return Math.PI * raio * raio; //Math.PI =  Representa a proporção entre circunferência de um círculo com o seu diâmetro, aproximadamente 3.14159
     }
 }

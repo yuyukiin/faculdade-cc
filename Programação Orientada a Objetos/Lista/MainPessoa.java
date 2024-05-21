@@ -25,5 +25,13 @@ public class MainPessoa {
         System.out.println("Idade: " + p.getIdade()); // Acessa o método getIdade do objeto p
         }
     }
+    
+    private static void ExibirPessoas2(List<Pessoa> lista){
+        for(int i = 0; i < lista.size(); i++){
+            System.out.println("Nome: " + lista.get(i).getNome());
+            System.out.println("Idade: " + lista.get(i).getIdade());
+        }
+    }
+    
 }
 

@@ -1,0 +1,7 @@
+Recursao é um recurso para chamar um metodo dentro dele mesmo
+  - é um metodo que chama ele mesmo
+  - é um recurso CARO, pois consome muita memoria
+  - é um recurso que pode ser substituido por um loop
+- > Recursão tem 2 tipos de recursão: recursão "sem retorno - void " e recursão "com retorno"
+    - Sem retorno - void : é quando o metodo não retorna nada
+    - Com retorno - return : é quando o metodo retorna algo

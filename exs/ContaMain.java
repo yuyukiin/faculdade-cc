@@ -14,10 +14,16 @@ public class ContaMain {
         ContaCorrente conta1 = new ContaCorrente();
         conta1.definirSaldoInicial(1000);
         System.out.println("Saldo: " + conta1.saldo);
-        conta1.sacar(500);
+        if(conta1.sacar(500))
+            System.out.println("Saque efetuado!");
+        else
+            System.out.println("Saque Não efetuado!");
         conta1.depositar(50);
         System.out.println("Saldo: " + conta1.saldo);
-        conta1.sacar(600);
+        if(conta1.sacar(600))
+            System.out.println("Saque efetuado!");
+        else
+            System.out.println("Saque Não efetuado!");
         System.out.println("Saldo: " + conta1.saldo);
 
     }

@@ -1,0 +1,48 @@
+## Ordenação - Organização ou Classificação por Chave(s)
+
+### Algoritmos de Ordenação Simples
+
+#### 1. Ordenação por Bolhas (Bubble Sort)
+- **Descrição**: Compara pares adjacentes de elementos e os troca se estiverem na ordem errada. Este processo é repetido até que a lista esteja ordenada.
+- **Estabilidade**: Estável (mantém a ordem relativa de elementos iguais).
+- **Complexidade**:
+  - **Tempo**: \(O(N^2)\) no pior e médio caso; \(O(N)\) no melhor caso (quando a lista já está ordenada).
+  - **Espaço**: \(O(1)\) - Ordenação em memória principal.
+- **Observações**: Apesar de ser intuitivo e fácil de implementar, o Bubble Sort é ineficiente para listas grandes devido à sua complexidade quadrática.
+
+#### 2. Ordenação por Seleção (Selection Sort)
+- **Descrição**: Encontra o menor (ou maior) elemento da lista e o coloca na posição correta, repetindo o processo para a sublista restante.
+- **Estabilidade**: Instável (pode alterar a ordem relativa de elementos iguais).
+- **Complexidade**:
+  - **Tempo**: \(O(N^2)\) no pior, médio e melhor caso.
+  - **Espaço**: \(O(1)\) - Ordenação em memória principal.
+- **Observações**: Embora o Selection Sort também seja ineficiente para grandes listas, ele tem a vantagem de requerer menos trocas de elementos do que o Bubble Sort.
+
+#### 3. Ordenação por Inserção (Insertion Sort)
+- **Descrição**: Constrói a lista ordenada um elemento de cada vez, pegando elementos da lista não ordenada e inserindo-os na posição correta da lista ordenada.
+- **Estabilidade**: Estável (mantém a ordem relativa de elementos iguais).
+- **Complexidade**:
+  - **Tempo**: \(O(N^2)\) no pior caso, \(O(N)\) no melhor caso (quando a lista já está ordenada).
+  - **Espaço**: \(O(1)\) - Ordenação em memória principal.
+- **Observações**: O Insertion Sort é eficiente para listas pequenas ou listas que já estão quase ordenadas, mas não é adequado para grandes listas devido à sua complexidade quadrática.
+
+### Comparação de Complexidades
+
+- **Tempo**:
+  - **Melhor Caso**: A ordenação por Bolhas e Inserção pode ser mais eficiente quando a lista está quase ordenada.
+  - **Pior Caso**: Todos os algoritmos simples mencionados têm uma complexidade de \(O(N^2)\), tornando-os ineficientes para grandes conjuntos de dados.
+
+- **Espaço**:
+  - Todos os algoritmos listados têm uma complexidade de espaço \(O(1)\), o que significa que eles utilizam uma quantidade constante de espaço adicional além da entrada.
+
+### Complexidade = Esforço Computacional
+
+O esforço computacional para algoritmos de ordenação é medido pela quantidade de comparações e trocas necessárias para ordenar a lista.
+
+- **Comparações**: Quantas vezes os elementos são comparados para determinar a ordem.
+- **Trocas**: Quantas vezes os elementos são efetivamente trocados de posição.
+
+### Considerações Adicionais
+
+- **Estabilidade**: Algoritmos estáveis são preferidos quando a ordem relativa de elementos iguais deve ser preservada.
+- **Eficiência para Listas Grandes**: Algoritmos como Merge Sort e Quick Sort, que possuem complexidade média de \(O(N \log N)\), são geralmente mais adequados para listas grandes.

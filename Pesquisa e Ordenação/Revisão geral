@@ -21,6 +21,9 @@ Algoritmos de Ordenação Simples
 - Estabilidade: Estável.
 - Complexidade: Tempo \(O(N^2)\) no pior caso; \(O(N)\) no melhor caso. Espaço \(O(1)\).
 
+Distancia
+- Pré organizar vetores, maiores pro final e os menores pro começo.
+
 Comparação de Complexidades
 
 - Tempo: Todos os algoritmos têm complexidade \(O(N^2)\) no pior caso. Bubble Sort e Insertion Sort podem ser mais eficientes com listas quase ordenadas.

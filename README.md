@@ -1,4 +1,4 @@
-# 🐙 Formatações avançadas
+# 💻 Faculdade Ciência da Computação
 
 ## Alertas
 

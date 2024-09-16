@@ -87,3 +87,27 @@ DECLARE @NomeFuncionario VARCHAR(100);
 EXEC ObterNomeCompletoFunconario '2123321321', @NomeFuncionario OUTPUT;
 PRINT @NomeFuncionario;
 
+--cALCULAR Slario total
+CREATE PROCEDURE CalcularValorTotal
+	@DepartamentoID INT,
+	@SalarioTotal decimal(18,2) OUTPUT
+
+AS 
+BEGIN
+	--Calcula salario total
+	SELECT @SalarioTotal = SUM(Salario) 
+	FROM FUNCIONARIO AS F
+	WHERE F.Dnr = @DepartamentoID
+
+	--Verifica se depertamento existe
+
+	IF @SalarioTotal IS NULL
+	BEGIN
+		SET @SalarioTotal = 0;
+		PRINT 'Departamento não existe'
+	END
+END
+
+DECLARE @TotalSalario DECIMAL(18,2)
+EXEC CalcularValorTotal 1, @TotalSalario OUTPUT;
+PRINT CAST(@TotalSalario AS VARCHAR(100));

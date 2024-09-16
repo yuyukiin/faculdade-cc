@@ -49,3 +49,41 @@ BEGIN
 END;	
 
 EXEC VerificarEInserirFuncionario 'Juca', 'S', 'Da Silveira', '0000000002'
+
+--teste
+CREATE PROCEDURE teste
+	@par1 as INT OUTPUT
+AS
+BEGIN
+	SELECT @par1*2
+	RETURN
+END
+DECLARE @valor AS INT = 15;
+PRINT CAST(@valor AS VARCHAR(50));
+
+DECLARE @valor
+
+SET @valor = 5
+
+EXEC teste @valor OUTPUT;
+PRINT CAST(@valor AS VARCHAR(50));
+
+--Declarer
+ALTER PROCEDURE ObterNomeCompletoFunconario
+	@Cpf VARCHAR(11),
+	@NomeCompleto VARCHAR(255) OUTPUT
+AS
+BEGIN
+	-- Concatenar e star o nome completo
+	SELECT @NomeCompleto = F.Pnome + ' ' + F.Minicial + '. ' + F.Unome
+	FROM FUNCIONARIO AS F
+	WHERE @Cpf = Cpf
+
+	IF @NomeCompleto IS NULL
+		SET @NomeCompleto = 'Funcionario nao encontrado'
+END
+
+DECLARE @NomeFuncionario VARCHAR(100);
+EXEC ObterNomeCompletoFunconario '2123321321', @NomeFuncionario OUTPUT;
+PRINT @NomeFuncionario;
+

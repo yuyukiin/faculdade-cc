@@ -111,3 +111,28 @@ END
 DECLARE @TotalSalario DECIMAL(18,2)
 EXEC CalcularValorTotal 1, @TotalSalario OUTPUT;
 PRINT CAST(@TotalSalario AS VARCHAR(100));
+
+--Data Nasc funcionario a aprti de cpf
+
+ALTER PROCEDURE CpfTeste
+	@Cpf VARCHAR(11),
+	@Idade INT OUTPUT
+
+AS
+BEGIN
+	SELECT @Idade = DATEDIFF(YEAR, Datanasc, GETDATE())
+	FROM FUNCIONARIO AS F
+	WHERE F.Cpf = @Cpf
+
+	IF @Cpf IS NULL
+	BEGIN
+		PRINT 'Funcionario Inexistente'
+		RETURN
+	END
+END
+
+DECLARE @IdadeFim INT
+EXEC CpfTeste '88866555576', @IdadeFim OUTPUT;
+PRINT ('Idade do funcionario: ' + CAST(@IdadeFim AS VARCHAR(100)));
+	
+

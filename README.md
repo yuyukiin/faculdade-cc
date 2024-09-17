@@ -1,16 +1,13 @@
 # 💻 Faculdade Ciência da Computação
 
 > [!NOTE]
-> Semestre 4/8
+> Cadeiras dos Semestre 3 e 4 adicionadas.
 
 > [!TIP]
 > a
 
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
 > [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
+> Semestre 1 e 2 não adicionados.
 
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
+> [!IMPORTANT]
+> Atualizaçõe

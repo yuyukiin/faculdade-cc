@@ -1,14 +1,10 @@
 # 💻 Faculdade Ciência da Computação
 
-## Alertas
-
-Alertas são uma extensão Markdown baseada na sintaxe blockquote que você pode usar para enfatizar informações críticas. Eles são exibidos com cores e ícones distintos para indicar a importância do conteúdo.
-
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> Semestre 4/8
 
 > [!TIP]
-> Helpful advice for doing things better or more easily.
+> a
 
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.

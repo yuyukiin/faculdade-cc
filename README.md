@@ -4,10 +4,10 @@
 > Repositório com códigos e bloco de notas com conteúdos dos respectivos semestres.
 
 > [!TIP]
-> Cadeiras dos Semestre 3 e 4 adicionadas.
+> Cadeiras do semestre 2 ao 4.
 
 > [!WARNING]
-> Semestre 1 e 2 não adicionados.
+> Semestre 1 não adicionado.
 
 > [!IMPORTANT]
-> Atualizaçõe
+> Adição dos semestres 5 ao 8.

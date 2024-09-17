@@ -1,1 +1,102 @@
-A
+markdown
+Copiar código
+# MySQL Operations Summary
+
+## Overview
+
+This document provides a summary of key MySQL operations, including creating and manipulating databases and tables, inserting data, and handling common errors.
+
+## 1. Creating and Managing Databases and Tables
+
+### Create a Database
+```sql
+CREATE DATABASE nome_do_banco;
+Select a Database
+sql
+Copiar código
+USE nome_do_banco;
+Create Table pessoa
+sql
+Copiar código
+CREATE TABLE pessoa(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    sexo VARCHAR(50) NOT NULL,
+    idioma VARCHAR(10) NOT NULL
+);
+Create Table alunos
+sql
+Copiar código
+CREATE TABLE alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    idade INT,
+    curso VARCHAR(50) NOT NULL
+);
+Create Table professores
+sql
+Copiar código
+CREATE TABLE professores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    idade INT,
+    disciplina VARCHAR(50) NOT NULL
+);
+Create Table matriculas
+sql
+Copiar código
+CREATE TABLE matriculas(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_aluno INT,
+    id_professor INT,
+    data_matricula DATE,
+    FOREIGN KEY (id_aluno) REFERENCES alunos(id),
+    FOREIGN KEY (id_professor) REFERENCES professores(id)
+);
+2. Inserting Data
+Insert Data into Table pessoa
+sql
+Copiar código
+INSERT INTO pessoa (nome, sexo, idioma)
+VALUES
+('Ricardo', 'M', 'Portugues'),
+('Gerald', 'M', 'Inglês'),
+('William', 'M', 'Inglês'),
+('Umberto', 'M', 'Espanhol'),
+('Jostein', 'M', 'Alemão'),
+('Stephen', 'M', 'Holandes');
+Insert Data into Table alunos
+sql
+Copiar código
+INSERT INTO alunos (nome, idade, curso)
+VALUES
+('Joao', 20, 'Matemática'),
+('Dudu', 20, 'CC'),
+('Yuri', 22, 'CC'),
+('Pedro', 18, 'SI');
+Insert Data into Table professores
+sql
+Copiar código
+INSERT INTO professores (nome, idade, disciplina)
+VALUES
+('Zamba', 50, 'CC'),
+('Yu', 22, 'CC');
+Insert Data into Table matriculas
+sql
+Copiar código
+INSERT INTO matriculas (id_aluno, id_professor, data_matricula)
+VALUES
+(1, 1, '2022-12-11');
+3. Querying Data and Common Errors
+List Tables
+sql
+Copiar código
+SHOW TABLES;
+Describe Table Structure
+sql
+Copiar código
+DESC nome_da_tabela;
+Select Data
+sql
+Copiar código
+SELECT * FROM nome_da_tabela;

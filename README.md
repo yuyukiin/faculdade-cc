@@ -1,10 +1,10 @@
 # 💻 Faculdade Ciência da Computação
 
 > [!NOTE]
-> Cadeiras dos Semestre 3 e 4 adicionadas.
+> Repositório com códigos e bloco de notas com conteúdos.
 
 > [!TIP]
-> Códigos e bloco de notas com conteúdos.
+> Cadeiras dos Semestre 3 e 4 adicionadas.
 
 > [!WARNING]
 > Semestre 1 e 2 não adicionados.

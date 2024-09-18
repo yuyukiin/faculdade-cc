@@ -18,7 +18,7 @@ Algoritmos de ordenação estáveis mantêm a ordem relativa de elementos iguais
 Algoritmos instáveis não garantem a mesma ordem, pegando um atributo e o comparando com todos, e se repetindo isso até o fim.
 
 ### 4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computaiconal que ele utiliza para ser melhor que os outros? Explique a resposta.
-O metodo é insersação, e o seu recurso computaiconal é a abordagem adaptativa, pois se utiliza de uma ordem existente nos dados. 
+O metodo é insersação, e o seu recurso computacional é a abordagem adaptativa, pois se utiliza de uma ordem existente nos dados. 
 
 ### 5) Observe a sequecia de números no vetor: 0 1 2 3 4 5 6 - indices / 7 3 5 1 8 2 5 - valores
 

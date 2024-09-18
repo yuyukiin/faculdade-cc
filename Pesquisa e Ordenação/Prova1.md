@@ -7,7 +7,7 @@ Enviar o arquivo da avaliação para alexz@ufn.edu.br. Assunto deve ser:
 Prova Pesquisa e ordenação.
 
 ### 1) O que é ordenação e qual o seu papel nos sistemas de informação
-Ordenação é a forma de organização feita nas estruturas de dados, que tem como papel otimizar a estrutura de dados a deixando organizada para busca de informações por exemplo.
+Ordenação é a forma de organização feita nas estruturas de dados, que tem como papel otimizar o algoritmo o tornando melhor para busca de informações por exemplo.
 
 ### 2) Na construção de algoritmos, por exemplo. algoritmos de ordenação, há o conceito de complexidade. Assim, em ordenação como se calcula ou se mede a complexidade.
 A complexidade é o esforço computacional, todos algoritmos tem. Os faotres que definem aumentando ou diminuindo, são a simplicidade no código, caso sejam simplificados a complexidade será maior e a otimização também.

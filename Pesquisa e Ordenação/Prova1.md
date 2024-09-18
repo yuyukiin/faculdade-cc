@@ -16,7 +16,7 @@ A complexidade é o esforço computacional, todos algoritmos tem uma complexidad
 Estáveis são algoritmos que seguem ordenandos a partir do primeiro momento, não fazendo uma desordem geral. Instáveis desorganizam todos para após organizar.
 
 ### 4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computaiconal que ele utiliza para ser melhor que os outros? Explique a resposta.
-Insersação, 
+O metodo é insersação, e o seu recurso computaiconal é a abordagem adaptativa, pois se utiliza de uma ordem existente nos dados. 
 
 ### 5) Observe a sequecia de números no vetor: 0 1 2 3 4 5 6 - indices / 7 3 5 1 8 2 5 - valores
 

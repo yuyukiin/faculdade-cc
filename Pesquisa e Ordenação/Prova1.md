@@ -34,10 +34,7 @@ Estáveis: Bolha e seleção
 Instáveis: Inserção e pente
 
 ### 7) No processo de ordenação de listas contendo objetos, com pessoas que derivam da classe Pessoa(nome, email, telfone, curso), para usar o método sort() em java ou C Sharp é preciso realizar alterações na classe Pessoa para que a ordenação ocorra corretamente. Exemplifique e explique qual(is) é(são) essa(s) alterações? Assuma que o atributo chave de ordenação da classe pessoa é nome seguido de curso.
-O motivo principal é por conta do método compareTo. CompareTo tem a finalidade de definir uma ordem dos objetos em Java. Caso não utilizasse, a ordenação teria que ser feita a "mão" pelo programador, mas já que
-existe o compareTo, podemos utilizar o método para definir a ordem.
-Seguindo uma regra mais direta, é preciso implementar a interface Compareble<Pessoa> para que assim possa modificar o metodo compareTo adicionando o atributo nome eo comparando. E na main é preciso apenas importar o Collections para se utilizar o sort.
-É preciso implementas na classe pessoa a interface Comparable<Pessoa> para que possamos modificar o metodo compareTo, colocando o atributo nome para ser
-comparado e caso o nome for igual comparar o curso, já na main precisamos importar o Collections para poder utilizar o sort
+O motivo principal é o método compareTo. O compareTo tem a finalidade de definir uma ordem para os objetos em Java. Caso não fosse utilizado, a ordenação teria que ser feita manualmente pelo programador. No entanto, como existe o compareTo, podemos utilizá-lo para definir a ordem.
+Seguindo uma regra mais direta, é preciso implementar a interface Comparable para que possamos modificar o método compareTo, adicionando o atributo nome para comparação. Se os nomes forem iguais, devemos comparar o curso. Na classe Pessoa, precisamos implementar a interface Comparable para modificar o método compareTo, utilizando o atributo nome como critério de comparação. Na classe main, é necessário importar a classe Collections para poder utilizar o método sort.
 
 

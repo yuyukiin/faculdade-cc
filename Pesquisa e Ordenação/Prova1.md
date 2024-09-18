@@ -16,11 +16,9 @@ Estáveis são algoritmos que seguem ordenando a partir do primeiro momento, nã
 
 ### 4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computaiconal que ele utiliza para ser melhor que os outros? Explique a resposta.
 
-### 5) Observe a sequecia de números no veotr:
-0 1 2 3 4 5 6 - indices
-7 3 5 1 8 2 5 - valores
-  a) quantas comparações e trocas vão ocorrer usando o bolha?
-  b) quantas comparações e trocas vão ocorrer usando o pente?
+### 5) Observe a sequecia de números no veotr: 0 1 2 3 4 5 6 - indices / 7 3 5 1 8 2 5 - valores
+  > a) quantas comparações e trocas vão ocorrer usando o bolha?
+  > b) quantas comparações e trocas vão ocorrer usando o pente?
 
 ### 6) Dos métodos estudados (bolha, seleção, inserção e pente)
 Estáveis: Bolha e seleção 

@@ -20,10 +20,10 @@ Insersação,
 
 ### 5) Observe a sequecia de números no vetor: 0 1 2 3 4 5 6 - indices / 7 3 5 1 8 2 5 - valores
 
-  ***a) quantas comparações e trocas vão ocorrer usando o bolha?***
+  **a) quantas comparações e trocas vão ocorrer usando o bolha?**
   21 comprações e 9 trocas
   
-  ***b) quantas comparações e trocas vão ocorrer usando o pente?***
+  **b) quantas comparações e trocas vão ocorrer usando o pente?**
   16 comprações e 8 trocas
 
 

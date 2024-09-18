@@ -14,6 +14,8 @@ A complexidade é o esforço computacional, todos algoritmos tem uma complexidad
 
 ### 3) Novamente no conteto de algoritmos de ordenação, há algoritmos estáveis e instáveis. Explique o que sso signfiica.
 Estáveis são algoritmos que seguem ordenandos a partir do primeiro momento, não fazendo uma desordem geral. Instáveis desorganizam todos para após organizar.
+Algoritmos de ordenação estáveis mantêm a ordem relativa de elementos iguais após a ordenação. 
+Algoritmos instáveis não garantem a mesma ordem, pegando um atributo e o comparando com todos, e se repetindo isso até o fim.
 
 ### 4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computaiconal que ele utiliza para ser melhor que os outros? Explique a resposta.
 O metodo é insersação, e o seu recurso computaiconal é a abordagem adaptativa, pois se utiliza de uma ordem existente nos dados. 

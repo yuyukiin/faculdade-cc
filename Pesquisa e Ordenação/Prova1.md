@@ -16,8 +16,15 @@ Estáveis são algoritmos que seguem ordenando a partir do primeiro momento, nã
 
 ### 4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computaiconal que ele utiliza para ser melhor que os outros? Explique a resposta.
 
-
+### 5) Observe a sequecia de números no veotr:
+0 1 2 3 4 5 6 - indices
+7 3 5 1 8 2 5 - valores
+  a) quantas comparações e trocas vão ocorrer usando o bolha?
+  b) quantas comparações e trocas vão ocorrer usando o pente?
 
 ### 6) Dos métodos estudados (bolha, seleção, inserção e pente)
-Estáveis: Bolha, seleção e pente 
-Instáveis: Inserção
+Estáveis: Bolha e seleção 
+Instáveis: Inserção e pente
+
+### 7) No processo de ordenação de listas contendo objetos, com pessoas que derivam da classe Pessoa(nome, email, telfone, curso), para usar o método sort() em java ou C Sharp é preciso realizar alterações na classe Pessoa
+para que a ordenação ocorra corretamente. Exemplifique e explique qual(is) é(são) essa(s) alterações? Assuma que o atributo chave de ordenação da classe pessoa é nome seguido de curso.

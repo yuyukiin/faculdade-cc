@@ -18,6 +18,7 @@ Estáveis são algoritmos que seguem ordenando a partir do primeiro momento, nã
 
 ### 5) Observe a sequecia de números no veotr: 0 1 2 3 4 5 6 - indices / 7 3 5 1 8 2 5 - valores
   > a) quantas comparações e trocas vão ocorrer usando o bolha?
+  
   > b) quantas comparações e trocas vão ocorrer usando o pente?
 
 ### 6) Dos métodos estudados (bolha, seleção, inserção e pente)

@@ -28,7 +28,9 @@ O metodo é insersação, e o seu recurso computaiconal é a abordagem adaptativ
 
 
 ### 6) Dos métodos estudados (bolha, seleção, inserção e pente)
+
 Estáveis: Bolha e seleção 
+
 Instáveis: Inserção e pente
 
 ### 7) No processo de ordenação de listas contendo objetos, com pessoas que derivam da classe Pessoa(nome, email, telfone, curso), para usar o método sort() em java ou C Sharp é preciso realizar alterações na classe Pessoa

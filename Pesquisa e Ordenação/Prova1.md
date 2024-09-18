@@ -27,3 +27,5 @@ Instáveis: Inserção e pente
 
 ### 7) No processo de ordenação de listas contendo objetos, com pessoas que derivam da classe Pessoa(nome, email, telfone, curso), para usar o método sort() em java ou C Sharp é preciso realizar alterações na classe Pessoa
 para que a ordenação ocorra corretamente. Exemplifique e explique qual(is) é(são) essa(s) alterações? Assuma que o atributo chave de ordenação da classe pessoa é nome seguido de curso.
+O motivo principal é por conta do método compareTo. CompareTo tem a finalidade de definir uma ordem dos objetos em Java. Caso não utilizasse, a ordenação teria que ser feita a "mão" pelo programador, mas já que
+existe o compareTo, podemos utilizar o método para definir a ordem.

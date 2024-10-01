@@ -1,4 +1,4 @@
-# Passo a Passo para Baixar o SUMO
+# Passo a Passo
 
 ## 1. Baixar SUMO
 - Abra o CMD.

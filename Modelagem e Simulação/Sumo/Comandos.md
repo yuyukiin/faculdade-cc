@@ -1,8 +1,6 @@
 # Codigos
 
-Abrir arquivo no terminal
-
-1 - CMD:
+- CMD:
 ```python:
 PS C:\Program Files (x86)\Eclipse\Sumo\bin> netConvert 
 --osm-files "C:\Users\laboratorio\Downloads\Trabalho\trabalho_1.osm"

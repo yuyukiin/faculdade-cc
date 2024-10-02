@@ -1,6 +1,8 @@
 # Avaliação Semestral de Pesquisa e Ordenação
 > Data: 18/09/2024
+
 > Nome: Yuri Alexander Costa Machado
+
 > Enviar o arquivo da avaliação para alexz@ufn.edu.br. Assunto deve ser: Prova Pesquisa e ordenação.
 
 ### 1) O que é ordenação e qual o seu papel nos sistemas de informação

@@ -60,13 +60,15 @@ Por simplificade de código:
   5. inserção
   6. shell -> distância
 
-### Não simplificado de código:
+### Por não simplicidade de código:
 1. Merge
     - Composto por 2 métodos, sendo um deles recursivo
     - Comportamento árvore binária
     - Usado no sort de java
     - Passível de paralelismo (Threads)
     - Sempre divide recursivamente a estrutura no meio
+    - Ordena durante o retorno da recursão
+    - Usa um vetor ou lista temporário(a)
 2. Quick
     - Comporto por 2 métodos, sendo um deles recursivo
     - Comportamento árvore binária

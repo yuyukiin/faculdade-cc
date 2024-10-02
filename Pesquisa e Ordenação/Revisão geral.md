@@ -63,8 +63,16 @@ Por simplificade de código:
 ### Não simplificado de código:
 1. Merge
     - Composto por 2 métodos, sendo um deles recursivo
+    - Comportamento árvore binária
+    - Usado no sort de java
+    - Passível de paralelismo (Threads)
+    - Sempre divide recursivamente a estrutura no meio
 2. Quick
     - Comporto por 2 métodos, sendo um deles recursivo
+    - Comportamento árvore binária
+    - Usado no sort do C Sharp
+    - Passível de paralelismo (Threads)
+    - Sempre divide recursivamenta a estrutura sob um PIVÔ
 3. Heap
     - Totalmente baseado em árvore
 4. Bucket

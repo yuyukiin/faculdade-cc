@@ -61,11 +61,11 @@ Por simplificade de código:
   6. shell -> distância
 
 ### Não simplificado de código:
-- Merge
+1. Merge
     - Composto por 2 métodos, sendo um deles recursivo
-- Quick
+2. Quick
     - Comporto por 2 métodos, sendo um deles recursivo
-- Heap
+3. Heap
     - Totalmente baseado em árvore
-- Bucket
+4. Bucket
     - Ordenação por dígito, radix           

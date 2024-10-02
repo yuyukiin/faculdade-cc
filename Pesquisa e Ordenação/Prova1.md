@@ -5,6 +5,8 @@
 
 > Enviar o arquivo da avaliação para alexz@ufn.edu.br. Assunto deve ser: Prova Pesquisa e ordenação.
 
+---
+
 ### 1) O que é ordenação e qual o seu papel nos sistemas de informação
 Ordenação é a forma de organização feita nas estruturas de dados, que tem como papel otimizar o algoritmo o tornando melhor para busca de informações.
 

@@ -10,7 +10,7 @@ Prova Pesquisa e ordenação.
 Ordenação é a forma de organização feita nas estruturas de dados, que tem como papel otimizar o algoritmo o tornando melhor para busca de informações.
 
 ### 2) Na construção de algoritmos, por exemplo. algoritmos de ordenação, há o conceito de complexidade. Assim, em ordenação como se calcula ou se mede a complexidade.
-A complexidade é o esforço computacional, todos algoritmos tem uma complexidade. Um dos fatores que definem  se será maior ou menor a complexidade, são a simplicidade no código, caso sejam simplificados a complexidade será maior e a otimização também. Vale lembrar, que quanto mais esforço, mais complexidade do código.
+A complexidade é o esforço computacional, todos algoritmos tem uma complexidade. É medida pela contagem de comparações e trocas que o algoritmo faz, e então se utiliza a notação Big-Oh para obter uma estimativa de eficiência do algoritmo.
 
 ### 3) Novamente no conteto de algoritmos de ordenação, há algoritmos estáveis e instáveis. Explique o que sso signfiica.
 Estáveis são algoritmos que seguem ordenandos a partir do primeiro momento, não fazendo uma desordem geral. Instáveis desorganizam todos para após organizar.
@@ -18,7 +18,7 @@ Algoritmos de ordenação estáveis mantêm a ordem relativa de elementos iguais
 Algoritmos instáveis não garantem a mesma ordem, pegando um atributo e o comparando com todos, e se repetindo isso até o fim.
 
 ### 4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computaiconal que ele utiliza para ser melhor que os outros? Explique a resposta.
-O metodo é o pente, e o seu recurso computacional é a abordagem adaptativa, pois se utiliza de uma ordem existente nos dados. 
+O metodo é o pente, e o seu recurso computacional é a analise a distância.
 
 ### 5) Observe a sequecia de números no vetor: 0 1 2 3 4 5 6 - indices / 7 3 5 1 8 2 5 - valores
 

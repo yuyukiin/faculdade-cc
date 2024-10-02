@@ -69,12 +69,14 @@ Por simplificade de código:
     - Sempre divide recursivamente a estrutura no meio
     - Ordena durante o retorno da recursão
     - Usa um vetor ou lista temporário(a)
+    - Estável
 2. Quick
     - Comporto por 2 métodos, sendo um deles recursivo
     - Comportamento árvore binária
     - Usado no sort do C Sharp
     - Passível de paralelismo (Threads)
     - Sempre divide recursivamenta a estrutura sob um PIVÔ
+    - instável
 3. Heap
     - Totalmente baseado em árvore
 4. Bucket

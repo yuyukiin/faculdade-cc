@@ -32,9 +32,9 @@ O metodo é o pente, e o seu recurso computacional é a analise a distância.
 
 ### 6) Dos métodos estudados (bolha, seleção, inserção e pente)
 
-Estáveis: Bolha e seleção 
+Estáveis: Bolha e inserção  
 
-Instáveis: Inserção e pente
+Instáveis: Seleção e pente
 
 ### 7) No processo de ordenação de listas contendo objetos, com pessoas que derivam da classe Pessoa(nome, email, telfone, curso), para usar o método sort() em java ou C Sharp é preciso realizar alterações na classe Pessoa para que a ordenação ocorra corretamente. Exemplifique e explique qual(is) é(são) essa(s) alterações? Assuma que o atributo chave de ordenação da classe pessoa é nome seguido de curso.
 O motivo principal é o método compareTo. O compareTo tem a finalidade de definir uma ordem para os objetos em Java. Caso não fosse utilizado, a ordenação teria que ser feita manualmente pelo programador. No entanto, como existe o compareTo, podemos utilizá-lo para definir a ordem.

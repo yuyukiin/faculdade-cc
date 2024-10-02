@@ -46,3 +46,26 @@ Exemplo de implementação:
 public int compareTo(Aluno o) {
     throw new UnsupportedOperationException("Not supported yet.");
 }
+```
+---
+### Melhor metodo para ordenação?
+Depende, se a estrutura estará previamente ordenada ou não, e do seu tamanho de estrutura.
+
+### Métodos de ordenação
+Por simplificade de código:
+  1. bolha
+  2. agitação
+  3. pente
+  4. seleção
+  5. inserção
+  6. shell -> distância
+
+### Não simplificado de código:
+- Merge
+    - Composto por 2 métodos, sendo um deles recursivo
+- Quick
+    - Comporto por 2 métodos, sendo um deles recursivo
+- Heap
+    - Totalmente baseado em árvore
+- Bucket
+    - Ordenação por dígito, radix           

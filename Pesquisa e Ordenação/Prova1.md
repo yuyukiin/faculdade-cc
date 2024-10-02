@@ -1,7 +1,7 @@
 # Avaliação Semestral de Pesquisa e Ordenação
-Data: 18/09/2024
+> Data: 18/09/2024
 
-Nome: Yuri Alexander Costa Machado
+> Nome: Yuri Alexander Costa Machado
 
 Enviar o arquivo da avaliação para alexz@ufn.edu.br. Assunto deve ser:
 Prova Pesquisa e ordenação.

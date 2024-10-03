@@ -10,23 +10,24 @@
    - _WAN:_   200.10.10.0/24
 2. Utilizar o Linux
    - Utilizar todas ferramentas no Linux
-   - Criar usuário
-     ```bash
-     adduser "username"
-     ```
-   - Adicionar usuário no SUDO
-     ```bash
-     # usermod -aG sudo username
-     ```
+
 3. Instalar o SSH no Linux
-   - Para instalação seguir as orientaões abaixo.
+   - Para instalação seguir as orientações abaixo, abrindo o terminal.
      ```bash
      sudo apt-get update
      sudo apt-get upgrade
      sudo apt-get install openssh-client
      ```
+     - Criar usuário utilizando o terminal
+     ```bash
+     adduser "username"
+     ```
+     - Adicionar usuário na lista do SUDO
+     ```bash
+     # usermod -aG sudo username
+     ```
 4. Instalar o Apache 2 no Linux
-   - Para instalação seguir as orientações abaixo.
+   - Para instalação seguir as orientações abaixo,  abrindo o terminal.
      ```bash
      sudo apt update
      sudo apt install apache2

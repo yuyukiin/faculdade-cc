@@ -169,14 +169,14 @@
 ### Andamento
 | Nome          | Concluído                                               | Para que serve                          |
 |---------------|--------------------------------------------------------|-----------------------------------------|
-| LINUX         | ✅ Utilização de ferramentas necessárias                | Ambiente para execução das tarefas      |
-| SSH           | ✅ Instalação e configuração de usuário                 | Acesso remoto e seguro ao servidor      |
-| APACHE 2      | ✅ Instalação e criação de página web                   | Servidor web para hospedar páginas      |
-| SUB-INTERFACE | ✅ Instalação do net-tools e criação de sub-interface   | Segmentação de rede para diferentes serviços |
-| ROTAS         | ❌ Configuração e exibição de rotas pendentes          | Direcionamento de tráfego na rede       |
-| Proxy         | ❌ Bloquear sites                                        | Intermediário para requisições externas |
-| - SQUID       | ❌ No meu servidor Linux                                 | Servidor proxy para controle de acesso  |
-| - IP TABLES   | ❌ Servidor laboratório                                  | Gerenciamento de regras de firewall      |
+| LINUX         | ✅                 | Ambiente para execução das tarefas      |
+| SSH           | ✅                  | Acesso remoto e seguro ao servidor      |
+| APACHE 2      | ✅                   | Servidor web para hospedar páginas      |
+| SUB-INTERFACE | ✅    | Segmentação de rede para diferentes serviços |
+| ROTAS         | ❌        | Direcionamento de tráfego na rede       |
+| Proxy         | ❌                                        | Intermediário para requisições externas |
+| - SQUID       | ❌                                  | Servidor proxy para controle de acesso  |
+| - IP TABLES   | ❌                                   | Gerenciamento de regras de firewall      |
 
 ---
 

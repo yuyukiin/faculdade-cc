@@ -49,7 +49,50 @@
      sudo apt update
      sudo apt install apache2
      ```
-     
+
+   - Inicie o serviço:
+     ```bash
+     sudo systemctl start apache2
+     ```
+
+   - Criando a página:
+     ```bash
+     sudo nano /var/www/html/windowsehmelhor.html
+     ```
+
+   - A página:
+     ```html
+     <!DOCTYPE html>
+     <html lang="pt-BR">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Página do Grupo 2</title>
+     </head>
+     <body>
+         <h1>Bem-vindo à nossa página, professor!</h1>
+         <p>Esta é uma página criada com Apache2.</p>
+     </body>
+     </html>
+     ```
+
+   - Para salvar e sair da "criação html":
+     ```bash
+     Ctrl + X
+     Y + Enter
+     ```
+
+   - Configurando permissões:
+     ```bash
+     sudo chown -R www-data:www-data /var/www/html/
+     sudo chmod -R 755 /var/www/html/
+     ```
+
+   - (Opcional) Habilitar no firewall:
+     ```bash
+     sudo ufw allow 'Apache'
+     ```
+
 5. **Criar Sub-interfaces no Linux**
    - Primeiramente tem que instalar o net-tools
      ```bash
@@ -67,7 +110,10 @@
      ```
      
 7. **Configurar Rotas**
-   -
+   - Exibir rotas
+     ```bash
+     sudo route
+     ```
 9. 
 
 

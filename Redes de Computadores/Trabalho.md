@@ -24,11 +24,11 @@
      ```
    - Criar usuário:
      ```bash
-     adduser "username"
+     adduser miguel
      ```
    - Adicionar usuário na lista do SUDO:
      ```bash
-     usermod -aG sudo username
+     sudo usermod -aG sudo miguel
      ```
    - Entra como super usuário:
      ```bash

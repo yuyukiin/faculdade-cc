@@ -44,7 +44,23 @@
      sudo apt update
      sudo apt install apache2
      ```
-
+5. **Criar Sub-interfaces no Linux**
+   - Primeiramente tem que instalar o Nettools
+     ```bash
+     sudo apt installar net-tools
+     ```
+   - AAA
+     ```bash
+     ifconfig
+     ```
+   - Craição de uma interface segue os códigos abaixo
+     ```bash
+     sudo apt update
+     sudo apt install apache2
+     ```
+   - 
+7. **Configurar Rotas**
+8. 
 
 
 ---

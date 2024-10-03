@@ -24,7 +24,7 @@
      ```
    - Criar usuário:
      ```bash
-     adduser username
+     sudo adduser username
      ```
    - Adicionar usuário na lista do SUDO:
      ```bash
@@ -51,7 +51,7 @@
      ```
    - Mostra roteador
      ```bash
-     ifconfig
+     sudo ifconfig
      ```
    - Adiciona a sub-interface (O IP será diferente conforme o grupo)
      ```bash

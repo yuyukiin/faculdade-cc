@@ -80,6 +80,11 @@ Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 
 ---
 
-### Sites
-- [Dontpad](https://dontpad.com/grupodosfalhosprogramadores)
-- [Pedroca](http://pedr0xh.free.nf)
+### Sites Relevantes
+
+| Nome     | Link                                               |
+|----------|----------------------------------------------------|
+| **Dontpad** | [dontpad.com/grupodosfalhosprogramadores](https://dontpad.com/grupodosfalhosprogramadores) |
+| **Pedroca** | [pedr0xh.free.nf](http://pedr0xh.free.nf)                         |
+
+

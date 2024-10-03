@@ -57,7 +57,7 @@
 
    - Criando a página:
      ```bash
-     sudo nano /var/www/html/windowsehmelhor.html
+     sudo nano /var/www/html/grupo1.html
      ```
 
    - A página:
@@ -67,7 +67,7 @@
      <head>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Página do Grupo 2</title>
+         <title>Página do Grupo 1</title>
      </head>
      <body>
          <h1>Bem-vindo à nossa página, professor!</h1>

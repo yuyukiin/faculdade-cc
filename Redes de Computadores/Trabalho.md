@@ -30,7 +30,10 @@
      ```bash
      usermod -aG sudo username
      ```
-
+   - Logar usuário / Mudar usuário:
+     ```bash
+     sudo su "username"
+     ```
 4. **Instalar o Apache 2 no Linux**
    - Para instalação, siga as orientações abaixo:
      ```bash

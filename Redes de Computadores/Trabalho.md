@@ -181,7 +181,7 @@
 
 ---
 
-### Informações Gerais
+### Informações importantes 
 Endereços que começam com 172 são endereços inválidos que não navegam pela internet.
 Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 

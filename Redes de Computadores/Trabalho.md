@@ -1,53 +1,42 @@
 # TRABALHO REDES
 
-- Grupo 1: Yuri Alexander, Eduardo Cerreta e Meani 
-- Grupo 2: Pedro, Miguel e Machado
+### Integrantes do Grupo
+- **Grupo 1:** Yuri Alexander, Eduardo Cerreta e Meani 
+- **Grupo 2:** Pedro, Miguel e Machado
+
+> **Nota:** Todas as instruções a seguir devem ser executadas no terminal do Linux.
 
 ## Passo a passo
-1. Planejar as redes
+1. **Planejar as redes**
    - Definir a topologia de rede, incluindo dispositivos e conexões.
-   - _LAN:_   192.168.1.0/24
-   - _WAN:_   200.10.10.0/24
-2. Utilizar o Linux
-   - Utilizar todas ferramentas no Linux
+   - **LAN:** 192.168.1.0/24
+   - **WAN:** 200.10.10.0/24
 
-3. Instalar o SSH no Linux
-   - Para instalação seguir as orientações abaixo, abrindo o terminal.
+2. **Utilizar o Linux**
+   - Utilizar todas as ferramentas necessárias no Linux.
+
+3. **Instalar o SSH no Linux**
+   - Para instalação, siga as orientações abaixo:
      ```bash
      sudo apt-get update
      sudo apt-get upgrade
      sudo apt-get install openssh-client
      ```
-     - Criar usuário utilizando o terminal
+   - Criar usuário:
      ```bash
      adduser "username"
      ```
-     - Adicionar usuário na lista do SUDO
+   - Adicionar usuário na lista do SUDO:
      ```bash
-     # usermod -aG sudo username
+     usermod -aG sudo username
      ```
-4. Instalar o Apache 2 no Linux
-   - Para instalação seguir as orientações abaixo,  abrindo o terminal.
+
+4. **Instalar o Apache 2 no Linux**
+   - Para instalação, siga as orientações abaixo:
      ```bash
      sudo apt update
      sudo apt install apache2
      ```
-
-
-
-
-### Sudo
-
-Instalção Sudo SSH
-
-
-Adiciona usuário a lista de Sudo
-
-
-### Linux
-
-Cria usuário no Linux
-
 
 
 

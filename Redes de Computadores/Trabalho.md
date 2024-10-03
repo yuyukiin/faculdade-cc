@@ -12,7 +12,7 @@
 1. [Integrantes do Grupo](#integrantes-do-grupo)
 2. [Passo a Passo](#passo-a-passo)
 3. [Andamento](#andamento)
-4. [Informações-gerais](#informações-gerais)
+4. [Informações gerais](#informações-gerais)
 5. [Redes](#redes)
 6. [Quadro](#quadro)
 7. [Sites Relevantes](#sites-relevantes)

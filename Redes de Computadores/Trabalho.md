@@ -3,7 +3,6 @@
 ### Passo a passo
 1. **Planejar as redes**
    - Definir a topologia de rede, incluindo dispositivos e conexões.
-   - Estabelecer políticas de segurança e acesso.
 2. **Instalar o Linux**
    - Escolher a distribuição adequada (ex: Ubuntu, CentOS).
    - Configurar a instalação e definir partições.
@@ -27,17 +26,4 @@ Endereços que começam com 172 são endereços inválidos que não navegam pela
 - **Máscara de Sub-rede:** 255.255.255.192
 - **Gateway Padrão:** 172.25.2.193
 
-### Considerações Adicionais
-- **Segurança:**
-  - Implementar firewalls e políticas de segurança para proteger a rede.
-  - Utilizar VPNs para acesso remoto seguro.
-  
-- **Monitoramento:**
-  - Implementar ferramentas de monitoramento (ex: Nagios, Zabbix) para rastrear a saúde da rede e desempenho dos serviços.
-
-- **Backup:**
-  - Estabelecer um plano de backup regular para dados e configurações do sistema.
-  
-- **Documentação:**
-  - Manter documentação atualizada sobre a configuração da rede, políticas de segurança e procedimentos de recuperação.
 

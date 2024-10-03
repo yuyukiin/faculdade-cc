@@ -23,7 +23,7 @@
 
 > **Nota:** Todas as instruções a seguir devem ser executadas no terminal do Linux.
 
-> **Ferramentas:** SSH,Linux, Windows, Apache 2, rotas, Sub-interface e Proxy(squid e IP Tables)
+> **Ferramentas:** SSH, Linux, Windows, Apache 2, rotas, Sub-interface e Proxy(squid e IP Tables)
 
 ## Passo a passo
 1. **Planejar as redes**

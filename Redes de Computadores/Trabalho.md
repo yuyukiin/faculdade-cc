@@ -9,8 +9,8 @@ Nome: Yuri Alexander, Pedro Daroda e Eduardo Cerreta
    - Escolher a distribuição adequada (ex: Ubuntu, CentOS).
    - Configurar a instalação e definir partições.
 
-   - **LAN:** 192.168.1.0/24
-   - **WAN:** 200.10.10.0/24
+   - _LAN:_   192.168.1.0/24
+   - _WAN:_   200.10.10.0/24
 
 ### Ferramentas utilizadas
 - **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.

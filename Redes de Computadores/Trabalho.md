@@ -122,6 +122,15 @@
 
 ---
 
+### FAZER
+-- **LINUX** ✅
+-- **SSH** ✅
+-- **APACHE 2** ✅
+-- *SUB-INTERFACE** ✅
+-- **ROTAS** ❌
+-- **PROXY** ❌
+
+
 ### Ferramentas utilizadas
 - **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.
 - **APACHE 2:** Servidor web para hospedagem de sites e aplicações.

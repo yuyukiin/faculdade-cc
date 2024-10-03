@@ -26,5 +26,5 @@ Endereços que começam com 172 são endereços inválidos que não navegam pela
 - **Máscara de Sub-rede:** 255.255.255.192
 - **Gateway Padrão:** 172.25.2.193
 
-![Falhos_Programadores](caminho/da/imagem.jpg)
+![Falhos_Programadores](humor.jpg)
 

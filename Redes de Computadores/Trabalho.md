@@ -13,7 +13,7 @@
 2. [Passo a Passo](#passo-a-passo)
 3. [Andamento](#andamento)
 4. [Salvar](#Salvar)
-5. [Imagem](#Imagem)
+5. [Imagens](#Imagens)
 6. [Sites Relevantes](#sites-relevantes)
 
 ---
@@ -192,7 +192,7 @@ Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 
 ---
 
-<h2 align="center">Imagem</h2>
+<h2 align="center">Imagens</h2>
 
 <h2 align="center">Redes</h2>
 <p align="center">

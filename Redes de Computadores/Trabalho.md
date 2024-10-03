@@ -45,18 +45,17 @@
      sudo apt install apache2
      ```
 5. **Criar Sub-interfaces no Linux**
-   - Primeiramente tem que instalar o Nettools
+   - Primeiramente tem que instalar o net-tools
      ```bash
-     sudo apt installar net-tools
+     sudo apt install net-tools
      ```
-   - AAA
+   - Mostra roteador
      ```bash
      ifconfig
      ```
-   - Craição de uma interface segue os códigos abaixo
+   - Adiciona a sub-interface (O IP será diferente conforme o grupo)
      ```bash
-     sudo apt update
-     sudo apt install apache2
+     sudo ifconfig enp0s31f6:0 192.168.1.9 netmask 255.255.255.248
      ```
    - 
 7. **Configurar Rotas**

@@ -1,5 +1,7 @@
 # TRABALHO
 
+Nome: Yuri Alexander, Pedro Daroda e Eduardo Cerreta
+
 ### Passo a passo
 1. **Planejar as redes**
    - Definir a topologia de rede, incluindo dispositivos e conexões.

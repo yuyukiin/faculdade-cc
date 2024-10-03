@@ -20,14 +20,14 @@
 
 ### Sudo
 
-Sudo Básico
+Update no Sudo
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install openssh-client
 ```
 
-Adiciona usuário a lista de sudo
+Adiciona usuário a lista de Sudo
 ```bash
 # usermod -aG sudo username
 ```

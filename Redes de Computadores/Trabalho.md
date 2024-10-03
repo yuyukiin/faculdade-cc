@@ -9,6 +9,7 @@
    - [Instalar o Apache 2 no Linux](#instalar-o-apache-2-no-linux)
    - [Criar Sub-interfaces no Linux](#criar-sub-interfaces-no-linux)
    - [Configurar Rotas](#configurar-rotas)
+   - [Bloquear sites com Proxy](#bloquear-sites-com-proxy)
 3. [FAZER](#fazer)
 4. [Ferramentas utilizadas](#ferramentas-utilizadas)
 5. [Informações gerais](#informações-gerais)

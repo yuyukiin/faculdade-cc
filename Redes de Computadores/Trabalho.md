@@ -1,5 +1,21 @@
 # TRABALHO REDES
 
+### Sumário
+1. [Integrantes do Grupo](#integrantes-do-grupo)
+2. [Passo a passo](#passo-a-passo)
+   - [Planejar as redes](#planejar-as-redes)
+   - [Utilizar o Linux](#utilizar-o-linux)
+   - [Instalar o SSH no Linux](#instalar-o-ssh-no-linux)
+   - [Instalar o Apache 2 no Linux](#instalar-o-apache-2-no-linux)
+   - [Criar Sub-interfaces no Linux](#criar-sub-interfaces-no-linux)
+   - [Configurar Rotas](#configurar-rotas)
+3. [FAZER](#fazer)
+4. [Ferramentas utilizadas](#ferramentas-utilizadas)
+5. [Informações gerais](#informações-gerais)
+6. [Redes](#redes)
+7. [Quadro](#quadro)
+8. [Sites Relevantes](#sites-relevantes)
+
 ### Integrantes do Grupo
 - **Grupo 1:** Yuri Alexander, Eduardo Cerreta e Meani 
 - **Grupo 2:** Pedro, Miguel e Machado
@@ -22,27 +38,27 @@
      sudo apt-get upgrade
      sudo apt-get install openssh-client
      ```
-     
+
    - Criar usuário:
      ```bash
      sudo adduser username
      ```
-     
+
    - Adicionar usuário na lista do SUDO:
      ```bash
      sudo usermod -aG sudo username
      ```
-     
+
    - Entra como super usuário:
      ```bash
      sudo su
      ```
-     
+
    - Logar usuário / Mudar usuário:
      ```bash
      sudo su username
      ```
-     
+
 4. **Instalar o Apache 2 no Linux**
    - Para instalação, siga as orientações abaixo:
      ```bash
@@ -93,7 +109,7 @@
      ```bash
      sudo ufw allow 'Apache'
      ```
-     
+
    - Abrir Site criado: http://172.25.2.204/grupo1.html
 
 5. **Criar Sub-interfaces no Linux**
@@ -101,24 +117,22 @@
      ```bash
      sudo apt install net-tools
      ```
-     
+
    - Mostra roteador
      ```bash
      sudo ifconfig
      ```
-     
+
    - Adiciona a sub-interface (O IP será diferente conforme o grupo)
      ```bash
      sudo ifconfig enp0s31f6:0 192.168.1.9 netmask 255.255.255.248
      ```
-     
+
 7. **Configurar Rotas**
    - Exibir rotas
      ```bash
      sudo route
      ```
-9. 
-
 
 ---
 
@@ -174,9 +188,7 @@ Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 | Nome     | Link                                               |
 |----------|----------------------------------------------------|
 | **Dontpad** | [dontpad.com/grupodosfalhosprogramadores](https://dontpad.com/grupodosfalhosprogramadores) |
-| **Bloquear** | [pedr0xh.free.nf]([http://pedr0xh.free.nf](http://172.25.2.204/grupo1.html))                         |
+| **Bloquear** | [pedr0xh.free.nf](http://172.25.2.204/grupo1.html)                         |
 | **Grupo 1** | [http://172.25.2.204/grupo1.html](http://172.25.2.204/grupo1.html) |
 
 </div>
-
----

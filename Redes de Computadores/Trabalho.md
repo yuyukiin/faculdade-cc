@@ -43,6 +43,7 @@
 ---
 
 ### Ferramentas utilizadas
+- **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.
 - **APACHE 2:** Servidor web para hospedagem de sites e aplicações.
 - **Sub-interface:** Utilização de interfaces virtuais para segmentação da rede e melhor gerenciamento de tráfego.
 - **Rotas:** Configuração de rotas estáticas e dinâmicas para comunicação entre diferentes sub-redes.

@@ -30,6 +30,10 @@
      ```bash
      usermod -aG sudo username
      ```
+   - Entra como super usuário:
+     ```bash
+     sudo su
+     ```
    - Logar usuário / Mudar usuário:
      ```bash
      sudo su "username"
@@ -56,7 +60,7 @@
 
 ### Informações gerais
 Endereços que começam com 172 são endereços inválidos que não navegam pela internet.
-Linux: quando criar sub-interface não deixa 
+Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 
 - **Endereço IPv4:** 172.25.2.205
 - **Máscara de Sub-rede:** 255.255.255.192

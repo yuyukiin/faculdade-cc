@@ -1,5 +1,12 @@
 # TRABALHO REDES
 
+
+<h2 align="center">Humor</h2>
+<p align="center">
+    <img src="humor.png" alt="Humor">
+</p>
+
+
 ### Sumário
 1. [Integrantes do Grupo](#integrantes-do-grupo)
 2. [Passo a Passo](#passo-a-passo)

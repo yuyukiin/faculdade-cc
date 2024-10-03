@@ -1,7 +1,6 @@
 # TRABALHO
 
-### O que fazr
-
+### O que fazer
 
 ### Ferramentas utilizadas
 - SSH
@@ -9,6 +8,8 @@
 - SUB INTERFACE
 - ROTAS
 - PROXI (NAT)
+  - SQUID
+  - IP TABLES   
   
 ---
 ### Informações gerais

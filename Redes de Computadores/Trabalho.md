@@ -6,6 +6,7 @@
     <img src="humor.jpg" alt="Falhos Programadores">
 </p>
 
+---
 
 ### Sumário
 1. [Integrantes do Grupo](#integrantes-do-grupo)

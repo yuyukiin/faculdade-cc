@@ -1,14 +1,14 @@
 # TRABALHO
 
+### O que fazr
+
+
 ### Ferramentas utilizadas
 - SSH
 - APACHE 2
 - SUB INTERFACE
 - ROTAS
 - PROXI (NAT)
-
-  SERVIDOR
-  PROXI =
   
 ---
 Endereços que começam com 172 são endereços invalidos que não navegam pela internet.

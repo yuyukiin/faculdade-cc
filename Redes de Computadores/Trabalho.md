@@ -4,49 +4,55 @@
 - Grupo 2: Pedro, Miguel e Machado
 
 ## Passo a passo
-1. **Planejar as redes**
+1. Planejar as redes
    - Definir a topologia de rede, incluindo dispositivos e conexões.
    - _LAN:_   192.168.1.0/24
    - _WAN:_   200.10.10.0/24
-2. **Instalar o Linux**
-   - Escolher a distribuição adequada (ex: Ubuntu, CentOS).
-   - Configurar a instalação e definir partições.
+2. Utilizar o Linux
+   - Utilizar todas ferramentas no Linux
+   - Criar usuário
+     ```bash
+     adduser "username"
+     ```
+   - Adicionar usuário no SUDO
+     ```bash
+     # usermod -aG sudo username
+     ```
 3. Instalar o SSH no Linux
-   - Acessar o Windows com o Linux para permitir gerenciamento remeto.
+   - Para instalação seguir as orientaões abaixo.
+     ```bash
+     sudo apt-get update
+     sudo apt-get upgrade
+     sudo apt-get install openssh-client
+     ```
+4. Instalar o Apache 2 no Linux
+   - Para instalação seguir as orientações abaixo.
+     ```bash
+     sudo apt update
+     sudo apt install apache2
+     ```
 
-
-
-## Comandos
 
 
 
 ### Sudo
 
-Update no Sudo
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install openssh-client
-```
+Instalção Sudo SSH
+
 
 Adiciona usuário a lista de Sudo
-```bash
-# usermod -aG sudo username
-```
+
 
 ### Linux
 
 Cria usuário no Linux
-```bash
-adduser "username"
-```
+
 
 
 
 ---
 
 ### Ferramentas utilizadas
-- **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.
 - **APACHE 2:** Servidor web para hospedagem de sites e aplicações.
 - **Sub-interface:** Utilização de interfaces virtuais para segmentação da rede e melhor gerenciamento de tráfego.
 - **Rotas:** Configuração de rotas estáticas e dinâmicas para comunicação entre diferentes sub-redes.

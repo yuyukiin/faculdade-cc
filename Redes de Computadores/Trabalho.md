@@ -11,13 +11,6 @@
 ### Sumário
 1. [Integrantes do Grupo](#integrantes-do-grupo)
 2. [Passo a Passo](#passo-a-passo)
-   - [Planejar as Redes](#planejar-as-redes)
-   - [Utilizar o Linux](#utilizar-o-linux)
-   - [Instalar o SSH no Linux](#instalar-o-ssh-no-linux)
-   - [Instalar o Apache 2 no Linux](#instalar-o-apache-2-no-linux)
-   - [Criar Sub-interfaces no Linux](#criar-sub-interfaces-no-linux)
-   - [Configurar Rotas](#configurar-rotas)
-   - [Bloquear Sites com Proxy](#bloquear-sites-com-proxy)
 3. [Andamento](#andamento)
 4. [Informações Gerais](#informações-para-lembrar)
 5. [Redes](#redes)

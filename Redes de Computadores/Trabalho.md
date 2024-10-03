@@ -30,7 +30,7 @@
 
 ## Passo a passo
 1. **Planejar as redes**
-   - Definir a topologia de rede, incluindo dispositivos e conexões.
+   - Definir a topologia de rede, incluindo dispositivos e conexões
    - **LAN:** 192.168.1.0/24
    - **WAN:** 200.10.10.0/24
 
@@ -38,29 +38,29 @@
    - Utilizar todas as ferramentas necessárias no Linux.
 
 3. **Instalar o SSH no Linux**
-   - Para instalação, siga as orientações abaixo:
+   - Para instalação, siga as orientações abaixo
      ```bash
      sudo apt-get update
      sudo apt-get upgrade
      sudo apt-get install openssh-client
      ```
 
-   - Criar usuário:
+   - Criar usuário
      ```bash
      sudo adduser username
      ```
 
-   - Adicionar usuário na lista do SUDO:
+   - Adicionar usuário na lista do SUDO
      ```bash
      sudo usermod -aG sudo username
      ```
 
-   - Entra como super usuário:
+   - Entra como super usuário
      ```bash
      sudo su
      ```
 
-   - Logar usuário / Mudar usuário:
+   - Logar usuário / Mudar usuário
      ```bash
      sudo su username
      ```
@@ -72,17 +72,17 @@
      sudo apt install apache2
      ```
 
-   - Inicie o serviço:
+   - Inicie o serviço
      ```bash
      sudo systemctl start apache2
      ```
 
-   - Criando a página:
+   - Criando a página
      ```bash
      sudo nano /var/www/html/grupo1.html
      ```
 
-   - A página:
+   - A página
      ```html
      <!DOCTYPE html>
      <html lang="pt-BR">
@@ -98,20 +98,20 @@
      </html>
      ```
 
-   - Para salvar e sair da "criação html":
+   - Para salvar e sair da "criação html"
      ```bash
      Ctrl + X
      ou
      Y + Enter
      ```
 
-   - Configurando permissões:
+   - Configurando permissões
      ```bash
      sudo chown -R www-data:www-data /var/www/html/
      sudo chmod -R 755 /var/www/html/
      ```
 
-   - (Opcional) Habilitar no firewall:
+   - (Opcional) Habilitar no firewall
      ```bash
      sudo ufw allow 'Apache'
      ```
@@ -141,27 +141,27 @@
      ```
 
 7. **Bloquear sites com Proxy**
-   - **Baixar o SQUID:**
+   - Baixar o SQUID
      ```bash
      sudo apt-get install squid
      ```
 
-   - **Verificar a Instalação**
+   - Verificar a Instalação
      ```bash
      sudo service squid status
      ```
 
-   - **Configurar o SQUID**
+   - Configurar o SQUID
      ```bash
      cd /etc/squid
      ```
 
-   - **Fazer Backup do SQUID**
+   - Fazer Backup do SQUID
      ```bash
      sudo cp squid.conf squid.conf.backup
      ```
 
-   - **Apagar o SQUID e Criar Novo**
+   - Apagar o SQUID e Criar Novo
      ```bash
      sudo rm squid.conf
      sudo nano squid.conf

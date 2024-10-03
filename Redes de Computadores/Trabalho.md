@@ -2,6 +2,10 @@
 
 ### O que fazer
 
+
+- LAN 192.168.1.0
+- WAN 200.10.10.0
+
 ### Ferramentas utilizadas
 - SSH
 - APACHE 2

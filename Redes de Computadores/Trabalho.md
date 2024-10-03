@@ -11,7 +11,7 @@
 1. [Integrantes do Grupo](#integrantes-do-grupo)
 2. [Passo a Passo](#passo-a-passo)
 3. [Andamento](#andamento)
-4. [Informações Importantes] (#informações-importantes)
+4. [Informações importantes] (#informações-importantes)
 5. [Informações](#informações)
 6. [Imagens](#imagens)
 7. [Sites Relevantes](#sites-relevantes)

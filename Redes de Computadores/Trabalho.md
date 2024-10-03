@@ -23,6 +23,8 @@
 
 > **Nota:** Todas as instruções a seguir devem ser executadas no terminal do Linux.
 
+> **Ferramentas:** SSH,Linux, Windows, Apache 2, rotas, Sub-interface e Proxy(squid e IP Tables)
+
 ## Passo a passo
 1. **Planejar as redes**
    - Definir a topologia de rede, incluindo dispositivos e conexões.
@@ -177,16 +179,8 @@
 
 ---
 
-### Ferramentas utilizadas
-- **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.
-- **APACHE 2:** Servidor web para hospedagem de sites e aplicações.
-- **Sub-interface:** Utilização de interfaces virtuais para segmentação da rede e melhor gerenciamento de tráfego.
-- **Rotas:** Configuração de rotas estáticas e dinâmicas para comunicação entre diferentes sub-redes.
-- **Proxy (NAT):**
-  - **SQUID:** Proxy caching para melhorar o desempenho de acesso à internet.
-  - **IP TABLES:** Ferramenta de filtragem de pacotes para configurar regras de firewall e NAT.
 
-### Informações gerais
+### Informações para lembrar 
 Endereços que começam com 172 são endereços inválidos que não navegam pela internet.
 Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 

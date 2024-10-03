@@ -24,11 +24,11 @@
      ```
    - Criar usuário:
      ```bash
-     adduser miguel
+     adduser username
      ```
    - Adicionar usuário na lista do SUDO:
      ```bash
-     sudo usermod -aG sudo miguel
+     sudo usermod -aG sudo username
      ```
    - Entra como super usuário:
      ```bash
@@ -36,7 +36,7 @@
      ```
    - Logar usuário / Mudar usuário:
      ```bash
-     sudo su "username"
+     sudo su username
      ```
 4. **Instalar o Apache 2 no Linux**
    - Para instalação, siga as orientações abaixo:

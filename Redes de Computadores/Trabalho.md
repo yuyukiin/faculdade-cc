@@ -8,6 +8,10 @@ Nome: Yuri Alexander, Pedro Daroda e Eduardo Cerreta
 2. **Instalar o Linux**
    - Escolher a distribuição adequada (ex: Ubuntu, CentOS).
    - Configurar a instalação e definir partições.
+3. **Preparar o**
+   -
+
+Linux: quando criar sub-interface não deixa 
 
 - _LAN:_   192.168.1.0/24
 - _WAN:_   200.10.10.0/24

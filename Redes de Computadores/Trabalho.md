@@ -22,42 +22,50 @@
      sudo apt-get upgrade
      sudo apt-get install openssh-client
      ```
+     
    - Criar usuário:
      ```bash
      sudo adduser username
      ```
+     
    - Adicionar usuário na lista do SUDO:
      ```bash
      sudo usermod -aG sudo username
      ```
+     
    - Entra como super usuário:
      ```bash
      sudo su
      ```
+     
    - Logar usuário / Mudar usuário:
      ```bash
      sudo su username
      ```
+     
 4. **Instalar o Apache 2 no Linux**
    - Para instalação, siga as orientações abaixo:
      ```bash
      sudo apt update
      sudo apt install apache2
      ```
+     
 5. **Criar Sub-interfaces no Linux**
    - Primeiramente tem que instalar o net-tools
      ```bash
      sudo apt install net-tools
      ```
+     
    - Mostra roteador
      ```bash
      sudo ifconfig
      ```
+     
    - Adiciona a sub-interface (O IP será diferente conforme o grupo)
      ```bash
      sudo ifconfig enp0s31f6:0 192.168.1.9 netmask 255.255.255.248
      ```
-   - 
+     
 7. **Configurar Rotas**
 8. 
 

@@ -33,7 +33,7 @@ Endereços que começam com 172 são endereços inválidos que não navegam pela
 - **Gateway Padrão:** 172.25.2.193
 
 <p align="center">
-    <img src="humor.jpg" alt="redes">
+    <img src="redes.jpg" alt="redes">
 </p>
 
 

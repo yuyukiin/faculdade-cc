@@ -168,16 +168,15 @@
 
 ### Andamento
 | Nome          | Concluído                                               | Para que serve                          |
-|---------------|--------------------------------------------------------|-----------------------------------------|
-| LINUX         |   ✅                 | Ambiente para execução das tarefas      |
-| SSH           |   ✅                  | Acesso remoto e seguro ao servidor      |
-| APACHE 2      | ✅                   | Servidor web para hospedar páginas      |
-| SUB-INTERFACE | ✅    | Segmentação de rede para diferentes serviços |
-| ROTAS         | ❌        | Direcionamento de tráfego na rede       |
-| Proxy         | ❌                                        | Intermediário para requisições externas |
-| - SQUID       | ❌                                  | Servidor proxy para controle de acesso  |
-| - IP TABLES   | ❌                                   | Gerenciamento de regras de firewall      |
-
+|---------------|:-------------------------------------------------------:|-----------------------------------------|
+| LINUX         |   ✅                                                     | Ambiente para execução das tarefas      |
+| SSH           |   ✅                                                     | Acesso remoto e seguro ao servidor      |
+| APACHE 2      |   ✅                                                     | Servidor web para hospedar páginas      |
+| SUB-INTERFACE |   ✅                                                     | Segmentação de rede para diferentes serviços |
+| ROTAS         |   ❌                                                     | Direcionamento de tráfego na rede       |
+| Proxy         |   ❌                                                     | Intermediário para requisições externas |
+| - SQUID       |   ❌                                                     | Servidor proxy para controle de acesso  |
+| - IP TABLES   |   ❌                                                     | Gerenciamento de regras de firewall     |
 ---
 
 

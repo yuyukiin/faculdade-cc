@@ -174,7 +174,8 @@ Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 | Nome     | Link                                               |
 |----------|----------------------------------------------------|
 | **Dontpad** | [dontpad.com/grupodosfalhosprogramadores](https://dontpad.com/grupodosfalhosprogramadores) |
-| **Bloquear** | [pedr0xh.free.nf](http://pedr0xh.free.nf)                         |
+| **Bloquear** | [pedr0xh.free.nf]([http://pedr0xh.free.nf](http://172.25.2.204/grupo1.html))                         |
+| **Grupo 1** | [http://172.25.2.204/grupo1.html](http://172.25.2.204/grupo1.html) |
 
 </div>
 

@@ -13,9 +13,8 @@
 2. [Passo a Passo](#passo-a-passo)
 3. [Andamento](#andamento)
 4. [Salvar](#Salvar)
-5. [Redes](#redes)
-6. [Quadro](#quadro)
-7. [Sites Relevantes](#sites-relevantes)
+5. [Imagem](#Imagem)
+6. [Sites Relevantes](#sites-relevantes)
 
 ---
 
@@ -192,6 +191,8 @@ Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 - **Gateway Padrão:** 172.25.2.193
 
 ---
+
+<h2 align="center">Imagem</h2>
 
 <h2 align="center">Redes</h2>
 <p align="center">

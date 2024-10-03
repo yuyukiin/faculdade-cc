@@ -3,23 +3,32 @@
 - Grupo 1: Yuri Alexander, Eduardo Cerreta e Meani 
 - Grupo 2: Pedro, Miguel e Machado
 
-### Passo a passo
+## Passo a passo
 1. **Planejar as redes**
    - Definir a topologia de rede, incluindo dispositivos e conexões.
 2. **Instalar o Linux**
    - Escolher a distribuição adequada (ex: Ubuntu, CentOS).
    - Configurar a instalação e definir partições.
-
-
+3. Instalar o SSH no Windowns
 
 - _LAN:_   192.168.1.0/24
 - _WAN:_   200.10.10.0/24
 
-### Comandos
+## Comandos
 
+Sudo
 ```bash
-
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install openssh-client
 ```
+
+Cria usuário no Linux
+```bash
+adduser "username"
+```
+
+---
 
 ### Ferramentas utilizadas
 - **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.
@@ -39,6 +48,7 @@ Linux: quando criar sub-interface não deixa
 - **Gateway Padrão:** 172.25.2.193
 
 ---
+
 <h2 align="center">Redes</h2>
 <p align="center">
     <img src="redes.png" alt="redes">
@@ -48,6 +58,8 @@ Linux: quando criar sub-interface não deixa
 <p align="center">
     <img src="quadro.jpeg" alt="quadro">
 </p>
+
+---
 
 ### Sites
 - [Dontpad](https://dontpad.com/grupodosfalhosprogramadores)

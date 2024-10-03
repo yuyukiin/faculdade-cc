@@ -128,10 +128,36 @@
      sudo ifconfig enp0s31f6:0 192.168.1.9 netmask 255.255.255.248
      ```
 
-7. **Configurar Rotas**
+6. **Configurar Rotas**
    - Exibir rotas
      ```bash
      sudo route
+     ```
+7. **Bloquear sites com Proxy**
+   - **Baixar o SQUID:**
+     ```bash
+     sudo apt-get install squid
+     ```
+
+   - **Verificar a Instalação:**
+     ```bash
+     sudo service squid status
+     ```
+
+   - **Configurar o SQUID:**
+     ```bash
+     cd /etc/squid
+     ```
+
+   - **Fazer Backup do SQUID:**
+     ```bash
+     sudo cp squid.conf squid.conf.backup
+     ```
+
+   - **Apagar o SQUID e Criar Novo:**
+     ```bash
+     sudo rm squid.conf
+     sudo nano squid.conf
      ```
 
 ---

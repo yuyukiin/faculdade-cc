@@ -15,6 +15,14 @@ Linux: quando criar sub-interface não deixa
 - _LAN:_   192.168.1.0/24
 - _WAN:_   200.10.10.0/24
 
+### Comandos
+
+brash
+´´´
+aaa
+´´´
+
+
 ### Ferramentas utilizadas
 - **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.
 - **APACHE 2:** Servidor web para hospedagem de sites e aplicações.

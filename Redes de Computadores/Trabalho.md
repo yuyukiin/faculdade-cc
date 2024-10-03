@@ -9,7 +9,8 @@
 2. **Instalar o Linux**
    - Escolher a distribuição adequada (ex: Ubuntu, CentOS).
    - Configurar a instalação e definir partições.
-3. Instalar o SSH no Windowns
+3. Instalar o SSH no Linux
+   - Acessar o Windows com o Linux para permitir gerenciamento remeto.
 
 - _LAN:_   192.168.1.0/24
 - _WAN:_   200.10.10.0/24

@@ -17,11 +17,9 @@ Linux: quando criar sub-interface não deixa
 
 ### Comandos
 
-brash
-´´´
-aaa
-´´´
+```bash
 
+```
 
 ### Ferramentas utilizadas
 - **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.
@@ -39,8 +37,15 @@ Endereços que começam com 172 são endereços inválidos que não navegam pela
 - **Máscara de Sub-rede:** 255.255.255.192
 - **Gateway Padrão:** 172.25.2.193
 
+
+# Redes
+
 <p align="center">
     <img src="redes.png" alt="redes">
 </p>
 
+# Quadro
 
+
+# Site
+Site: [https://dontpad.com/grupodosfalhosprogramadores]

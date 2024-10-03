@@ -46,4 +46,5 @@ Endereços que começam com 172 são endereços inválidos que não navegam pela
 
 
 # Site
-Site: https://dontpad.com/grupodosfalhosprogramadores
+- [Dontpad](https://dontpad.com/grupodosfalhosprogramadores)
+- [Pedroca](http://pedr0xh.free.nf)

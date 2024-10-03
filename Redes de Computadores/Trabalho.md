@@ -130,7 +130,7 @@
 | APACHE 2      | ✅ Instalação e criação de página web                   | Servidor web para hospedar páginas      |
 | SUB-INTERFACE | ✅ Instalação do net-tools e criação de sub-interface   | Segmentação de rede para diferentes serviços |
 | ROTAS         | ❌ Configuração e exibição de rotas pendentes          | Direcionamento de tráfego na rede       |
-| Proxy         |                                                        | Intermediário para requisições externas |
+| Proxy         | ❌ Bloquear sites                                        | Intermediário para requisições externas |
 | - SQUID       | ❌ No meu servidor Linux                                 | Servidor proxy para controle de acesso  |
 | - IP TABLES   | ❌ Servidor laboratório                                  | Gerenciamento de regras de firewall      |
 

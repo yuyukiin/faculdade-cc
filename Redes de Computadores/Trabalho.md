@@ -22,7 +22,7 @@
 
 > **Nota:** Todas as instruções a seguir devem ser executadas no terminal do Linux.
 
-> **Ferramentas:** SSH, Linux, Windows, Apache 2, rotas, Sub-interface e Proxy(squid e IP Tables)
+> **Ferramentas:** SSH, Linux, Windows, Apache 2, rotas, Sub-interface e Proxy(SQUID e IP TABLES)
 
 ---
 
@@ -143,22 +143,22 @@
      sudo apt-get install squid
      ```
 
-   - **Verificar a Instalação:**
+   - **Verificar a Instalação**
      ```bash
      sudo service squid status
      ```
 
-   - **Configurar o SQUID:**
+   - **Configurar o SQUID**
      ```bash
      cd /etc/squid
      ```
 
-   - **Fazer Backup do SQUID:**
+   - **Fazer Backup do SQUID**
      ```bash
      sudo cp squid.conf squid.conf.backup
      ```
 
-   - **Apagar o SQUID e Criar Novo:**
+   - **Apagar o SQUID e Criar Novo**
      ```bash
      sudo rm squid.conf
      sudo nano squid.conf
@@ -175,8 +175,8 @@
 | SUB-INTERFACE |   ✅                                                     | Segmentação de rede para diferentes serviços |
 | ROTAS         |   ❌                                                     | Direcionamento de tráfego na rede       |
 | Proxy         |   ❌                                                     | Intermediário para requisições externas |
-| - SQUID       |   ❌                                                     | Servidor proxy para controle de acesso  |
-| - IP TABLES   |   ❌                                                     | Gerenciamento de regras de firewall     |
+| SQUID       |    ✅                                                 | Servidor proxy para controle de acesso  |
+| IP TABLES   |   ❌                                                     | Gerenciamento de regras de firewall     |
 ---
 
 

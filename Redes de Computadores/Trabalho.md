@@ -1,5 +1,6 @@
 # TRABALHO REDES
 
+
 <h2 align="center">Falhos Programadores</h2>
 <p align="center">
     <img src="humor.jpg" alt="Falhos Programadores">
@@ -10,11 +11,20 @@
 ### Sumário
 1. [Integrantes do Grupo](#integrantes-do-grupo)
 2. [Passo a Passo](#passo-a-passo)
+   - [Planejar as Redes](#planejar-as-redes)
+   - [Utilizar o Linux](#utilizar-o-linux)
+   - [Instalar o SSH no Linux](#instalar-o-ssh-no-linux)
+   - [Instalar o Apache 2 no Linux](#instalar-o-apache-2-no-linux)
+   - [Criar Sub-interfaces no Linux](#criar-sub-interfaces-no-linux)
+   - [Configurar Rotas](#configurar-rotas)
+   - [Bloquear Sites com Proxy](#bloquear-sites-com-proxy)
 3. [Andamento](#andamento)
-4. [Informações importantes] (#informações-importantes)
-5. [Informações](#informações)
-6. [Imagens](#imagens)
+4. [Informações Gerais](#informações-para-lembrar)
+5. [Redes](#redes)
+6. [Quadro](#quadro)
 7. [Sites Relevantes](#sites-relevantes)
+
+---
 
 ### Integrantes do Grupo
 - **Grupo 1:** Yuri Alexander, Eduardo Cerreta e Meani 
@@ -53,7 +63,7 @@
      sudo usermod -aG sudo username
      ```
 
-   - Entrar como super usuário:
+   - Entra como super usuário:
      ```bash
      sudo su
      ```
@@ -122,18 +132,18 @@
      sudo apt install net-tools
      ```
 
-   - Mostra roteador:
+   - Mostra roteador
      ```bash
      sudo ifconfig
      ```
 
-   - Adiciona a sub-interface (O IP será diferente conforme o grupo):
+   - Adiciona a sub-interface (O IP será diferente conforme o grupo)
      ```bash
      sudo ifconfig enp0s31f6:0 192.168.1.9 netmask 255.255.255.248
      ```
 
 6. **Configurar Rotas**
-   - Exibir rotas:
+   - Exibir rotas
      ```bash
      sudo route
      ```
@@ -144,22 +154,22 @@
      sudo apt-get install squid
      ```
 
-   - **Verificar a Instalação:**
+   - **Verificar a Instalação**
      ```bash
      sudo service squid status
      ```
 
-   - **Configurar o SQUID:**
+   - **Configurar o SQUID**
      ```bash
      cd /etc/squid
      ```
 
-   - **Fazer Backup do SQUID:**
+   - **Fazer Backup do SQUID**
      ```bash
      sudo cp squid.conf squid.conf.backup
      ```
 
-   - **Apagar o SQUID e Criar Novo:**
+   - **Apagar o SQUID e Criar Novo**
      ```bash
      sudo rm squid.conf
      sudo nano squid.conf
@@ -176,12 +186,11 @@
 | SUB-INTERFACE |   ✅                                                     | Segmentação de rede para diferentes serviços |
 | ROTAS         |   ❌                                                     | Direcionamento de tráfego na rede       |
 | PROXY         |   ❌                                                     | Intermediário para requisições externas |
-| SQUID         |   ✅                                                     | Servidor proxy para controle de acesso  |
-| IP TABLES     |   ❌                                                     | Gerenciamento de regras de firewall     |
-
+| SQUID       |    ✅                                                 | Servidor proxy para controle de acesso  |
+| IP TABLES   |   ❌                                                     | Gerenciamento de regras de firewall     |
 ---
 
-### Informações importantes 
+### Informações para lembrar 
 Endereços que começam com 172 são endereços inválidos que não navegam pela internet.
 Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 
@@ -190,10 +199,6 @@ Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 - **Gateway Padrão:** 172.25.2.193
 
 ---
-
-
-
-<h2 align="center">Imagens</h2>
 
 <h2 align="center">Redes</h2>
 <p align="center">

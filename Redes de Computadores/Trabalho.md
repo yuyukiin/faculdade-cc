@@ -79,6 +79,7 @@
    - Para salvar e sair da "criação html":
      ```bash
      Ctrl + X
+     ou
      Y + Enter
      ```
 
@@ -92,6 +93,7 @@
      ```bash
      sudo ufw allow 'Apache'
      ```
+   - Abrir Site [Grupo 1](http://172.25.2.204/grupo1.html)
 
 5. **Criar Sub-interfaces no Linux**
    - Primeiramente tem que instalar o net-tools

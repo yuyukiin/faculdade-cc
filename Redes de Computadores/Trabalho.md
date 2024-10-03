@@ -39,17 +39,16 @@ Linux: quando criar sub-interface não deixa
 - **Gateway Padrão:** 172.25.2.193
 
 ---
-# Redes
-
+<h2 align="center">Redes</h2>
 <p align="center">
     <img src="redes.png" alt="redes">
 </p>
 
-# Quadro
+<h2 align="center">Quadro</h2>
 <p align="center">
-    <img src="quadro.jpge" alt="quadro">
+    <img src="quadro.jpeg" alt="quadro">
 </p>
 
-# Site
+### Sites
 - [Dontpad](https://dontpad.com/grupodosfalhosprogramadores)
 - [Pedroca](http://pedr0xh.free.nf)

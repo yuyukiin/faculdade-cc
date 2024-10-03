@@ -192,7 +192,7 @@ Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 
 ---
 
-<h2 align="center">Imagens</h2>
+<h1 align="center">Imagens</h1>
 
 <h2 align="center">Redes</h2>
 <p align="center">

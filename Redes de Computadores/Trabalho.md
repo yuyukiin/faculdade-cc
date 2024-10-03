@@ -12,7 +12,7 @@
 1. [Integrantes do Grupo](#integrantes-do-grupo)
 2. [Passo a Passo](#passo-a-passo)
 3. [Andamento](#andamento)
-4. [Informações gerais](#informações-gerais)
+4. [Salvar](#Salvar)
 5. [Redes](#redes)
 6. [Quadro](#quadro)
 7. [Sites Relevantes](#sites-relevantes)
@@ -183,7 +183,7 @@
 | IP TABLES   |   ❌                                                     | Gerenciamento de regras de firewall     |
 ---
 
-### Informações gerais
+### Salvar
 Endereços que começam com 172 são endereços inválidos que não navegam pela internet.
 Linux: quando criar sub-interface não vai permitir. IPV4 alterar 0 para 1.
 

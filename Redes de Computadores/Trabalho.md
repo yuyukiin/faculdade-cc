@@ -1,7 +1,7 @@
 # TRABALHO
 
-Grupo 1: Yuri Alexander, Eduardo Cerreta e Meani 
-Grupo 2: Pedro, Miguel e Machado
+- Grupo 1: Yuri Alexander, Eduardo Cerreta e Meani 
+- Grupo 2: Pedro, Miguel e Machado
 
 ### Passo a passo
 1. **Planejar as redes**

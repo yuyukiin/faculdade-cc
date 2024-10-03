@@ -11,11 +11,10 @@
    - [Configurar Rotas](#configurar-rotas)
    - [Bloquear Sites com Proxy](#bloquear-sites-com-proxy)
 3. [FAZER](#fazer)
-4. [Ferramentas Utilizadas](#ferramentas-utilizadas)
-5. [Informações Gerais](#informações-gerais)
-6. [Redes](#redes)
-7. [Quadro](#quadro)
-8. [Sites Relevantes](#sites-relevantes)
+4. [Informações Gerais](#informações-gerais)
+5. [Redes](#redes)
+6. [Quadro](#quadro)
+7. [Sites Relevantes](#sites-relevantes)
 
 ### Integrantes do Grupo
 - **Grupo 1:** Yuri Alexander, Eduardo Cerreta e Meani 

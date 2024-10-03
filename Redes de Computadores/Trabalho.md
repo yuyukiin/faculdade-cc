@@ -136,7 +136,7 @@
 
 ---
 
-### FAZER
+### Andamento
 | Nome          | Concluído                                               | Para que serve                          |
 |---------------|--------------------------------------------------------|-----------------------------------------|
 | LINUX         | ✅ Utilização de ferramentas necessárias                | Ambiente para execução das tarefas      |

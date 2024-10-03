@@ -123,13 +123,18 @@
 ---
 
 ### FAZER
--- **LINUX** ✅
--- **SSH** ✅
--- **APACHE 2** ✅
--- *SUB-INTERFACE** ✅
--- **ROTAS** ❌
--- **PROXY** ❌
+| Nome          | Concluído                                               | Para que serve                          |
+|---------------|--------------------------------------------------------|-----------------------------------------|
+| LINUX         | ✅ Utilização de ferramentas necessárias                | Ambiente para execução das tarefas      |
+| SSH           | ✅ Instalação e configuração de usuário                 | Acesso remoto e seguro ao servidor      |
+| APACHE 2      | ✅ Instalação e criação de página web                   | Servidor web para hospedar páginas      |
+| SUB-INTERFACE | ✅ Instalação do net-tools e criação de sub-interface   | Segmentação de rede para diferentes serviços |
+| ROTAS         | ❌ Configuração e exibição de rotas pendentes          | Direcionamento de tráfego na rede       |
+| Proxy         |                                                        | Intermediário para requisições externas |
+| - SQUID       | ❌ No meu servidor Linux                                 | Servidor proxy para controle de acesso  |
+| - IP TABLES   | ❌ Servidor laboratório                                  | Gerenciamento de regras de firewall      |
 
+---
 
 ### Ferramentas utilizadas
 - **SSH:** Acesso ao Linux a partir do Windows, permitindo gerenciamento remoto seguro.

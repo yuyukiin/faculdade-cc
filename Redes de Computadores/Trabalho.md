@@ -3,7 +3,7 @@
 
 <h2 align="center">Humor</h2>
 <p align="center">
-    <img src="humor.png" alt="Humor">
+    <img src="humor.jpg" alt="Falhos Programadores">
 </p>
 
 

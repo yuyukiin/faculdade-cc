@@ -16,17 +16,30 @@
 
 ## Comandos
 
-Sudo
+
+
+### Sudo
+
+Sudo Básico
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install openssh-client
 ```
 
+Adiciona usuário a lista de sudo
+```bash
+# usermod -aG sudo username
+```
+
+### Linux
+
 Cria usuário no Linux
 ```bash
 adduser "username"
 ```
+
+
 
 ---
 

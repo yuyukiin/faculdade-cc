@@ -12,9 +12,8 @@
 2. [Passo a Passo](#passo-a-passo)
 3. [Andamento](#andamento)
 4. [Informações Gerais](#informações-gerais)
-5. [Redes](#redes)
-6. [Quadro](#quadro)
-7. [Sites Relevantes](#sites-relevantes)
+5. [Imagem](#imagens)
+6. [Sites Relevantes](#sites-relevantes)
 
 ### Integrantes do Grupo
 - **Grupo 1:** Yuri Alexander, Eduardo Cerreta e Meani 

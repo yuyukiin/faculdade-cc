@@ -85,6 +85,31 @@ BEGIN
 END
 ```
 
+### Transferência de dinheiro
+```sql
+BEGIN TRANSACTION;
+
+INSERT INTO CONTA (Id, Nome, Saldo)
+VALUES ('1', 'Yuri', '2000'),
+	   ('2', 'Dudu', '2500')
+SELECT * FROM CONTA
+
+DECLARE @Saldo INT;
+
+SELECT @Saldo = Saldo FROM CONTA WHERE Id = '1';
+
+IF @Saldo > 1500
+	BEGIN
+	ROLLBACK TRANSACTION;
+	PRINT 'Seu saldo é alto.';
+	END
+ELSE
+	BEGIN
+	COMMIT TRANSACTION;
+	PRINT 'Seu saldo é abaixo.';
+	END
+```
+
 ### Princípios ACID
 
 - **Atomicidade**: Garante que todas as operações de uma transação sejam completadas; se uma falha ocorrer, nenhuma mudança é aplicada.

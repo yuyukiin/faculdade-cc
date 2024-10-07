@@ -94,18 +94,30 @@ VALUES ('1', 'Yuri', '2000'),
 	   ('2', 'Dudu', '2500')
 SELECT * FROM CONTA
 
-DECLARE @Saldo INT;
+DECLARE @contaOrigem INT = 1,
+		@contaDestino INT =2,
+		@valorTransferencia INT = 200,
+		@saldo INT;
 
-SELECT @Saldo = Saldo FROM CONTA WHERE Id = '1';
+SELECT @Saldo = Saldo FROM CONTA WHERE Id = @contaOrigem
 
-IF @Saldo > 1500
+IF (@Saldo) >= @valorTransferencia
 	BEGIN
-	ROLLBACK TRANSACTION;
-	PRINT 'Seu saldo é alto.';
+	
+	--Remover grana
+	UPDATE CONTA 
+	WHERE Id = @contaOrigem
+	SET Saldo = Saldo - @valorTransferencia
+	--Add Grana
+	UPDATE CONTA
+	SET Saldo = Saldo + @valorTransferencia
+	WHERE Id = @contaDestino
+	SELECT * FROM CONTA;
+	COMMIT TRANSACTION;
 	END
 ELSE
 	BEGIN
-	COMMIT TRANSACTION;
+	ROLLBACK TRANSACTION;
 	PRINT 'Seu saldo é abaixo.';
 	END
 ```

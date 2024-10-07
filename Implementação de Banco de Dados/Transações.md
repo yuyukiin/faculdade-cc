@@ -62,6 +62,29 @@ ELSE
 	END
 ```
 
+### Implementar uma transação... Usar tabela produtos para registrar no estoque
+```sql
+UPDATE PRODUTO SET Quantidade = 10
+
+INSERT INTO PRODUTO (Id, Nome, Preco, Quantidade)
+VALUES ('1', 'Notebook', '25', '5');
+DECLARE @Quantidade INT;
+SELECT @Quantidade = Quantidade FROM PRODUTO WHERE Id = '1';
+
+IF @Quantidade > 0
+BEGIN
+    UPDATE PRODUTO SET Quantidade = Quantidade - 1 WHERE Id = '1';
+    
+    COMMIT TRANSACTION;
+    PRINT 'Transação concluída com sucesso. Quantidade restante: ' + CAST(@Quantidade - 1 AS VARCHAR);
+END
+ELSE
+BEGIN
+    ROLLBACK TRANSACTION;
+    PRINT 'Erro: Produto fora de estoque. Transação revertida.';
+END
+```
+
 ### Princípios ACID
 
 - **Atomicidade**: Garante que todas as operações de uma transação sejam completadas; se uma falha ocorrer, nenhuma mudança é aplicada.

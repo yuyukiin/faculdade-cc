@@ -38,16 +38,22 @@ END
 ### Crie uma transação para realizar duas inserções dentro de uma transação. Uma na tabela FUNCIONARIO e outra na tabela DEPARTAMENTO. 
 ```sql
 BEGIN TRANSACTION;
+DECLARE @Erro INT;
 INSERT INTO FUNCIONARIO (Pnome, Unome, Cpf)
 VALUES ('Yuri', 'Alex', '02064068007')
+SET @Erro = @@ERROR
 
 INSERT INTO DEPARTAMENTO (Dnome, Dnumero)
 VALUES ('Firma', '22')
+SET @Erro = @Erro + @@ERROR
 
-IF @@ERROR <> 0
+
+SELECT * FROM FUNCIONARIO;
+
+IF @Erro <> 0
 	BEGIN
 	ROLLBACK TRANSACTION;
-	PRINT 'Transação concluída com sucesso.';
+	PRINT 'Erro, Transação revertida.';
 	END
 ELSE
 	BEGIN

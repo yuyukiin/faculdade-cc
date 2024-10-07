@@ -9,6 +9,32 @@ Uma transação é uma sequência de operações realizadas em um banco de dados
 - **ROLLBACK TRANSACTION**: Desfaz todas as operações realizadas desde o início da transação.
 - **SAVEPOINT**: Define um ponto dentro de uma transação para permitir um rollback parcial, até esse ponto.
 
+Imagine que estamos inserindo dados em duas tabelas, `FUNCIONARIO` e `DEPARTAMENTO`, e queremos garantir que ambas as operações sejam bem-sucedidas. Se a inserção em uma das tabelas falhar, todas as operações precisam ser revertidas.
+
+```sql
+BEGIN TRANSACTION;
+
+-- Tentativa de inserir um novo funcionário
+INSERT INTO FUNCIONARIO (Pnome, Minicial, Unome, Cpf, Datanasc, Endereco, Sexo, Salario, Cpf_supervisor, Dnr)
+VALUES ('João', 'A', 'Silva', '12345678901', '1990-01-01', 'Rua das Flores, 123', 'M', 5000, NULL, 1);
+
+-- Tentativa de inserir um novo departamento
+INSERT INTO DEPARTAMENTO (Dnumero, Dnome, Cpf_gerente, Data_inicio_gerente)
+VALUES (3, 'Recursos Humanos', '12345678901', '2023-09-29');
+
+-- Verifica se houve erro em alguma das inserções
+IF @@ERROR <> 0 
+BEGIN
+    ROLLBACK TRANSACTION;
+    PRINT 'Erro detectado. Transação revertida.';
+END
+ELSE
+BEGIN
+    COMMIT TRANSACTION;
+    PRINT 'Transação concluída com sucesso.';
+END
+```
+
 ### Princípios ACID
 
 - **Atomicidade**: Garante que todas as operações de uma transação sejam completadas; se uma falha ocorrer, nenhuma mudança é aplicada.

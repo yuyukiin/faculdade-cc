@@ -35,7 +35,7 @@ BEGIN
 END
 ```
 
-### 
+### Crie uma transação para realizar duas inserções dentro de uma transação. Uma na tabela FUNCIONARIO e outra na tabela DEPARTAMENTO. 
 ```sql
 BEGIN TRANSACTION;
 INSERT INTO FUNCIONARIO (Pnome, Unome, Cpf)

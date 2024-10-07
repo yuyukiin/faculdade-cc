@@ -35,6 +35,27 @@ BEGIN
 END
 ```
 
+### 
+```sql
+BEGIN TRANSACTION;
+INSERT INTO FUNCIONARIO (Pnome, Unome, Cpf)
+VALUES ('Yuri', 'Alex', '02064068007')
+
+INSERT INTO DEPARTAMENTO (Dnome, Dnumero)
+VALUES ('Firma', '22')
+
+IF @@ERROR <> 0
+	BEGIN
+	ROLLBACK TRANSACTION;
+	PRINT 'Transação concluída com sucesso.';
+	END
+ELSE
+	BEGIN
+	COMMIT TRANSACTION;
+	PRINT 'Transação concluída com sucesso.';
+	END
+```
+
 ### Princípios ACID
 
 - **Atomicidade**: Garante que todas as operações de uma transação sejam completadas; se uma falha ocorrer, nenhuma mudança é aplicada.

@@ -1,6 +1,7 @@
 package Aula;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.TreeSet;
 
 public class Util {
     
@@ -21,9 +22,9 @@ public class Util {
     public static void preencheBagunca(ArrayList<Integer> lista, int n){
 
         for(int i = 0;i < n;i++ ){
-            
+
             Random r = new Random();
-            lista.add(r.nextInt(1000));
+            lista.add(r.nextInt(2000000));
 
         }
 
@@ -57,3 +58,16 @@ public class Util {
         }
         return -1;
     }
+
+    public static void preencheArvore(TreeSet<Integer> arvore, int n){
+
+        for(int i = 0;i < n;i++ ){
+
+            Random r = new Random();
+            arvore.add(r.nextInt(2000000));
+
+        }
+
+    }
+
+}

@@ -4,7 +4,12 @@
 
 ## Blecaute na Cidade
 
-Um blecaute geral em Santa Maria resultaria na interrupção de todos os semáforos, criando um caos nas ruas. O tráfego ficaria desordenado, aumentando o risco de acidentes e dificultando a mobilidade urbana.
+Um blecaute geral em Santa Maria, concentrado na Rua Rio Branco, resultaria na interrupção de todos os semáforos, criando um caos nas ruas. O tráfego ficaria desordenado, aumentando o risco de acidentes e dificultando a mobilidade urbana.
+
+### Comandos Utilizados
+
+- **disallow:** Alterou o status da Rua Rio Branco de "allow" para "disallow".
+- **off:** Selecionou as sinaleiras na Rua Rio Branco e alterou o sinal para "off".
 
 ### Possíveis Consequências
 
@@ -21,4 +26,4 @@ Um blecaute geral em Santa Maria resultaria na interrupção de todos os semáfo
 
 ## Conclusão
 
-Um blecaute total em Santa Maria demandaria uma resposta rápida e eficaz para garantir a segurança e a mobilidade dos cidadãos. A utilização do aplicativo Sumo poderia facilitar a comunicação e a orientação durante essa crise.
+Um blecaute total na Rua Rio Branco em Santa Maria demandaria uma resposta rápida e eficaz para garantir a segurança e a mobilidade dos cidadãos. A utilização do aplicativo Sumo poderia facilitar a comunicação e a orientação durante essa crise.

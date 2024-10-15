@@ -1,7 +1,8 @@
 # Trabalho: Blecaute em Santa Maria
 
 > **Grupo:** Yuri Alexander, Eduardo Cerreta e Bruno Ardais
-> **Aplicativo utilizado:** Sumo
+
+> **Aplicativo Utilizado:** Sumo
 
 ## Blecaute na Cidade
 

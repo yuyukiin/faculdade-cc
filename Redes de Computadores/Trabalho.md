@@ -164,6 +164,17 @@
      cd /etc/squid
      ```
      
+   - Fazer Backup do SQUID
+     ```bash
+     sudo cp squid.conf squid.conf.backup
+     ```
+     
+   - Apagar o SQUID e Criar Novo
+     ```bash
+     sudo rm squid.conf
+     sudo nano squid.conf
+     ```
+     
    - Criar arquivo
      ```bash
      sudo touch /etc/squid/sites_proibidos.txt
@@ -184,19 +195,12 @@
        http_access deny sites_proibidos
    
      # Bloqueia acesso a sites listados no arquivo "sites_proibidos"
-     deny_info http://172.25.2.214/grupo2.html sites_proibidos
+     deny_info http://172.25.2.214/grupo2 sites_proibidos
      ```
      
-   - Fazer Backup do SQUID
-     ```bash
-     sudo cp squid.conf squid.conf.backup
-     ```
 
-   - Apagar o SQUID e Criar Novo
-     ```bash
-     sudo rm squid.conf
-     sudo nano squid.conf
-     ```
+
+
 
    - Reiniciar SQUID / Qualquer modificação deve ser reiniciado o SQUID
      ```bash

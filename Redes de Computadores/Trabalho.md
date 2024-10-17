@@ -166,12 +166,12 @@
      
    - Criar arquivo
      ```bash
-     sudo touch /etc/squid/sites_proibidos
+     sudo touch /etc/squid/sites_proibidos.txt
      ```
      
    - Entrar no Arquivo
      ```bash
-     sudo nano /etc/squid/sites_proibidos
+     sudo nano /etc/squid/sites_proibidos.txt
      ``` 
 
    - Configurações do SQUID

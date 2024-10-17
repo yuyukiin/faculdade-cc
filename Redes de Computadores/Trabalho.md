@@ -114,6 +114,18 @@
 
    - Abrir Site criado: http://172.25.2.204/grupo1.html
 
+5. **IP TABLES no Linux**
+   - Instalação
+     ```bash
+     sudo apt install iptables
+
+     sudo apt install iptables-persistent
+      
+     sudo systemctl enable netfilter-persistent
+     ```
+   - 
+     
+
 4. **Criar Sub-interfaces no Linux**
    - Primeiramente tem que instalar o net-tools
      ```bash
@@ -187,7 +199,7 @@
      sudo nano squid.conf
      ```
      
-7. Acessando o site pelo Windows 11
+7. **Acessando o site pelo Windows 11**
 
 - Abra as configurações.
 - Entre em **Rede e Internet**.

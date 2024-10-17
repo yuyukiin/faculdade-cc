@@ -164,9 +164,15 @@
 
    - Configurações do SQUID
      ```bash
+     # Configurações do SQUID
+     # Define a porta do proxy
      http_port 3128
+   
+     # Permite acesso apenas à rede local (192.168.1.8/255.255.255.248)
      acl rede_local src 192.168.1.8/255.255.255.248
      http_access allow rede_local
+   
+     # Bloqueia acesso a sites listados no arquivo "sites_proibidos"
      acl sites_proibidos url_regex -i "/etc/squid/sites_proibidos"
      http_access deny sites_proibidos
      ```

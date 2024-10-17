@@ -1,10 +1,7 @@
 # TRABALHO REDES
 
 
-<h2 align="center">Falhos Programadores</h2>
-<p align="center">
-    <img src="humor.jpg" alt="Falhos Programadores">
-</p>
+
 
 ---
 ### Resumo

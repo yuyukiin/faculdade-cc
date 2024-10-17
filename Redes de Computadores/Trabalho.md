@@ -153,18 +153,22 @@
      ```
      
    - Criar arquivo
-     ```
+     ```bash
      sudo touch /etc/squid/sites_proibidos
      ```
      
    - Entrar no Arquivo
-     ```
+     ```bash
      sudo nano /etc/squid/sites_proibidos
      ``` 
 
-   - aaa
-     ```
-     a
+   - Configurações do SQUID
+     ```bash
+     http_port 3128
+     acl rede_local src 192.168.1.8/255.255.255.248
+     http_access allow rede_local
+     acl sites_proibidos url_regex -i "/etc/squid/sites_proibidos"
+     http_access deny sites_proibidos
      ```
     
    - bbb

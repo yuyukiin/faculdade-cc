@@ -146,15 +146,21 @@
      ```bash
      sudo service squid status
      ```
-     
-   - 
-
-
 
    - Configurar o SQUID
      ```bash
      cd /etc/squid
      ```
+     
+   - Criar arquivo
+     ```
+     sudo touch /etc/squid/sites_proibidos
+     ```
+     
+   - Entrar no Arquivo
+     ```
+     sudo nano /etc/squid/sites_proibidos
+     ``` 
 
    - Fazer Backup do SQUID
      ```bash
@@ -167,18 +173,6 @@
      sudo nano squid.conf
      ```
      
-   - Espeficiar determinado host ou rede de origem
-      ```bash
-      acl rede_local src 192.168.1.0/255.255.255.0
-      
-      ```
-   - Especificar determinado host ou rede de destino
-      ```
-      acl rede_local dst 10.68.1.1/255.255.255.255
-      ```
-   -
-
-
 ---
 
 ### Andamento

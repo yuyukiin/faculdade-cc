@@ -39,7 +39,7 @@
    - **WAN:** 200.10.10.0/24
 
 2. **Utilizar o Linux**
-   - Utilizar todas as ferramentas necessárias no Linux.
+   - Utilizaremos o Linux.
 
 3. **Instalar o SSH no Linux**
    - Para instalação, siga as orientações abaixo

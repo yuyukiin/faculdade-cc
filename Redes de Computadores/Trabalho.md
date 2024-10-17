@@ -162,6 +162,17 @@
      sudo nano /etc/squid/sites_proibidos
      ``` 
 
+   - aaa
+     ```
+     a
+     ```
+    
+   - bbb
+     ```
+     b
+     ```
+    
+
    - Fazer Backup do SQUID
      ```bash
      sudo cp squid.conf squid.conf.backup

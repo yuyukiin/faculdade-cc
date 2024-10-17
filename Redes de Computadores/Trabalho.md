@@ -198,6 +198,12 @@
      sudo rm squid.conf
      sudo nano squid.conf
      ```
+
+   - Reiniciar SQUID
+     ```bash
+     sudo systemctl stop squid
+     sudo systemctl start squid
+     ```
      
 7. **Acessando o site pelo Windows 11**
    - Abra as configurações.

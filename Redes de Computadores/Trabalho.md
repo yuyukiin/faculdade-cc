@@ -146,6 +146,10 @@
      ```bash
      sudo service squid status
      ```
+     
+   - 
+
+
 
    - Configurar o SQUID
      ```bash
@@ -162,6 +166,18 @@
      sudo rm squid.conf
      sudo nano squid.conf
      ```
+     
+   - Espeficiar determinado host ou rede de origem
+      ```bash
+      acl rede_local src 192.168.1.0/255.255.255.0
+      
+      ```
+   - Especificar determinado host ou rede de destino
+      ```
+      acl rede_local dst 10.68.1.1/255.255.255.255
+      ```
+   -
+
 
 ---
 
@@ -172,8 +188,8 @@
 | SSH           |   ✅                                                     | Acesso remoto e seguro ao servidor      |
 | APACHE 2      |   ✅                                                     | Servidor web para hospedar páginas      |
 | SUB-INTERFACE |   ✅                                                     | Segmentação de rede para diferentes serviços |
-| ROTAS         |   ❌                                                     | Direcionamento de tráfego na rede       |
-| PROXY         |   ❌                                                     | Intermediário para requisições externas |
+| ROTAS         |   ✅                                                     | Direcionamento de tráfego na rede       |
+| PROXY         |   ✅                                                     | Intermediário para requisições externas |
 | SQUID       |    ✅                                                 | Servidor proxy para controle de acesso  |
 | IP TABLES   |   ❌                                                     | Gerenciamento de regras de firewall     |
 ---

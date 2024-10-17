@@ -164,7 +164,6 @@
 
    - Configurações do SQUID
      ```bash
-     # Configurações do SQUID
      # Define a porta do proxy
      http_port 3128
    
@@ -176,13 +175,7 @@
      acl sites_proibidos url_regex -i "/etc/squid/sites_proibidos"
      http_access deny sites_proibidos
      ```
-    
-   - bbb
-     ```
-     b
-     ```
-    
-
+     
    - Fazer Backup do SQUID
      ```bash
      sudo cp squid.conf squid.conf.backup

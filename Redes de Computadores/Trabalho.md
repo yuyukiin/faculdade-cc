@@ -199,7 +199,7 @@
      sudo nano squid.conf
      ```
 
-   - Reiniciar SQUID
+   - Reiniciar SQUID / Qualquer modificação deve ser reiniciado o SQUID
      ```bash
      sudo systemctl stop squid
      sudo systemctl start squid

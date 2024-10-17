@@ -174,7 +174,12 @@
      sudo rm squid.conf
      sudo nano squid.conf
      ```
-     
+
+   - Entrar no Config
+     ```bash
+     cd /etc/squid
+     ```
+
    - Criar arquivo
      ```bash
      sudo touch /etc/squid/sites_proibidos.txt
@@ -208,7 +213,7 @@
      sudo systemctl start squid
      ```
      
-7. **Acessando o site pelo Windows 11**
+6. **Acessando o site pelo Windows 11**
    - Abra as configurações.
    - Entre em **Rede e Internet**.
       - Clique em **Proxy**.

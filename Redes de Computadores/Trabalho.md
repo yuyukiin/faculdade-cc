@@ -38,10 +38,7 @@
    - **LAN:** 192.168.1.0/24
    - **WAN:** 200.10.10.0/24
 
-2. **Utilizar o Linux**
-   - Utilizaremos o Linux.
-
-3. **Instalar o SSH no Linux**
+2. **Instalar o SSH no Linux**
    - Para instalação, siga as orientações abaixo
      ```bash
      sudo apt-get update
@@ -69,7 +66,7 @@
      sudo su username
      ```
 
-4. **Instalar o Apache 2 no Linux**
+3. **Instalar o Apache 2 no Linux**
    - Para instalação, siga as orientações abaixo:
      ```bash
      sudo apt update
@@ -122,7 +119,7 @@
 
    - Abrir Site criado: http://172.25.2.204/grupo1.html
 
-5. **Criar Sub-interfaces no Linux**
+4. **Criar Sub-interfaces no Linux**
    - Primeiramente tem que instalar o net-tools
      ```bash
      sudo apt install net-tools
@@ -138,13 +135,13 @@
      sudo ifconfig enp0s31f6:0 192.168.1.9 netmask 255.255.255.248
      ```
 
-6. **Configurar Rotas**
+5. **Configurar Rotas**
    - Exibir rotas
      ```bash
      sudo route
      ```
 
-7. **Bloquear sites com Proxy**
+6. **Bloquear sites com Proxy**
    - Baixar o SQUID
      ```bash
      sudo apt-get install squid

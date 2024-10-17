@@ -177,11 +177,15 @@
    - Criar arquivo
      ```bash
      sudo touch /etc/squid/sites_proibidos.txt
+
+     sudo touch /etc/squid/palavras_proibidas.txt
      ```
      
    - Entrar no Arquivo
      ```bash
      sudo nano /etc/squid/sites_proibidos.txt
+
+     sudo nano /etc/squid/palavras_proibidas.txt
      ``` 
 
    - Configurações do SQUID

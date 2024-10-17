@@ -2,11 +2,6 @@
 <p align="center">
 
 
-
-
-
-
----
 ### Resumo
 
 

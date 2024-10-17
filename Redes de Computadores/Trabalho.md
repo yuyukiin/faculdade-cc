@@ -220,7 +220,7 @@
 | ROTAS         |   ✅                                                     | Direcionamento de tráfego na rede       |
 | PROXY         |   ✅                                                     | Intermediário para requisições externas |
 | SQUID       |    ✅                                                 | Servidor proxy para controle de acesso  |
-| IP TABLES   |   ❌                                                     | Gerenciamento de regras de firewall     |
+| IP TABLES   |   ✅                                                     | Gerenciamento de regras de firewall     |
 ---
 
 ### Salvar

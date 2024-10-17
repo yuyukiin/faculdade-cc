@@ -142,12 +142,6 @@
      sudo ifconfig enp0s31f6:0 192.168.1.9 netmask 255.255.255.248
      ```
 
-5. **Configurar Rotas**
-   - Exibir rotas
-     ```bash
-     sudo route
-     ```
-
 6. **Bloquear sites com Proxy**
    - Baixar o SQUID
      ```bash

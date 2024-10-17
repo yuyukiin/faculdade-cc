@@ -7,6 +7,10 @@
 </p>
 
 ---
+### Resumo
+
+
+---
 
 ### Sumário
 1. [Integrantes do Grupo](#integrantes-do-grupo)

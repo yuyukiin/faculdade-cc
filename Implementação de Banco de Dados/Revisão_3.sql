@@ -1,4 +1,4 @@
-# Avaliação Final
+# Avaliação 
 
 1) No seu github pessoal, criar um repositório de banco de dados (caso ainda não exista) e dentro dele um arquivo chamado vocabulario.md. Nele preencher o significado das expressões abaixo, mantendo o texto ordenado:
 

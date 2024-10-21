@@ -125,3 +125,28 @@ END;
 -- Inserir um novo funcionário
 INSERT INTO FUNCIONARIO (Pnome, Minicial, Unome, Cpf)
 VALUES ('yuyuyaaaYUUUUu', 'E', 'BriAAto', '81862155574');
+
+---
+
+
+CREATE TRIGGER trg_salll
+ON FUNCIONARIO
+INSTEAD OF INSERT
+AS
+BEGIN
+	DECLARE @cpf CHAR(8),
+			@salario DECIMAL (10,2)
+
+	SELECT @cpf = i.cpf, @salario = i.salario FROM inserted AS I
+
+	IF @salario >= 50000.00
+	BEGIN
+		INSERT INTO FUNCIONARIO (Pnome, Minicial, Unome, Cpf, Datanasc, Endereco, Sexo, Salario, Cpf_supervisor, Dnr)
+        SELECT Pnome, Minicial, Unome, Cpf, Datanasc, Endereco, Sexo, Salario, Cpf_supervisor, Dnr FROM inserted;
+		PRINT 'Funcionario inserido com sucesso'
+	END
+	ELSE 
+		BEGIN
+		RAISERROR('Salário inválido. Não foi possível inserir o funcionário.', 16, 1);
+		END
+END

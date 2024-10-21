@@ -62,3 +62,66 @@ SET Pnome = 'yurAAS'
 WHERE Cpf = '83866555575';
 
 SELECT * FROM FUNCIONARIO;
+
+
+---
+
+# Script SQL para a Empresa
+
+```sql
+USE EMPRESA;
+
+-- Trigger para log de inserções em FUNCIONARIO
+ALTER TRIGGER trg_funcio
+ON FUNCIONARIO
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO log_funcionario (Cpf, Operacao)
+    SELECT Cpf, 'INSERT'
+    FROM inserted;
+END;
+
+-- Selecionar todos os registros do log
+SELECT * FROM log_funcionario;
+
+-- Inserir um novo funcionário
+INSERT INTO FUNCIONARIO (Pnome, Minicial, Unome, Cpf, Endereco, Salario)
+VALUES ('yuyuyaaaYUUUUu', 'E', 'BriAAto', '81862155570', 'Rua do Horto, 35, São Paulo, SP', 55000);
+
+-- Trigger para verificar duplicidade antes da inserção
+ALTER TRIGGER trg_inserir
+ON FUNCIONARIO 
+INSTEAD OF INSERT 
+AS
+BEGIN
+    DECLARE @nome VARCHAR(50),
+            @minicial VARCHAR(50),
+            @sobrenome VARCHAR(50);
+
+    SELECT @minicial = i.Minical, 
+           @sobrenome = i.Unome, 
+           @nome = i.Pnome 
+    FROM inserted i;
+
+    IF EXISTS (
+        SELECT 1 FROM FUNCIONARIO AS F
+        WHERE Pnome = @nome AND Unome = @sobrenome AND Minicial = @minicial
+    )
+    BEGIN
+        PRINT 'Não inserido';
+        ROLLBACK TRANSACTION;
+    END
+    ELSE
+    BEGIN
+        PRINT 'Inserido';
+        INSERT INTO FUNCIONARIO (Pnome, Minicial, Unome, Cpf)
+        SELECT Pnome, Minicial, Unome, Cpf
+        FROM inserted;
+        COMMIT TRANSACTION;
+    END
+END;
+
+-- Inserir um novo funcionário
+INSERT INTO FUNCIONARIO (Pnome, Minicial, Unome, Cpf)
+VALUES ('yuyuyaaaYUUUUu', 'E', 'BriAAto', '81862155574');

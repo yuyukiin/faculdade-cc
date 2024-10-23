@@ -35,7 +35,26 @@ int inocente(byte a[], int m, byte b[], int n) {
 ```
 ## Resolução do Exercício 1 em Python 
 ```python
-aaa
+def inocente(a, b):
+    m = len(a)
+    n = len(b)
+    ocorrs = 0
+    
+    for k in range(m - 1, n):  # k vai de m-1 até n-1
+        # Verifica se a[0..m-1] casa com b[k-m+1..k]
+        i, j = m - 1, k
+        while i >= 0 and a[i] == b[j]:
+            i -= 1
+            j -= 1
+        if i < 0:  # Se chegamos ao início do vetor a
+            ocorrs += 1
+            
+    return ocorrs
+
+a = [1, 2, 3]
+b = [0, 1, 2, 3, 1, 2, 3]
+resultado = inocente(a, b)
+print(f"Número de ocorrências: {resultado}")
 ```
 
 ## Algoritmo inocente / Exercícios 2
@@ -82,7 +101,42 @@ boyermoore1 (byte a[], int m,
 
 ## Resolução do Exercício 2 em Python 
 ```python
-aaa
+def boyermoore1(a, b):
+    m = len(a)
+    n = len(b)
+    ult = [0] * 256  # Inicializa o último vetor para o alfabeto de 0 a 255
+
+    # Pré-processamento da palavra a
+    for f in range(256):
+        ult[f] = 0
+    for i in range(m):
+        ult[a[i]] = i + 1  # armazena o índice de última ocorrência (1-indexed)
+
+    # Busca da palavra a no texto b
+    ocorrs = 0
+    k = m - 1  # Inicia na posição correspondente a k em C
+    while k < n:  # Enquanto k for menor que n
+        # Verifica se a[0..m-1] casa com b[k-m+1..k]
+        i, j = m - 1, k
+        while i >= 0 and a[i] == b[j]:
+            i -= 1
+            j -= 1
+        if i < 0:  # Se todos os caracteres coincidem
+            ocorrs += 1
+        
+        # Atualiza k conforme a regra do algoritmo de Boyer-Moore
+        if k == n - 1:
+            k += 1  # Se estamos no final de b, incrementa para sair do loop
+        else:
+            k += m - ult[b[k + 1]] if (k + 1) < n else 1
+
+    return ocorrs
+
+# Exemplo de uso:
+a = [1, 2, 3]
+b = [0, 1, 2, 3, 1, 2, 3]
+resultado = boyermoore1(a, b)
+print(f"Número de ocorrências: {resultado}")
 ```
 
 ## Algorotimos de Boyer-Moore 
@@ -128,7 +182,44 @@ boyermoore1 (byte a[], int m,
 
 ## Primeiro algoritmo de Boyter-Moore em Python
 ```python
-aaa
+def boyermoore1(a, b):
+    m = len(a)
+    n = len(b)
+    ult = [0] * 256  # Inicializa o vetor para o alfabeto de 0 a 255
+
+    # Pré-processamento da palavra a
+    for f in range(256):
+        ult[f] = 0
+    for i in range(m):
+        ult[a[i]] = i + 1  # Armazena o índice de última ocorrência (1-indexed)
+
+    # Busca da palavra a no texto b
+    ocorrs = 0
+    k = m - 1  # Inicia na posição m-1
+
+    while k < n:  # Enquanto k for menor que n
+        # Verifica se a[0..m-1] casa com b[k-m+1..k]
+        i, j = m - 1, k
+        while i >= 0 and a[i] == b[j]:
+            i -= 1
+            j -= 1
+        
+        if i < 0:  # Se todos os caracteres coincidem
+            ocorrs += 1
+        
+        # Atualiza k conforme a regra do algoritmo de Boyer-Moore
+        if k == n - 1:
+            k += 1  # Se estamos no final de b, incrementa para sair do loop
+        else:
+            k += m - ult[b[k + 1]] if (k + 1) < n else 1
+
+    return ocorrs
+
+# Exemplo de uso:
+a = [1, 2, 3]
+b = [0, 1, 2, 3, 1, 2, 3]
+resultado = boyermoore1(a, b)
+print(f"Número de ocorrências: {resultado}")
 ```
 
 
@@ -178,7 +269,56 @@ boyermoore2 (byte a[], int m,
 
 ## Segundo algoritmo de Boyter-Moore em Python
 ```python
-aaa
+def boyermoore2(a, b):
+    m = len(a)
+    n = len(b)
+    jump = [0] * (m + 1)  # Inicializa o vetor de saltos
+
+    # Pré-processamento da palavra a
+    h = m
+    k = m - 1
+
+    while h >= 1 and k >= 1:
+        i = m - 1
+        j = k
+        while i >= h and j >= 1:
+            if a[i] == a[j]:
+                i -= 1
+                j -= 1
+            else:
+                i = m - 1
+                j -= 1
+        jump[h] = k
+        h -= 1
+
+    while h >= 1:
+        jump[h] = k
+        h -= 1
+
+    # Busca da palavra a no texto b
+    ocorrs = 0
+    k = m - 1
+
+    while k < n:
+        i = m - 1
+        j = k
+        while i >= 0 and a[i] == b[j]:
+            i -= 1
+            j -= 1
+        if i < 0:  # Se todos os caracteres coincidem
+            ocorrs += 1
+        if i == m - 1:
+            k += 1
+        else:
+            k += m - jump[i + 1]
+
+    return ocorrs
+
+# Exemplo de uso:
+a = [1, 2, 3]
+b = [0, 1, 2, 3, 1, 2, 3]
+resultado = boyermoore2(a, b)
+print(f"Número de ocorrências: {resultado}")
 ```
 
 ### Terceiro algoritmo de Boyer-Moore 
@@ -227,7 +367,54 @@ boyermoore2 (byte a[], int m,
 
 ## Terceiro algoritmo de Boyter-Moore em Python
 ```python
-aaa
+def boyermoore2(a, b):
+    m = len(a)
+    n = len(b)
+    jump = [0] * (m + 1)  # Inicializa o vetor jump com tamanho m + 1
+
+    # Pré-processamento da palavra a
+    h = m
+    k = m - 1
+    while h >= 1 and k >= 1:
+        i = m - 1
+        j = k
+        while i >= h - 1 and j >= 0:
+            if a[i] == a[j]:
+                i -= 1
+                j -= 1
+            else:
+                i = m - 1
+                j -= 1
+        jump[h] = k
+        h -= 1
+
+    while h >= 1:
+        jump[h] = k
+        h -= 1
+
+    # Busca da palavra a no texto b
+    ocorrs = 0
+    k = m - 1
+    while k < n:
+        i = m - 1
+        j = k
+        while i >= 0 and a[i] == b[j]:
+            i -= 1
+            j -= 1
+        if i < 0:  # Se todos os caracteres coincidem
+            ocorrs += 1
+        if i == m - 1:
+            k += 1
+        else:
+            k += m - jump[i + 1]
+
+    return ocorrs
+
+# Exemplo de uso:
+a = [1, 2, 3]
+b = [0, 1, 2, 3, 1, 2, 3]
+resultado = boyermoore2(a, b)
+print(f"Número de ocorrências: {resultado}")
 ```
 
 ---

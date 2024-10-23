@@ -2,6 +2,8 @@
 
 Procurar uma palavra num texto é uma atividade corriqueira. No contexto computacional, esse problema é conhecido como substring searching ou string matching e pode ser formulado assim: encontrar todas as ocorrências de um dado vetor `a` em um dado vetor `b`.
 
+> Todos códigos em linguagem C
+
 ## Terminologia e decisões de projeto / Exercício 1
 
 1. Quantas vezes a palavra `AAA` ocorre no texto `AAAAA`?

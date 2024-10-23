@@ -74,7 +74,7 @@ boyermoore1 (byte a[], int m,
 
 ## Algorotimos de Boyer-Moore 
 
-## Primeiro algoritmo de Boyter-Moore
+### Primeiro algoritmo de Boyter-Moore
 ```c
 typedef unsigned char byte;
 
@@ -108,7 +108,7 @@ boyermoore1 (byte a[], int m,
 }
 ```
 
-## Segundo algoritmo de Boyer-Moore 
+### Segundo algoritmo de Boyer-Moore 
 ```c
 typedef unsigned char byte;
 
@@ -150,7 +150,7 @@ boyermoore2 (byte a[], int m,
 }  
 ```
 
-## Terceiro algoritmo de Boyer-Moore 
+### Terceiro algoritmo de Boyer-Moore 
 ```c
 typedef unsigned char byte;
 

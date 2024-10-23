@@ -191,3 +191,16 @@ boyermoore2 (byte a[], int m,
    return ocorrs;
 }
 ```
+
+
+
+<h2 align="center">Sites Utilizados</h2>
+
+<div align="center">
+
+| Nome     | Link                                               |
+|----------|----------------------------------------------------|
+| **Projeto de Algoritmos (em C)** | [Algorotimos de Paulo Feofiloff](https://www.ime.usp.br/~pf/algoritmos/) |
+| **Busca de palavras em um texto** | [Busca de palavras de Paulo Feofiloff](https://www.ime.usp.br/~pf/algoritmos/aulas/strma.html) |
+
+</div>

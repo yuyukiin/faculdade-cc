@@ -76,7 +76,12 @@ boyermoore1 (byte a[], int m,
 
 ## Algorotimos de Boyer-Moore 
 
+
 ### Primeiro algoritmo de Boyter-Moore
+Um alfabeto de uma instância do nosso problema é qualquer conjunto de bytes que contém todos os elementos dos vetores a e b.  Dadas nossas convenções, 0..255 é um alfabeto de qualquer instância do problema. Mas algumas instâncias podem ter um alfabeto menor, como 0..127 no caso de caracteres ASCII, ou como  65 67 71 84  no caso das aplicações à genética.
+
+R.S. Boyer e J.S. Moore tiveram a engenhosa ideia de usar uma tabela auxiliar, indexada pelo alfabeto, para acelerar o algoritmo inocente.  Suponha que já comparamos a[1..m] com um sufixo de b[1..k].
+
 ```c
 typedef unsigned char byte;
 
@@ -111,6 +116,8 @@ boyermoore1 (byte a[], int m,
 ```
 
 ### Segundo algoritmo de Boyer-Moore 
+O segundo algoritmo de Boyer-Moore, ao contrário do primeiro, não precisa conhecer o alfabeto de a e b explicitamente. Ademais, o segundo algoritmo precisa comparar a palavra com o texto da direita para a esquerda: primeiro a[m] com b[k], depois a[m-1] com b[k-1], e assim por diante.
+
 ```c
 typedef unsigned char byte;
 
@@ -153,6 +160,8 @@ boyermoore2 (byte a[], int m,
 ```
 
 ### Terceiro algoritmo de Boyer-Moore 
+O terceiro algoritmo de Boyer-Moore é uma fusão dos dois anteriores. A cada passo, o algoritmo escolhe o maior dos dois deslocamentos: aquele ditado pela tabela ult e aquele dado pela tabela jump.  (Esse é o algoritmo de Boyer-Moore propriamente dito. A distinção que fizemos acima entre primeiro e segundo algoritmos é apenas didática.)
+
 ```c
 typedef unsigned char byte;
 

@@ -2,7 +2,9 @@
 
 Procurar uma palavra num texto é uma atividade corriqueira. No contexto computacional, esse problema é conhecido como substring searching ou string matching e pode ser formulado assim: encontrar todas as ocorrências de um dado vetor `a` em um dado vetor `b`.
 
-> Todos códigos estão na linguagem C
+> Códigos de Paulo Feofiloff estão na linguagem C
+
+> Códigos de feitos por mim estão na linguagem Python
 
 ## Terminologia e decisões de projeto / Exercício 1
 
@@ -30,6 +32,10 @@ int inocente(byte a[], int m, byte b[], int n) {
     }
     return ocorrs;
 }
+```
+## Resolução do Exercício 1 em Python 
+```python
+aaa
 ```
 
 ## Algoritmo inocente / Exercícios 2
@@ -74,6 +80,11 @@ boyermoore1 (byte a[], int m,
 }
 ```
 
+## Resolução do Exercício 2 em Python 
+```python
+aaa
+```
+
 ## Algorotimos de Boyer-Moore 
 
 
@@ -114,6 +125,12 @@ boyermoore1 (byte a[], int m,
    return ocorrs;
 }
 ```
+
+## Primeiro algoritmo de Boyter-Moore em Python
+```python
+aaa
+```
+
 
 ### Segundo algoritmo de Boyer-Moore 
 O segundo algoritmo de Boyer-Moore, ao contrário do primeiro, não precisa conhecer o alfabeto de a e b explicitamente. Ademais, o segundo algoritmo precisa comparar a palavra com o texto da direita para a esquerda: primeiro a[m] com b[k], depois a[m-1] com b[k-1], e assim por diante.
@@ -157,6 +174,11 @@ boyermoore2 (byte a[], int m,
    }
    return ocorrs;
 }  
+```
+
+## Segundo algoritmo de Boyter-Moore em Python
+```python
+aaa
 ```
 
 ### Terceiro algoritmo de Boyer-Moore 
@@ -203,7 +225,12 @@ boyermoore2 (byte a[], int m,
 }
 ```
 
+## Terceiro algoritmo de Boyter-Moore em Python
+```python
+aaa
+```
 
+---
 
 <h2 align="center">Sites Utilizados</h2>
 

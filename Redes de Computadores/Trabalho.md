@@ -29,8 +29,8 @@
 ## Passo a passo
 1. **Planejar as redes**
    - Definir a topologia de rede, incluindo dispositivos e conexões
-   - **LAN:** 192.168.1.0/28
-   - **WAN:** 200.10.10.0/28
+   - **LAN:** 192.168.1.0/29
+   - **WAN:** 200.10.10.0/30
 
 2. **Instalar o SSH no Linux**
    - Para instalação, siga as orientações abaixo

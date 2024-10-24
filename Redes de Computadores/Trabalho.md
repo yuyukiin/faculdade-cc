@@ -111,7 +111,7 @@
      sudo ufw allow 'Apache'
      ```
 
-   - Abrir Site criado: http://172.25.2.204/grupo1.html
+   - Abrir Site criado: http://172.25.2.204/grupo1
 
 5. **IP TABLES no Linux**
    - Instalação

@@ -24,6 +24,8 @@
 
 > **Ferramentas:** SSH, Linux, Windows, Apache 2, rotas, Sub-interface e Proxy(SQUID e IP TABLES)
 
+**Eduardo e Yuri ficarão até o final da aula** 
+
 ---
 
 ## Passo a passo
@@ -223,7 +225,6 @@
    - Em configurações de proxy manual, clique na opção **Editar**.
       - Clique em **Ativado**.
    - Em **Endereço de proxy**, coloque o IP da sua máquina Linux e, na **Porta**, coloque 3128.
-
 ---
 
 ### Andamento

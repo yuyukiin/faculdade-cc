@@ -122,6 +122,13 @@
       
      sudo systemctl enable netfilter-persistent
      ```
+
+     - Cria rota no IP TABLES
+     ```bash
+     IP route
+
+     route add - net 0.0.0.0 netmask 0.0.0.0 GW IP
+     ```
      
 4. **Criar Sub-interfaces no Linux**
    - Primeiramente tem que instalar o net-tools

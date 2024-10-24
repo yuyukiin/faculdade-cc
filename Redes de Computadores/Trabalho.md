@@ -19,7 +19,6 @@
 
 ### Integrantes do Grupo
 - **Grupo 1:** Yuri Alexander, Eduardo Cerreta e Meani 
-- **Grupo 2:** Pedro, Miguel e Machado
 
 > **Nota:** Todas as instruções a seguir devem ser executadas no terminal do Linux.
 

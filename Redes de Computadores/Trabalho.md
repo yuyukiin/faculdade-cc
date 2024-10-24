@@ -122,9 +122,7 @@
       
      sudo systemctl enable netfilter-persistent
      ```
-   - 
      
-
 4. **Criar Sub-interfaces no Linux**
    - Primeiramente tem que instalar o net-tools
      ```bash

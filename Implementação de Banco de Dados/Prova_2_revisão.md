@@ -39,10 +39,17 @@ As restrições de integridade garantem a validade e a precisão dos dados no ba
 
 - **Procedural**: Restrições implementadas através de procedimentos armazenados ou funções. Podem incluir lógica de validação mais complexa.
 
+- Integridade de Dominio: Definir tipo do valor.
+- Intrigdade Referencial: Referenciar algo, precisa que existe em outra tabela, tabelas vinculads
+- Intregidade Vazio: not null ou null
+- Intrigidade Chave: não repitição de valores nas chaves primarias
+
 - **Declarativas**: Restrições definidas diretamente no esquema do banco de dados. Exemplos incluem:
 - **Comandos DDL*:
   - Create, Alter, Drop.   
   - **Cascade**: Usada em operações de exclusão ou atualização para propagar mudanças para registros relacionados.
+    - on update cascade
+    - on delete cascade 
   - **Check**: Restrições que garantem que os valores em uma coluna atendam a uma condição específica.
 
 ### View

@@ -21,3 +21,20 @@ SELECT * FROM tbl_pessoa
 INSERT INTO tbl_pessoa VALUES ('Juras', 'gargamel', 1, 30, 'M')
 
 ```
+
+## Utilizando View
+
+```sql
+ALTER VIEW View1 AS 
+SELECT L.isbn, L.titulo, L.ano, E.nome, CONCAT(A.nome, A.nacionalidade ) AS 'Nome/Nacionalidade', C.tipo_categoria
+FROM Livro AS L 
+JOIN Editora AS E ON l.fk_editora = E.id
+JOIN Categoria AS C ON l.fk_editora = c.id
+JOIN LivroAutor AS LA ON L.isbn = LA.fk_livro
+JOIN Autor AS A ON LA.fk_autor = A.id
+
+
+SELECT * FROM View1 WHERE nome LIKE '%da%'
+--%
+
+```

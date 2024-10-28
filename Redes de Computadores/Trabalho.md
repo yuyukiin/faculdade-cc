@@ -1,10 +1,6 @@
 <h2 align="center">TRABALHO REDES</h2>
 <p align="center">
 
-
-### Resumo
-
-
 ---
 
 ### Sumário
@@ -22,7 +18,7 @@
 
 > **Nota:** Todas as instruções a seguir devem ser executadas no terminal do Linux.
 
-> **Ferramentas:** SSH, Linux, Windows, Apache 2, rotas, Sub-interface e Proxy(SQUID e IP TABLES)
+> **Ferramentas:** SSH, Linux, Windows, Apache 2, Sub-interface e Proxy(SQUID e IP TABLES)
 
 **Eduardo e Yuri ficarão até o final da aula** 
 

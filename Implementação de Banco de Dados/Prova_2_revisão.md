@@ -40,6 +40,8 @@ As restrições de integridade garantem a validade e a precisão dos dados no ba
 - **Procedural**: Restrições implementadas através de procedimentos armazenados ou funções. Podem incluir lógica de validação mais complexa.
 
 - **Declarativas**: Restrições definidas diretamente no esquema do banco de dados. Exemplos incluem:
+- **Comandos DDL*:
+  - Create, Alter, Drop.   
   - **Cascade**: Usada em operações de exclusão ou atualização para propagar mudanças para registros relacionados.
   - **Check**: Restrições que garantem que os valores em uma coluna atendam a uma condição específica.
 

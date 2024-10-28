@@ -12,6 +12,13 @@ As transações em sistemas de bancos de dados seguem o princípio ACID, que gar
 
 - **Durabilidade**: Após uma transação ser confirmada (committed), suas mudanças permanecem no sistema, mesmo em caso de falha do sistema ou do banco de dados.
 
+### Rollback e Commit
+Durante o gerenciamento de transações, duas operações fundamentais são:
+
+- **Commit**: Esta operação confirma todas as mudanças realizadas durante a transação. Quando um commit é executado, todas as alterações se tornam permanentes no banco de dados. Isso garante que os dados sejam salvos de forma durável.
+
+- **Rollback**: Esta operação reverte todas as mudanças realizadas desde o último commit. É utilizada em casos de erro ou se a transação não puder ser concluída com sucesso. O rollback assegura que o banco de dados retorne a um estado consistente, como se a transação nunca tivesse ocorrido.
+
 ### Trigger (Gatilho)
 Triggers são procedimentos automáticos que são executados em resposta a certos eventos no banco de dados. Eles podem ser definidos para ocorrer em três momentos:
 

@@ -15,12 +15,12 @@
 
 ### Integrantes do Grupo
 - **Grupo 1:** Yuri Alexander, Eduardo Cerreta e Meani 
-
+- **Eduardo e Yuri ficarão até o final da aula** 
 > **Nota:** Todas as instruções a seguir devem ser executadas no terminal do Linux.
 
 > **Ferramentas:** SSH, Linux, Windows, Apache 2, Sub-interface e Proxy(SQUID e IP TABLES)
 
-**Eduardo e Yuri ficarão até o final da aula** 
+
 
 ---
 

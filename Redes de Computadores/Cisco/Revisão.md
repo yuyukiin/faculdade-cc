@@ -59,11 +59,11 @@ Router(config-if)# no shut
 
 ```bash
 Router(config)#int s0/0
-Router(config-if)#encap pp
 Router(config-if)#encap ppp
+Router(config-if)#bandwidth 2048
 Router(config-if)#clock rate 250000
-This command applies only to DCE interfaces
 Router(config-if)#clock rate 2500000
 Router(config-if)#router ospf 3
+Router(config-if)#network 200.10.0.0 255.255.255.248 a 1
 Router(config-if)#network 192.168.0.1 255.255.255.252 a 1
 ```

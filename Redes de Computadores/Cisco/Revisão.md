@@ -55,5 +55,3 @@ Router(config-if)# encap ppp
 Router(config-if)# no shut
 ```
 
-
-Agora está tudo organizado em um único bloco, pronto para ser colocado em um arquivo `git.md`. Se precisar de mais alguma coisa, é só falar!

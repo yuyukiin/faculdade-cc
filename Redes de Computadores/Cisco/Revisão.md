@@ -55,3 +55,15 @@ Router(config-if)# encap ppp
 Router(config-if)# no shut
 ```
 
+# OSPF
+
+```bash
+Router(config)#int s0/0
+Router(config-if)#encap pp
+Router(config-if)#encap ppp
+Router(config-if)#clock rate 250000
+This command applies only to DCE interfaces
+Router(config-if)#clock rate 2500000
+Router(config-if)#router ospf 3
+Router(config-if)#network 192.168.0.1 255.255.255.252 a 1
+```

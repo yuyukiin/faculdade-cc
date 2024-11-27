@@ -38,3 +38,18 @@ herysson.figueiredo@ufn.edu.br
 Disciplina de Banco de Dados II  
 Atividade
 
+
+
+```sql
+{
+    "_id": "12345",
+    "nome": "Tênis Esportivo",
+    "preco": 199.99,
+    "categoria": ["Calçados", "Esporte"],
+    "avaliacoes": [
+        {"cliente": "João", "nota": 5, "comentario": "Excelente!"},
+        {"cliente": "Maria", "nota": 4, "comentario": "Confortável."}
+    ],
+    "estoque": 50
+}
+```

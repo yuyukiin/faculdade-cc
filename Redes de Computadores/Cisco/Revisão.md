@@ -42,6 +42,11 @@ Router> enable
 Router# config t
 Enter configuration commands, one per line. End with CNTL/Z.
 
+```
+
+# RIP
+
+```bash
 Router(config)# route rip
 Router(config-router)# network 192.168.1.0
 Router(config-router)# network 200.10.0.0

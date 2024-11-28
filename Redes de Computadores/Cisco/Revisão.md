@@ -1,3 +1,7 @@
+/24
+
+
+
 # Configuração do Roteador
 
 ```bash

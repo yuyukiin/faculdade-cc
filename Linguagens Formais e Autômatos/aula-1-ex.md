@@ -9,16 +9,16 @@ b. **Σ\***
    [ε, ab, ac, ...]
 
 c. **|w|**  
-   [aaaa, bbbb, cccc, ...]
+   [4]
 
 d. **Prefixos de w**  
    [a, aa, aab, aabc]  
 
 e. **Sufixos de w**  
-   [ε, c, cb, cba, cbaa] 
+   [c, cb, cba, cbaa] 
 
 f. **Subpalavras de w**  
-   [prefixos, sufixos, aa, bb, ...]
+   [prefixos, sufixos, ab, b]
 
 g. **|w|⁴**
 
@@ -37,7 +37,7 @@ b. **Lᵦ = {w ∈ {0, 1}⁺ | w possui sufixo "101"}**
    [101, 0101, 00101, ...]
 
 c. **Lᶜ = {w ∈ {a, b, c}* | w possui subpalavra "abc"}**  
-   [abc, aabc, abbc, ...]
+   [abc, aabc, abcc, ...]
 
 d. **Lᴰ = {w ∈ {0, 1}⁺ | todo 0 é seguido de 1}**  
-   [01, 0101, 010101]
+   [1, 01, 0101, 010101, 1111]

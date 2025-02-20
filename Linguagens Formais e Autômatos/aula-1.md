@@ -78,7 +78,8 @@
 ## Definição 3: Tamanho ou Comprimento
 <p> O tamanho ou comprimento de uma palavra W é o número de símbolos que está palavra é representa por W </p>
 
-## Definicão 4: Prefixo, Sufixo, Subpalavra
+## Definicão 4: Prefixo, Sufixo, Subpalavra 
+<p> W = 101 </p>
 <ul>
   <li> Prefixo de uma palavra é qualquer sequência inicial de símbolos da palavra. [1,10,101] </li>
   <li> Sufixo de uma palavra é qualquer sequência final de símbolos da palavra. [1,01,101] </li>

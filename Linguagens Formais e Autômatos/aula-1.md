@@ -87,4 +87,6 @@
 </ul>
 
 ## Definição 5: Linguagem Formal
-<p> Uma linguagem formal é um conjunto de palavras sobre um alfabeto </p>
+<p> Uma linguagem formal é um conjunto de palavras sobre um alfabetoUma linguagem formal é um conjunto de palavras sobre um alfabeto L¹ = {W ∈ Σ+ | Σ = {0,1} e W tem sufixo 0} // Representação por compreemsão ou L¹ = {0,10,000,010,110,...} // Representação por extensão
+
+L² = {W ∈ {0,1}* | W tem prefixo 11} </p>

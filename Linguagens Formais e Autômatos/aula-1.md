@@ -90,3 +90,17 @@
 <p> Uma linguagem formal é um conjunto de palavras sobre um alfabetoUma linguagem formal é um conjunto de palavras sobre um alfabeto L¹ = {W ∈ Σ+ | Σ = {0,1} e W tem sufixo 0} // Representação por compreemsão ou L¹ = {0,10,000,010,110,...} // Representação por extensão
 
 L² = {W ∈ {0,1}* | W tem prefixo 11} </p>
+
+## Definição 6: Concatenação
+<p> A concatenação é uma operação binária que assoacia a cada par de palavras uma terceira palavra formada pela justaposição da primeira com a segunda, essa operação satisfaz ás propriedades descritas a seguir, considerando v, w, t são palavras. </p>
+a. Associatividade: v(wt) = (vw)t
+b. Elemento Neutro a esquerda e a direita: εw = w = wε
+
+## Definição 7: Concatenação Sucessiva
+<p> A concatenação sucessiva de uma palavra (com ela mesma), wᵃ, é definida com segue: </p>
+a. a) w ≠ ε
+        w⁰ = ε
+        wⁿ = wⁿ⁻¹ w, para n>0
+b. b) w = ε
+        w⁰ é indefinida
+        wⁿ = ε, para n>0

@@ -1,106 +1,121 @@
-### Data 20/02/2025
+### Data: 20/02/2025
 
 # Teoria - Linguagens Formais
 
-## Um Autômato é 
-  <p> Uma Máquina de Estados finitos </p>
-  <p> Por exemplo a lâmpada, caso ela esteja no seu estado desligado, se ocorrer um determinado evento ela troca de estado, que seria o estado ligado. </p>
-  
+## Um Autômato é
+Uma Máquina de Estados finitos. 
+
+Por exemplo, a lâmpada: caso ela esteja no seu estado desligado, se ocorrer um determinado evento, ela troca de estado, que seria o estado ligado.
+
+---
+
 ## 1936 - Allan Turing - Década de 50
-  <p> Desenvolvimento de teorias relacionadas com linguaguens naturais, um dos principais pilares para linguagens artificiais</p>
-  <p> <a href="[https://example.com](https://brasilescola.uol.com.br/biografia/noam-chomsky.htm)">Chomsky</a>: Gramáticas Formais, o tutor de Allan Turing. </p>
+Desenvolvimento de teorias relacionadas com linguagens naturais, um dos principais pilares para linguagens artificiais.
+
+- **Chomsky**: Gramáticas Formais, o tutor de Allan Turing.  
+  [Chomsky - Biografia](https://brasilescola.uol.com.br/biografia/noam-chomsky.htm)
+
+---
 
 ### Principais Aplicações
-<ul>
-  <li> Análise léxica de sintática -> Tradutores de linguagens de programação </li>
-  <li> Protocolos de comunicação (modelos) </li>
-  <li> Modelos de sistemas biológicos </li>
-  <li> Procura em corpo de texto, ocorrências de palavras, frases... </li>
-  <li> Desenho de hardware (circuitos digitais) </li>
-</ul>
+- Análise léxica e sintática → Tradutores de linguagens de programação
+- Protocolos de comunicação (modelos)
+- Modelos de sistemas biológicos
+- Procura em corpo de texto, ocorrências de palavras, frases...
+- Desenho de hardware (circuitos digitais)
 
-### Terminologia 
-<p> Informações gerias: </p>
+---
+
+### Terminologia
 
 #### Léxico
-<ul>
-  <li> Termos de um idioma </li>
-  <li> Dicionario </li>
-</ul>
+- Termos de um idioma
+- Dicionário
 
 #### Sintaxe
-<ul>
-  <li> Forma de escrita </li>
-  <li> Forma da linguagem </li>
-  <li> Gramática </li>
-</ul>
+- Forma de escrita
+- Forma da linguagem
+- Gramática
 
 #### Semântica
-<ul>
-  <li> Sentido </li>
-  <li> Significado </li>
-</ul>
+- Sentido
+- Significado
 
 ---
 
 ## Formalismos usados
-<ul> 
-  <li> Formalismo Operacional ou Reconhecedor
-    <ul>
-      <li> Autômatos = Máquina abstrata</li>
-    </ul>
-  </li>
-  <li> Formalismo Axiomático ou Gerador
-    <ul>
-      <li> Gramática = regras associadas ao comportamento da linguagem</li>
-    </ul>
-  </li>
-  <li> Formalismo Denotacional
-    <ul>
-      <li> Expressão Regular</li>
-    </ul>
-  </li>
-</ul>
+- **Formalismo Operacional ou Reconhecedor**  
+  - Autômatos = Máquina abstrata
+- **Formalismo Axiomático ou Gerador**  
+  - Gramática = Regras associadas ao comportamento da linguagem
+- **Formalismo Denotacional**  
+  - Expressão Regular
 
 ---
 
 # Alfabeto, palavras, linguagens - Linguagens Formais
 
-## Definicação 1: 
-<p> Σ¹ = {a,b,c,d} </p>
-<p> Σ² = {0,1} </p>
+## Definição 1:
+- Σ¹ = {a, b, c, d}
+- Σ² = {0, 1}
+
+---
 
 ## Definição 2: Palavras
-<p> Σ Representa o alfabeto </p>
-<p> Σ* Representa todas palavras possíveis sobre um Σ </p>
-<p> Σ⁺ Representa todas as palavras possíveis sobre Σ excetuando-se </p>
+- **Σ**: Representa o alfabeto
+- **Σ***: Representa todas as palavras possíveis sobre um Σ
+- **Σ⁺**: Representa todas as palavras possíveis sobre Σ, exceto a palavra vazia (ε)
+
+---
 
 ## Definição 3: Tamanho ou Comprimento
-<p> O tamanho ou comprimento de uma palavra W é o número de símbolos que está palavra é representa por W </p>
+O tamanho ou comprimento de uma palavra **W** é o número de símbolos que ela contém. A palavra **W** é representada por **|W|**.
 
-## Definicão 4: Prefixo, Sufixo, Subpalavra 
-<p> W = 101 </p>
-<ul>
-  <li> Prefixo de uma palavra é qualquer sequência inicial de símbolos da palavra. [1,10,101] </li>
-  <li> Sufixo de uma palavra é qualquer sequência final de símbolos da palavra. [1,01,101] </li>
-  <li> Subpalavra de uma palavra é qualquer sequência de símbolos contígua da palavra. [prefixos, sufixos, 0]</li>
-</ul>
+---
+
+## Definição 4: Prefixo, Sufixo, Subpalavra
+Seja **W = 101**, então:
+
+- **Prefixo** de uma palavra é qualquer sequência inicial de símbolos da palavra.  
+  Exemplos: [1, 10, 101]
+- **Sufixo** de uma palavra é qualquer sequência final de símbolos da palavra.  
+  Exemplos: [1, 01, 101]
+- **Subpalavra** de uma palavra é qualquer sequência de símbolos contíguos da palavra.  
+  Exemplos: [prefixos, sufixos, 0]
+
+---
 
 ## Definição 5: Linguagem Formal
-<p> Uma linguagem formal é um conjunto de palavras sobre um alfabetoUma linguagem formal é um conjunto de palavras sobre um alfabeto L¹ = {W ∈ Σ+ | Σ = {0,1} e W tem sufixo 0} // Representação por compreemsão ou L¹ = {0,10,000,010,110,...} // Representação por extensão
+Uma linguagem formal é um conjunto de palavras sobre um alfabeto. Exemplos de linguagens formais:
 
-L² = {W ∈ {0,1}* | W tem prefixo 11} </p>
+- **L¹ = {W ∈ Σ⁺ | Σ = {0,1} e W tem sufixo 0}**  
+  Representação por compreensão: L¹ = {0, 10, 000, 010, 110, ...}  
+  Representação por extensão: {0, 10, 000, 010, 110, ...}
+
+- **L² = {W ∈ {0,1}* | W tem prefixo 11}**
+
+---
 
 ## Definição 6: Concatenação
-<p> A concatenação é uma operação binária que assoacia a cada par de palavras uma terceira palavra formada pela justaposição da primeira com a segunda, essa operação satisfaz ás propriedades descritas a seguir, considerando v, w, t são palavras. </p>
-a. Associatividade: v(wt) = (vw)t
-b. Elemento Neutro a esquerda e a direita: εw = w = wε
+
+A concatenação é uma operação binária que associa a cada par de palavras uma terceira palavra formada pela justaposição da primeira com a segunda. Essa operação satisfaz as propriedades descritas a seguir, considerando **v**, **w**, **t** como palavras.
+
+- **a. Associatividade**:  
+  v(wt) = (vw)t
+
+- **b. Elemento Neutro à esquerda e à direita**:  
+  εw = w = wε
+
+---
 
 ## Definição 7: Concatenação Sucessiva
-<p> A concatenação sucessiva de uma palavra (com ela mesma), wᵃ, é definida com segue: </p>
-a. a) w ≠ ε
-        w⁰ = ε
-        wⁿ = wⁿ⁻¹ w, para n>0
-b. b) w = ε
-        w⁰ é indefinida
-        wⁿ = ε, para n>0
+
+A concatenação sucessiva de uma palavra (com ela mesma), **wᵃ**, é definida da seguinte forma:
+
+- **a)** Se **w ≠ ε**:  
+  - w⁰ = ε  
+  - wⁿ = wⁿ⁻¹ w, para n > 0
+
+- **b)** Se **w = ε**:  
+  - w⁰ é indefinido  
+  - wⁿ = ε, para n > 0

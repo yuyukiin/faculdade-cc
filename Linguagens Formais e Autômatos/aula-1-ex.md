@@ -2,12 +2,12 @@
 
 ## 1. Seja Σ = {a, b, c} e w = aabc, encontre:
 
-a. Σ⁺  
-b. Σ*  
-c. |w|  
-d. Prefixos de w  
-e. Sufixos de w  
-f. Subpalavras de w  
+a. Σ⁺  [ab, ac, bc, ...]
+b. Σ*  [ε, ab, ac, ...]
+c. |w|  [aaaa, bbbb, cccc, ...]
+d. Prefixos de w [a, aa, aab, aabc]  
+e. Sufixos de w  ε [c, cb, cba, cbaa] 
+f. Subpalavras de w  [prefixos, sufixos, aa, bb, ...]
 g. |w|⁴  
 h. w³  
 i. w⁰  

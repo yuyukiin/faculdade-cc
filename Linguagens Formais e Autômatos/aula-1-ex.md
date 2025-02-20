@@ -16,17 +16,10 @@ i. w⁰
 
 ## 2. Sejam as Linguagens Formais a seguir. Para cada uma delas, encontre 3 palavras que pertencem à linguagem:
 
-a. **Lₐ = {a, b, c}**  
-   w ∈ {a, b, c}¹
+a. Lₐ = {w ∈ {a, 1}* = [a1, 1a, ε, ...]
 
-b. **Lᵦ = {a, b, c}**  
-   w ∈ {a, b, c}⁰¹  
-   |w possui sufixo "101"|
+b. Lᵦ = { w ∈ {0, 1}⁺ |w possui sufixo "101"| = [101, 0101, 00101, ...]
 
-c. **Lᶜ = {a, b, c}**  
-   w ∈ {a, b, c}*  
-   |w possui subpalavra "abc"|
+c. Lᶜ = { w ∈ {a, b, c}* |w possui subpalavra "abc"| = [abc, aabc, abbc, ...]
 
-d. **Lᴰ = {a, b, c}**  
-   w ∈ {a, b, c}⁰¹  
-   |todo 0 é seguido de 1|
+d. Lᴰ = { w ∈ {0, 1}⁺ |todo 0 é seguido de 1| = [01, 0101, 010101]

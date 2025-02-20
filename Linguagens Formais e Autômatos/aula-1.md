@@ -18,7 +18,6 @@
   <li> Desenho de hardware (circuitos digitais) </li>
 </ul>
 
-
 ### Terminologia 
 <p> Informações gerias: </p>
 
@@ -40,6 +39,7 @@
   <li> Sentido </li>
   <li> Significado </li>
 </ul>
+
 ---
 
 ## Formalismos usados
@@ -65,3 +65,7 @@
 ---
 
 # Alfabeto, palavras, linguagens - Linguagens Formais
+
+<p> Σ Representa o alfabeto </p>
+<p> Σ* Representa todas palavras possíveis sobre um Σ </p>
+<p> Σ⁺ Representa todas as palavras possíveis sobre Σ excetuando-se </p>

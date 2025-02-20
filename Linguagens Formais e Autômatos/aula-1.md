@@ -1,6 +1,6 @@
 ### Data 20/02/2025
 
-# Teoria das Linguagens Formais
+# Teoria - Linguagens Formais
 ## Um Autômato é 
   <p> Uma Máquina de Estados finitos </p>
   <p> Por exemplo a lâmpada, caso ela esteja no seu estado desligado, se ocorrer um determinado evento ela troca de estado, que seria o estado ligado. </p>
@@ -18,7 +18,10 @@
   <li> Desenho de hardware (circuitos digitais) </li>
 </ul>
 
+
 ### Terminologia 
+<p> Informações gerias: </p>
+
 #### Léxico
 <ul>
   <li> Termos de um idioma </li>
@@ -37,3 +40,28 @@
   <li> Sentido </li>
   <li> Significado </li>
 </ul>
+---
+
+## Formalismos usados
+<ul> 
+  <li> Formalismo Operacional ou Reconhecedor
+    <ul>
+      <li> Autômatos = Máquina abstrata</li>
+    </ul>
+  </li>
+  <li> Formalismo Axiomático ou Gerador
+    <ul>
+      <li> Gramática = regras associadas ao comportamento da linguagem</li>
+    </ul>
+  </li>
+  <li> Formalismo Denotacional
+    <ul>
+      <li> Expressão Regular</li>
+    </ul>
+  </li>
+</ul>
+
+
+---
+
+# Alfabeto, palavras, linguagens - Linguagens Formais

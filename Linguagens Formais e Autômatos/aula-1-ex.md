@@ -21,11 +21,12 @@ f. **Subpalavras de w**
    [prefixos, sufixos, ab, b]
 
 g. **|w|⁴**
+   [16]
 
 h. **w³**
-
+   [aabcaabcaabc]
 i. **w⁰**
-
+   [ε]
 ---
 
 ## 2. Sejam as Linguagens Formais a seguir. Para cada uma delas, encontre 3 palavras que pertencem à linguagem:

@@ -66,6 +66,11 @@
 
 # Alfabeto, palavras, linguagens - Linguagens Formais
 
+## Definicação 1: 
+<p> Σ¹ = {a,b,c,d}</p>
+<p> Σ² = {0,1}</p>
+
+## Definição 2: Palavras
 <p> Σ Representa o alfabeto </p>
 <p> Σ* Representa todas palavras possíveis sobre um Σ </p>
 <p> Σ⁺ Representa todas as palavras possíveis sobre Σ excetuando-se </p>

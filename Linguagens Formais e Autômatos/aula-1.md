@@ -1,6 +1,7 @@
 ### Data 20/02/2025
 
 # Teoria - Linguagens Formais
+
 ## Um Autômato é 
   <p> Uma Máquina de Estados finitos </p>
   <p> Por exemplo a lâmpada, caso ela esteja no seu estado desligado, se ocorrer um determinado evento ela troca de estado, que seria o estado ligado. </p>
@@ -61,16 +62,28 @@
   </li>
 </ul>
 
-
 ---
 
 # Alfabeto, palavras, linguagens - Linguagens Formais
 
 ## Definicação 1: 
-<p> Σ¹ = {a,b,c,d}</p>
-<p> Σ² = {0,1}</p>
+<p> Σ¹ = {a,b,c,d} </p>
+<p> Σ² = {0,1} </p>
 
 ## Definição 2: Palavras
 <p> Σ Representa o alfabeto </p>
 <p> Σ* Representa todas palavras possíveis sobre um Σ </p>
 <p> Σ⁺ Representa todas as palavras possíveis sobre Σ excetuando-se </p>
+
+## Definição 3: Tamanho ou Comprimento
+<p> O tamanho ou comprimento de uma palavra W é o número de símbolos que está palavra é representa por W </p>
+
+## Definicão 4: Prefixo, Sufixo, Subpalavra
+<ul>
+  <li> Prefixo de uma palavra é qualquer sequência inicial de símbolos da palavra. [1,10,101] </li>
+  <li> Sufixo de uma palavra é qualquer sequência final de símbolos da palavra. [1,01,101] </li>
+  <li> Subpalavra de uma palavra é qualquer sequência de símbolos contígua da palavra. [prefixos, sufixos, 0]</li>
+</ul>
+
+## Definição 5: Linguagem Formal
+<p> Uma linguagem formal é um conjunto de palavras sobre um alfabeto </p>

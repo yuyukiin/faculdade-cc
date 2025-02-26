@@ -36,3 +36,15 @@
 ## Modelar a solução com alguma técnica de IA
   1. Mapear os estados possíveis do problema
      - Definir classe e seus atributos
+     - Definir o estado inicial e o estado(s) final (is)
+  2. Mapear os métodos das classes - regras de sansição
+  3. Mapear as restrições
+  4. Forma de mapear os visitados - hashSet ou árvore
+    - gerar uma string dos atributos daquele estado/objeto
+  5. Definir o método meta ou objetivo
+
+### Observação
+- Toda vez que um estado/objeto é gerado é preciso fazer 3 testes:
+  1. é valido?
+  2. já visitei?
+  3. é a meta?

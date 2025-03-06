@@ -18,3 +18,7 @@
   <li> PRICE, Ana Maria de Alencar; TOSCANI, Simão Sirineo. Implementação de linguagens de programação: compiladores. 2. ed. Porto Alegre: Sagra Luzzatto, 2001. 194 p. (Livros Didáticos; 9). </li>
   <li> TOSCANI, Laira Vieira; VELOSO, Paulo A. S. Complexidade de algorítimos: análise, projeto e métodos. Porto Alegre: Sagra Luzzato, 2001. 202 p. (Livros Didáticos; 13). </li>
 </ul>
+
+## Links
+- JFlap https://www.jflap.org/
+- Simulador web de AF https://phcco.com/pt-BR/automato-finito-deterministico-e-nao-deterministico.html

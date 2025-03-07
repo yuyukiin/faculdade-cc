@@ -18,3 +18,8 @@ rm novo.txt  # Remove o arquivo 'novo.txt'
 rm *.txt  # Remove todos os arquivos com extensão .txt
 cd ..  # Retorna ao diretório anterior
 pwd  # Confirma o diretório atual
+strace pwd
+ps -aux
+gcc -o arq aqr.c
+ls
+./arq

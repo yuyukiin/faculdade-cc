@@ -7,6 +7,7 @@ Descrição da Atividade:
 Cada aluno deverá elaborar um relatório contendo as seguintes seções:
 
 1. História do DevOps
+   O DevOps surgiu entre 2007 e 2008
 - Como surgiu o conceito de DevOps.
 - Principais influências e evolução ao longo do tempo.
 

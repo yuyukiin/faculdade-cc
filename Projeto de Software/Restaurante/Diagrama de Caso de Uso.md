@@ -1,6 +1,6 @@
 # Diagrama de Caso de Uso
 
-![Diagrama de Caso de Uso](Diagrama de Caso de Uso.png)
+![Diagrama de Caso de Uso](Diagrama de Caso de Uso.jpge)
 
 ## Atores
 - **Cliente**: Usuário que realiza pedidos.

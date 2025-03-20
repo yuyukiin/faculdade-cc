@@ -1,25 +1,19 @@
-## **Restaurante**  
+# Diagrama de Caso de Uso
 
-1. **Atores do Sistema:**  
-   1.1. Cliente  
-   1.2. Administrador/Gerente  
+![Diagrama de Caso de Uso](coloque_o_caminho_da_imagem_aqui)
 
-2. **Funcionalidades do Cliente:**  
-   2.1. Adicionar itens ao carrinho.  
-   2.2. Alterar carrinho.  
-   2.3. Confirmar pedido.  
-   2.4. Solicitar a conta para encerrar o pedido.  
+## Atores
+- **Cliente**: Usuário que realiza pedidos.
+- **Administrador (Adm)**: Responsável pela gestão dos pedidos.
 
-3. **Funcionalidades do Administrador/Gerente:**  
-   3.1. Adicionar itens ao menu.  
-   3.2. Ajustar os itens do menu.  
-   3.3. Ativar/Desativar itens do menu.  
+## Casos de Uso
+### Cliente
+- **Adicionar Itens ao Pedido**: Cliente pode incluir novos itens ao pedido.
+- **Alterar Itens Pedidos**: Cliente pode modificar os itens antes da confirmação.
+- **Confirmar Pedido**: Finaliza o pedido com os itens escolhidos.
+- **Solicitar Conta / Pedir a Conta**: Solicita o fechamento da conta.
+- **Emitir Via** *(include)*: Gera uma via do pedido.
 
-4. **Requisitos Não Funcionais:**  
-   4.1. O sistema não pode incluir bebidas alcoólicas no menu.  
-   4.2. O programa não pode ser fechado pelo usuário.  
-   4.3. O sistema não exige login para acesso.  
-   4.4. O menu deve conter três opções principais.  
-
-5. **Interface do Sistema:**  
-   5.1. Exibição do cardápio com as opções disponíveis.  
+### Administrador (Adm)
+- **Alterar Pedido**: Modifica um pedido registrado.
+- **Cadastrar Pedido**: Registra novos pedidos no sistema.

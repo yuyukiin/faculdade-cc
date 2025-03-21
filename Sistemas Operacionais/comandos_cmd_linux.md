@@ -20,6 +20,6 @@ cd ..  # Retorna ao diretório anterior
 pwd  # Confirma o diretório atual
 strace pwd
 ps -aux
-gcc -o arq aqr.c
+gcc -o arq aqr.c # cria o executavel
 ls
 ./arq

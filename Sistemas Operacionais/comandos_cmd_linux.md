@@ -23,3 +23,5 @@ ps -aux
 gcc -o arq aqr.c # cria o executavel
 ls
 ./arq
+java c # compilar
+java # 

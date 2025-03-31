@@ -13,6 +13,7 @@ A funcionalidade implementada é o **Cadastro de Produtos**, onde os dados são 
   - Nome
   - Preço
   - Quantidade
+  - Categoria
 - Armazenamento dos dados em arquivo CSV
 - Interface simples com Java Swing
 
@@ -21,7 +22,7 @@ A funcionalidade implementada é o **Cadastro de Produtos**, onde os dados são 
 ## 🧱 Estrutura do Projeto
 
 - `Produto`: classe modelo que representa o produto
-- `ProdutoRepository`: responsável por salvar e carregar os dados do arquivo CSV
+- `ProdutoDAO`: responsável por salvar e carregar os dados do arquivo CSV
 - `ProdutoForm`: interface gráfica para entrada dos dados
 
 ---

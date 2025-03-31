@@ -1,35 +1,47 @@
-# Trabalho Restaurente
-> Nomes: Yuri Alexander, Pedro e Bruno
+# Trabalho Restaurante
+
+## Integrantes
+- Yuri Alexander
+- Pedro
+- Bruno
 
 ---
 
-!!!!!!!!!!!!fazer documentacao explicando o projeto!!!!!
+## Descrição do Projeto
+Este projeto tem como objetivo a criação de um sistema de gestão de pedidos para um restaurante. O sistema permite que clientes realizem pedidos e que administradores possam gerenciar esses pedidos de forma eficiente.
 
-# Diagrama de Caso de Uso
+### Funcionalidades
+- Clientes podem adicionar, alterar e confirmar pedidos.
+- Clientes podem solicitar a conta e emitir vias dos pedidos.
+- Administradores podem cadastrar e modificar pedidos.
+- O sistema exibe mensagens de erro quando necessário.
 
-![Diagrama de Caso de Uso](Diagrama de Caso de Uso.jpeg)
+---
 
-## Atores
+## Diagrama de Caso de Uso
+![Diagrama de Caso de Uso](Diagrama%20de%20Caso%20de%20Uso.jpeg)
+
+### Atores
 - **Cliente**: Usuário que realiza pedidos.
 - **Administrador (Adm)**: Responsável pela gestão dos pedidos.
 
-## Casos de Uso
-### Cliente
+### Casos de Uso
+#### Cliente
 - **Adicionar Itens ao Pedido**: Cliente pode incluir novos itens ao pedido.
 - **Alterar Itens Pedidos**: Cliente pode modificar os itens antes da confirmação.
 - **Confirmar Pedido**: Finaliza o pedido com os itens escolhidos.
 - **Solicitar Conta / Pedir a Conta**: Solicita o fechamento da conta.
 - **Emitir Via** *(include)*: Gera uma via do pedido.
 
-### Administrador (Adm)
+#### Administrador (Adm)
 - **Alterar Pedido**: Modifica um pedido registrado.
 - **Cadastrar Pedido**: Registra novos pedidos no sistema.
 
 ---
 
-# Caso de Uso Descritivo
+## Casos de Uso Descritivos
 
-## Caso de Uso: Adicionar Itens ao Pedido
+### Caso de Uso: Adicionar Itens ao Pedido
 **Ator Primário:** Cliente  
 **Descrição:** Permite que o cliente adicione itens ao seu pedido.  
 **Fluxo Principal:**  
@@ -43,7 +55,7 @@
 
 ---
 
-## Caso de Uso: Alterar Itens Pedidos
+### Caso de Uso: Alterar Itens Pedidos
 **Ator Primário:** Cliente  
 **Descrição:** Permite que o cliente modifique itens antes da confirmação do pedido.  
 **Fluxo Principal:**  
@@ -56,7 +68,7 @@
 
 ---
 
-## Caso de Uso: Confirmar Pedido
+### Caso de Uso: Confirmar Pedido
 **Ator Primário:** Cliente  
 **Descrição:** Finaliza o pedido com os itens escolhidos.  
 **Fluxo Principal:**  
@@ -69,7 +81,7 @@
 
 ---
 
-## Caso de Uso: Solicitar Conta / Pedir a Conta
+### Caso de Uso: Solicitar Conta / Pedir a Conta
 **Ator Primário:** Cliente  
 **Descrição:** Permite que o cliente solicite a conta para pagamento.  
 **Fluxo Principal:**  
@@ -82,7 +94,7 @@
 
 ---
 
-## Caso de Uso: Emitir Via
+### Caso de Uso: Emitir Via
 **Ator Primário:** Sistema  
 **Descrição:** Gera uma via do pedido para referência.  
 **Fluxo Principal:**  
@@ -94,7 +106,7 @@
 
 ---
 
-## Caso de Uso: Alterar Pedido (Administrador)
+### Caso de Uso: Alterar Pedido (Administrador)
 **Ator Primário:** Administrador  
 **Descrição:** Permite que o administrador modifique um pedido já registrado.  
 **Fluxo Principal:**  
@@ -108,7 +120,7 @@
 
 ---
 
-## Caso de Uso: Cadastrar Pedido (Administrador)
+### Caso de Uso: Cadastrar Pedido (Administrador)
 **Ator Primário:** Administrador  
 **Descrição:** Permite que o administrador registre novos pedidos no sistema.  
 **Fluxo Principal:**  
@@ -121,3 +133,4 @@
 - Se houver erro no cadastro, o sistema solicita correção dos dados.
 
 ---
+

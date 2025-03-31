@@ -1,4 +1,3 @@
-
 # Cadastro de Produto com Interface Gráfica (Java + CSV)
 
 Este projeto é um exemplo didático utilizado na disciplina de **Projeto de Software**, com o objetivo de demonstrar a interação entre o **Diagrama de Classes** e o **Diagrama de Sequência**.
@@ -23,114 +22,27 @@ A funcionalidade implementada é o **Cadastro de Produtos**, onde os dados são 
 
 - `Produto`: classe modelo que representa o produto
 - `ProdutoDAO`: responsável por salvar e carregar os dados do arquivo CSV
-- `ProdutoForm`: interface gráfica para entrada dos dados
+- `PedidoForm`: interface gráfica para entrada dos dados
 
 ---
 
 ## 📘 Diagrama de Classes
 
-<!-- Substitua o link abaixo com a imagem do seu diagrama de classes -->
 ### Astah
 
-![C - Cadastro de Produto](https://github.com/user-attachments/assets/77ddad27-aee2-4f98-b3a3-3528bd820579)
-
----
-
-### PlantUML
-
-![image](https://github.com/user-attachments/assets/e2b13764-f51f-48b6-8bcb-5e8176e3a898)
-
----
-
-#### PlantUML – code
-
-```plantuml
-@startuml
-title Diagrama de Classes - Cadastro de Produto
-
-class Produto {
-    - nome: String
-    - preco: double
-    - quantidade: int
-    --
-    + Produto(nome: String, preco: double, quantidade: int)
-    + getNome(): String
-    + setNome(nome: String): void
-    + getPreco(): double
-    + setPreco(preco: double): void
-    + getQuantidade(): int
-    + setQuantidade(qtd: int): void
-}
-
-class ProdutoRepository {
-    - FILE_NAME: String = "produtos.csv"
-    --
-    + salvar(produto: Produto): void
-    + carregarTodos(): List<Produto>
-}
-
-class ProdutoForm {
-    - nomeField: JTextField
-    - precoField: JTextField
-    - quantidadeField: JTextField
-    - cadastrarButton: JButton
-    - repository: ProdutoRepository
-    --
-    + ProdutoForm()
-    - limparCampos(): void
-}
-
-ProdutoForm --> ProdutoRepository : usa
-ProdutoRepository --> Produto : manipula
-@enduml
-```
+![C - Cadastro de Produto](https://github.com/yuyukiin/faculdade-cc/blob/main/Projeto%20de%20Software/Restaurante/Diagramas/Diagramas%20Gerais/Diagrama%20de%20classe.png)
 
 ---
 
 ## 🔄 Diagrama de Sequência
 
-<!-- Substitua o link abaixo com a imagem do seu diagrama de sequência -->
-### Astah
-
-![DS - Cadastro de Produto](https://github.com/user-attachments/assets/4cd7a905-574e-483d-85d8-ca076026c51f)
-
----
-
-### PlantUML
-
-![image](https://github.com/user-attachments/assets/687dad68-2687-40fd-a1ac-9112088cc1a1)
-
----
-
-#### PlantUML – code
-
-```plantuml
-@startuml
-title Diagrama de Sequência - Cadastro de Produto
-
-actor Usuario
-
-boundary ProdutoForm
-control ProdutoRepository
-entity Produto
-
-== Início do Cadastro ==
-
-Usuario -> ProdutoForm : preencherCampos()
-Usuario -> ProdutoForm : clicarEmCadastrar()
-
-ProdutoForm -> Produto : new Produto(nome, preco, quantidade)
-
-ProdutoForm -> ProdutoRepository : salvar(produto)
-
-ProdutoRepository -> "Arquivo CSV" : escreverLinha(produto)
-
-ProdutoRepository --> ProdutoForm : retorno (void)
-
-ProdutoForm -> Usuario : mostrarMensagem("Produto cadastrado com sucesso!")
-
-@enduml
-```
+### Astah  
+Cadastro de Produto  
+![DS - Cadastro de Produto](https://github.com/yuyukiin/faculdade-cc/blob/main/Projeto%20de%20Software/Restaurante/Diagramas/Diagramas%20de%20Sequ%C3%AAncia/Cadastro%20Pedido.png)  
+Alterar Produto  
+![DS - Alterar Produto](https://github.com/yuyukiin/faculdade-cc/blob/main/Projeto%20de%20Software/Restaurante/Diagramas/Diagramas%20de%20Sequ%C3%AAncia/Alterar%20Pedido.png)  
+Excluir Produto  
+![DS - Excluir Produto](https://github.com/yuyukiin/faculdade-cc/blob/main/Projeto%20de%20Software/Restaurante/Diagramas/Diagramas%20de%20Sequ%C3%AAncia/Excluir%20Pedido.png)
 
 ---
 
@@ -204,19 +116,29 @@ Como exercício complementar, **projete e implemente as demais funcionalidades d
 
 ---
 
-
 ## 📄 Licença
 
 Este projeto está licenciado sob os termos da licença MIT.  
 Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
 ---
+
+## 📌 Casos de Uso
+
+<!-- Adicione aqui a descrição detalhada dos casos de uso -->
+
+---
+
+## 📌 Caso de Uso Descritivo
+
+<!-- Adicione aqui os casos de uso descritivos -->
+
 ---
 
 ## 👤 Autor
 
-**Prof. Herysson R. Figueredo**  
+**Aluno: Yuri Alexander Costa Machado**  
 Curso de Ciência da Computação – Universidade Franciscana (UFN)
 
-📧 E-mail: herysson.figueiredo@ufn.edu.br  
-🔗 GitHub: [@Herysson](https://github.com/Herysson)  
+📧 E-mail: yuricostamachado7@gmail.com  
+🔗 GitHub: [@Yuyukiin](https://github.com/Yuyukiin)

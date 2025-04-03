@@ -26,3 +26,17 @@ P = { A -> aaB | bbB ,
 G = ({A, B}, {a, b}, P, A)
 Derivação de Palavras
 A => aaB => aabB => aabe
+
+Ex7. (a+b)*aba
+P = { A -> aA, bB, eB, 
+      B -> aba}
+G = ({A,B}, {a,b}, P, A)
+Derivação de Palavras
+A => aA => aaB => aaaba
+
+Ex8. (aa+bb)*(a+e)
+P = { X -> aaX | bbX | a | e }
+G = ({X}, {a,b}, P, X)
+Derivação de Palavras
+X => aaX => aabbX => aabba
+

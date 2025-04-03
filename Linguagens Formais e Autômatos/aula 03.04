@@ -1,10 +1,19 @@
 
 Ex4. (a+b)*ab
 
-P = { A -> aA | bA | eB |
+P = { A -> aA | bA | eB ,
       B = ab }
 
 G = ({A, B}, {a, b}, P, A)
 
 Derivação de Palavras
 A => aA => abA => abeB => abeab
+
+Ex5. a*(aa+bb)
+
+P = {A -> aA | eB,
+     B -> aa | bb }
+
+G = ({A,B}, {a,b}, P, A)
+
+Derivação de Palavras

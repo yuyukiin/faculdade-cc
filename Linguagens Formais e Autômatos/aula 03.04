@@ -17,3 +17,12 @@ P = {A -> aA | eB,
 G = ({A,B}, {a,b}, P, A)
 
 Derivação de Palavras
+A => aA
+
+Ex6. (aa+bb)(a+b)*
+P = { A -> aaB | bbB ,
+      B -> aB | bB | e}
+
+G = ({A, B}, {a, b}, P, A)
+Derivação de Palavras
+A => aaB => aabB => aabe

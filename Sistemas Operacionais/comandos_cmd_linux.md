@@ -22,6 +22,6 @@ strace pwd
 ps -aux
 gcc -o arq aqr.c # cria o executavel
 ls
-./arq
+./arq(nome arquivo) # executa o arquivo 
 java c # compilar
 java # 

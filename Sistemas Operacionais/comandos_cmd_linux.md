@@ -25,3 +25,4 @@ ls
 ./arq(nome arquivo) # executa o arquivo 
 java c # compilar
 java # 
+gcc -o mb2 mb2.c -fstack-protector-all # tirar proteção da pilha

@@ -1,21 +1,5 @@
 # Trabalho Restaurante
 
-## Integrantes
-- Yuri Alexander
-- Pedro
-- Bruno
-
----
-
-## Descrição do Projeto
-Este projeto tem como objetivo a criação de um sistema de gestão de pedidos para um restaurante. O sistema permite que clientes realizem pedidos e que administradores possam gerenciar esses pedidos de forma eficiente.
-
-### Funcionalidades
-- Clientes podem adicionar, alterar e confirmar pedidos.
-- Clientes podem solicitar a conta e emitir vias dos pedidos.
-- Administradores podem cadastrar e modificar pedidos.
-- O sistema exibe mensagens de erro quando necessário.
-
 ---
 
 ## Diagrama de Caso de Uso

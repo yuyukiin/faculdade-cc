@@ -63,36 +63,6 @@ Excluir Produto
 
 ---
 
-## 🧠 Objetivos Didáticos
-
-- Compreender o uso prático de diagramas UML (classes e sequência)
-- Aplicar a arquitetura orientada a objetos
-- Trabalhar com persistência de dados simples (CSV)
-- Desenvolver interfaces gráficas com Swing
-
----
-
-## 📂 Organização dos Arquivos
-
-```
-CadastroProdutoCSV/
-├── Projeto/
-│   ├── src/
-│   │   └── main/
-│   │       └── java/
-│   │           └── com/
-│   │               └── mycompany/
-│   │                   └── cadastroproduto/
-│   │                       ├── Produto.java
-│   │                       ├── ProdutoForm.java
-│   │                       └── ProdutoRepository.java
-│   └── produtos.csv
-├── LICENSE
-└── README.md
-```
-
----
-
 ### 🗂️ Descrição dos Diretórios e Arquivos
 
 - **`Produto.java`**: Classe que representa o modelo de dados.
@@ -103,24 +73,6 @@ CadastroProdutoCSV/
 - **`README.md`**: Este arquivo com instruções e explicações do projeto.
 
 ---
-
-## 🧩 Desafio
-
-Como exercício complementar, **projete e implemente as demais funcionalidades do CRUD (Create, Read, Update, Delete)** para produtos:
-
-- 📖 **Listar Produtos**: Leia e exiba todos os produtos cadastrados no CSV.
-- ✏️ **Atualizar Produto**: Permita alterar as informações de um produto existente.
-- ❌ **Excluir Produto**: Implemente uma forma de apagar um produto do CSV.
-
-> 💡 Lembre-se de adaptar o repositório e a interface gráfica para essas operações, sempre mantendo a separação entre lógica de apresentação e acesso a dados.
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob os termos da licença MIT.  
-Consulte o arquivo [LICENSE](LICENSE) para mais informações.
-
 ---
 
 ## 📌 Casos de Uso

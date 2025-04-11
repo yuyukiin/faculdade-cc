@@ -1,3 +1,4 @@
+
 # Estudo de Algoritmos de Escalonamento
 
 ## Conjunto de Processos
@@ -24,11 +25,11 @@
 > Não há preempção (interrupção).  
 > Se houver empate (todos chegam ao mesmo tempo), a ordem original é mantida (P1, P2, P3, ...).
 
-P1	P2	P3	P4	P5
-0 10 11 13 14 15				
-yaml
-Copiar
-Editar
+```
+| P1 | P2 | P3 | P4 | P5 |
+|----|----|----|----|----|
+0    10   11   13   14   15
+```
 
 ---
 
@@ -39,11 +40,11 @@ Editar
 > Em caso de empate no tempo de CPU, desempata pela **ordem de chegada** (FIFO).  
 > Não preemptivo: o processo não pode ser interrompido até terminar.
 
-P2	P4	P3	P5	P1
-0 1 2 4 9 19				
-yaml
-Copiar
-Editar
+```
+| P2 | P4 | P3 | P5 | P1 |
+|----|----|----|----|----|
+0    1    2    4    9    19
+```
 
 ---
 
@@ -54,11 +55,11 @@ Editar
 > Em caso de empate de prioridade, desempata pela **ordem de chegada**.  
 > Não há preempção: quem começa, termina.
 
-P2	P5	P1	P3	P4
-0 1 6 16 18 19				
-yaml
-Copiar
-Editar
+```
+| P2 | P5 | P1 | P3 | P4 |
+|----|----|----|----|----|
+0    1    6   16   18   19
+```
 
 ---
 
@@ -70,11 +71,11 @@ Editar
 > A fila é circular (cíclica).  
 > Todos os processos são tratados igualmente, na **ordem de chegada**.
 
-P1	P2	P3	P4	P5	P1	P5	P1
-0 3 4 6 7 10 13 15 19							
-yaml
-Copiar
-Editar
+```
+| P1 | P2 | P3 | P4 | P5 | P1 | P5 | P1 |
+|----|----|----|----|----|----|----|----|
+0    3    4    6    7    10   13   15   19
+```
 
 ---
 
@@ -116,3 +117,4 @@ Editar
 | Round Robin | (9 + 3 + 4 + 6 + 10) / 5 = 6.4    |
 
 ---
+```

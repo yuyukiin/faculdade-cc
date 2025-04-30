@@ -1,1 +1,39 @@
 https://swish.swi-prolog.org/
+
+  %fatos ou verdades
+nasceuEm("Yuri Alexander","Santa Maria").
+nasceuEm("Alexander Machado","Santa Maria").
+nasceuEm("Gregorio","Santa Maria").
+%regra recursiva de sobrecarga
+nasceuEm(Pessoa, Lugar):- 
+    nasceuEm(Pessoa, I),
+    estaEm(I, Lugar).
+
+localizadoEm("Santa Maria","RS").
+localizadoEm("RS","Brasil").
+
+
+%regra recursiva
+estaEm(Lugar, OutroLugar) :-
+    localizadoEm(Lugar, OutroLugar).
+estaEm(Lugar, OutroLugar) :-
+    localizadoEm(Lugar, I),
+    estaEm(I, OutroLugar).
+
+progenitor("Alexander Machado","Yuri Alexander").
+progenitor("Gregorio","Yuri Alexander").
+progenitor("Gregorio","Alexander Machado").
+
+
+avo(Avo, Neto) :-
+    progenitor(Avo, Pai),
+    progenitor(Pai, Neta).
+
+irmao(I1, I2) :-
+    progenitor(Pai,I1),
+    progenitor(Pai,I2),
+    I1 \= I2.
+
+tio(Tio,Sobrinho) :-
+    irmao(Tio,Pai),
+    progenitor(Pai,Sobrinho).

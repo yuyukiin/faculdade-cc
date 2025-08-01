@@ -18,3 +18,12 @@
 - Exploram as vulnerabilidades para avaliar e obter informações bem sucedidas e falhas
   - Quando se identifica as vulnerabilidades, buscam opssíveis roblemas que levarão a um comprometimento na exploração de falhas
   -    
+
+### Engenharia Social
+- USUÁRIOS REPRESENTAM VULNErailidade que jamais pode ser corrigida
+- Kevin Mitnick
+- Convencer uma pessoa de fazer algo
+
+
+### Hackers
+- 

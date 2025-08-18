@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 
 /**
  * Classe com metodos utilitarios
- * @author Miguel
  */
 public class Util {
     

@@ -1,6 +1,6 @@
-# Meus Projetos de VHDL - Máquinas de Estados Finitos (FSM)
+# Meus Projetos de VHDL - Sistemas Digitais
 
-Este repositório contém uma coleção de projetos básicos em VHDL desenvolvidos para estudo e prática de lógica digital, com foco especial na implementação de Máquinas de Estados Finitos (FSMs) para FPGAs. Cada projeto inclui o código-fonte do design, um testbench para simulação e os resultados esperados.
+Este repositório contém uma coleção de projetos básicos em VHDL desenvolvidos para a disciplina de Sistemas Digitais, com foco na implementação de Máquinas de Estados Finitos (FSMs). Cada projeto inclui o código-fonte do design, um testbench para simulação e os resultados da simulação.
 
 ## Projetos
 
@@ -14,29 +14,11 @@ Este repositório contém uma coleção de projetos básicos em VHDL desenvolvid
 
 ## 1. Detector de Sequência "101"
 
-Este projeto implementa uma FSM do tipo Moore que detecta a sequência de bits `101` em uma entrada serial. A saída `saida` é ativada por um ciclo de clock quando a sequência é encontrada.
-
-#### Diagrama de Estados
-```mermaid
-graph TD
-    S0 -- 0 --> S0
-    S0 -- 1 --> S1
-    S1 -- 0 --> S2
-    S1 -- 1 --> S1
-    S2 -- 0 --> S0
-    S2 -- 1 --> S3
-    S3 -- 0 --> S0
-    S3 -- 1 --> S1
-
-    style S3 fill:#90EE90
-```
-*No estado `S3`, a saída é `1`.*
+Este projeto implementa uma FSM do tipo Moore que detecta a sequência de bits `101` em uma entrada serial.
 
 #### Resultados da Simulação
-Adicione aqui um screenshot da sua simulação e renomeie o arquivo para **`simulacao_detector_101.png`**.
-
-![Simulação do Detector 101](simulacao_detector_101.png)
-*Figura 1: Simulação do detector '101' mostrando a saída `saida` ativada após a sequência correta.*
+![Simulação do Detector 101](detector.jpeg)
+*Figura 1: Simulação do detector '101' mostrando a saída ativada após a sequência correta.*
 
 #### Código Fonte
 <details>
@@ -144,12 +126,11 @@ end Behavioral;
 
 ## 2. Semáforo com Temporizador
 
-Uma FSM Moore que controla um semáforo de trânsito, ciclando entre os estados Verde, Amarelo e Vermelho com temporizadores baseados na frequência do clock.
+Uma FSM Moore que controla um semáforo de trânsito, ciclando entre os estados Verde, Amarelo e Vermelho com temporizadores.
 
 #### Resultados da Simulação
-Adicione aqui um screenshot da sua simulação e renomeie o arquivo para **`simulacao_semaforo.png`**.
 
-![Simulação do Semáforo](simulacao_semaforo.png)
+![Simulação do Semáforo](semaforo.png)
 *Figura 2: Simulação do semáforo mostrando a transição das luzes ao longo de vários segundos.*
 
 #### Código Fonte
@@ -279,10 +260,8 @@ end Behavioral;
 Uma FSM Moore que simula uma fechadura eletrônica. A porta abre (`aberta` = '1') por um ciclo de clock quando a sequência correta `1101` é inserida.
 
 #### Resultados da Simulação
-Adicione aqui um screenshot da sua simulação e renomeie o arquivo para **`simulacao_porta_senha.png`**.
-
-![Simulação da Porta com Senha](simulacao_porta_senha.png)
-*Figura 3: Simulação da porta mostrando a saída `aberta` sendo ativada após a senha correta e com sobreposição.*
+![Simulação da Porta com Senha](porta.png)
+*Figura 3: Simulação da porta mostrando a saída `aberta` sendo ativada após a senha correta.*
 
 #### Código Fonte
 <details>
@@ -404,9 +383,7 @@ end Behavioral;
 Um contador crescente de 3 bits (0 a 7) que retorna ao início, implementado de forma explícita com uma FSM de 8 estados.
 
 #### Resultados da Simulação
-Adicione aqui um screenshot da sua simulação e renomeie o arquivo para **`simulacao_contador_3bits.png`**.
-
-![Simulação do Contador de 3 bits](simulacao_contador_3bits.png)
+![Simulação do Contador de 3 bits](contador.png)
 *Figura 4: Simulação do contador mostrando a saída `q` incrementando de "000" a "111" e retornando a "000".*
 
 #### Código Fonte
@@ -501,27 +478,8 @@ end Behavioral;
 
 Uma FSM Moore que simula uma máquina de vendas. O produto custa 75 centavos e a máquina aceita moedas de 25 e 50 centavos, liberando o produto e o troco (se necessário).
 
-#### Diagrama de Estados
-```mermaid
-graph TD
-    S0_INICIAL -- m25 --> S25
-    S0_INICIAL -- m50 --> S50
-    S25 -- m25 --> S50
-    S25 -- m50 --> S75_PRODUTO
-    S50 -- m25 --> S75_PRODUTO
-    S50 -- m50 --> S100_TROCO
-    S75_PRODUTO --> S0_INICIAL
-    S100_TROCO --> S0_INICIAL
-    
-    style S75_PRODUTO fill:#90EE90
-    style S100_TROCO fill:#90EE90
-```
-*Nos estados `S75_PRODUTO` e `S100_TROCO`, as saídas correspondentes são ativadas.*
-
 #### Resultados da Simulação
-Adicione aqui um screenshot da sua simulação e renomeie o arquivo para **`simulacao_maquina_venda.png`**.
-
-![Simulação da Máquina de Venda](simulacao_maquina_venda.png)
+![Simulação da Máquina de Venda](maquina_venda.png)
 *Figura 5: Simulação mostrando uma compra com pagamento exato e outra com troco.*
 
 #### Código Fonte

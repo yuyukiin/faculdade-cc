@@ -113,13 +113,13 @@ begin
     begin
         reset <= '1'; wait for 2*clk_period;
         reset <= '0'; wait for clk_period;
-        
+
         -- Testa a sequência "101"
         entrada <= '1'; wait for clk_period;
         entrada <= '0'; wait for clk_period;
         entrada <= '1'; wait for clk_period;
         entrada <= '0'; wait for 5*clk_period;
-        
+
         wait;
     end process;
 end Behavioral;
@@ -481,6 +481,49 @@ end Behavioral;
 ## 5. Máquina de Venda Automática
 
 Uma FSM Moore que simula uma máquina de vendas. O produto custa 75 centavos e a máquina aceita moedas de 25 e 50 centavos, liberando o produto e o troco (se necessário).
+
+#### Diagrama de Estados
+
+```
+        ( Início )
+            |
+            V
++-----------------------+ --<-- (sem moeda) --<--+
+|   S0_INICIAL (0c)     |                        |
++-----------------------+ -->-- (m25) ------>--+ |
+            |                                  | |
+            |------------>-- (m50) ---->--+    | |
+            V                              |    | |
++-----------------------+ <-- (sem moeda) --<--+ |    |
+|      S25 (25c)        |                        |    |
++-----------------------+ -->-- (m25) ------>--+ |    |
+            |                                  | |    |
+            '------------>-- (m50) ---->--+    | |    |
+                                           |    | |    |
+                                           V    V V    V
++-----------------------+ --<-- (sem moeda) --<--+    |
+|      S50 (50c)        |                             |
++-----------------------+ -->-- (m25) ------>--+      |
+            |                                  |      |
+            '------------>-- (m50) ---->--+    |      |
+                                           |    |      |
+                                           V    V      V
+                        +----------------------------------+
+                        |  S75_PRODUTO                     |
+                        |  (saída: libera_produto = '1')   |
+                        +----------------------------------+
+                                           |
+                                           V
+                        +----------------------------------+
+                        |  S100_TROCO                      |
+                        |  (saídas: libera_produto = '1',  |
+                        |            troco25 = '1')        |
+                        +----------------------------------+
+                                           |
+                                           V
+                                       ( Retorna
+                                        ao Início )
+```
 
 #### Resultados da Simulação
 ![Simulação da Máquina de Venda](maquina_venda.png)

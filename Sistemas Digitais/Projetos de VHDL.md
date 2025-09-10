@@ -1,4 +1,4 @@
-# Meus Projetos de VHDL - Sistemas Digitais
+# Meus Projetos de VHDL
 
 Este repositório contém uma coleção de projetos básicos em VHDL desenvolvidos para a disciplina de Sistemas Digitais, com foco na implementação de Máquinas de Estados Finitos (FSMs). Cada projeto inclui o código-fonte do design, um testbench para simulação e os resultados da simulação.
 

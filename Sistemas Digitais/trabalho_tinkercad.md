@@ -125,7 +125,7 @@ void loop() {
 Este projeto controla um LED RGB (Cátodo Comum) para exibir um ciclo de cores, incluindo as primárias (Vermelho, Verde, Azul) e suas misturas (Amarelo, Ciano, Magenta e Branco).
 
 #### Circuito e Simulação
-![Circuito do LED RGB](ex_4.png)
+![Circuito do LED RGB](ex_4.jpg)
 *Figura 4: LED RGB conectado aos pinos 9, 10 e 11, cada um controlando um canal de cor (R, G, B).*
 
 #### Código Fonte

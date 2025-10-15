@@ -45,6 +45,7 @@ void loop() {
   // então o loop pode ficar vazio para manter o LED aceso constantemente.
 }
 ```
+---
 
 ## 2. PWM com 5 Níveis de Intensidade
 
@@ -76,6 +77,7 @@ void loop() {
   }
 }
 ```
+---
 
 ## 3. Efeito de Respiração com LED
 
@@ -116,6 +118,7 @@ void loop() {
   delay(30);
 }
 ```
+---
 
 ## 4. Controle de LED RGB
 

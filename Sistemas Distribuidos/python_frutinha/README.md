@@ -36,4 +36,4 @@ A implementação é feita 100% em Python e roda inteiramente no terminal, sem n
 
 ## Autor
 
-* Yuri [Seu Sobrenome] - (@yuyukiin)
+* Yuri Alexander - (@yuyukiin)

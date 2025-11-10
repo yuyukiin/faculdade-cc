@@ -4,10 +4,20 @@ Este é um projeto de exemplo para a disciplina de Sistemas Distribuídos, imple
 
 A implementação é feita 100% em Python e roda inteiramente no terminal, sem necessidade de bibliotecas gráficas.
 
+## Demonstração
+
+<p align="center">
+  <img src="img.png" alt="Demonstração do Jogo">
+</p>
+
+---
+
 ## Conceito
 
 * **Servidor (`server.py`):** Gerencia o estado do jogo, incluindo a posição de todos os jogadores e da "recompensa" (o item a ser coletado). Ele recebe os comandos de movimento dos clientes e distribui o estado atualizado do jogo para todos.
-* **Cliente (`client.py`):** Conecta-se ao servidor, envia os comandos de teclado do usuário (W, A, S, D) e renderiza o estado do jogo recebido no terminal.
+* **Cliente (`client.py`):** Conecta-se ao servidor, envia os comandos de teclado do usuário (W, A, S, D) e recebe a atualização do estado do jogo para renderizar no terminal.
+
+---
 
 ## Como Executar
 
@@ -22,7 +32,6 @@ A implementação é feita 100% em Python e roda inteiramente no terminal, sem n
     ```bash
     python server.py
     ```
-    (No Windows, pode ser necessário usar `python` em vez de `python3`)
 
 3.  **Inicie os Clientes:**
     Abra *outro* terminal (ou vários) e execute:
@@ -33,6 +42,8 @@ A implementação é feita 100% em Python e roda inteiramente no terminal, sem n
 
 4.  **Para Jogar:**
     No terminal do cliente, use as teclas `W`, `A`, `S`, `D` e pressione `Enter` para se mover.
+
+---
 
 ## Autor
 

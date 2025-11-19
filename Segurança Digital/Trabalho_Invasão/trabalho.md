@@ -1,6 +1,5 @@
 <h1 style="border-bottom: 2px solid #333; padding-bottom: 10px;">RELATÓRIO TÉCNICO: PENTEST INTERNO (LAB)</h1>
 
-<p><strong>NÍVEL: CONFIDENCIAL</strong><br>
 <strong>Data:</strong> 19 de Novembro de 2025<br>
 <strong>Analistas:</strong> Yuri Alexander e Gabriel Machado<br>
 <strong>Cenário:</strong> Ataque de Engenharia Social em ambiente virtualizado.</p>
